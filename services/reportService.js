@@ -1,0 +1,108 @@
+const { Device, Maintenance, Department } = require('../models');
+const { Op } = require('sequelize');
+const logger = require('../utils/logger');
+
+class ReportService {
+  // 获取设备状态统计
+  static async getDeviceStatusCount() {
+    try {
+      const statusCounts = await Device.findAll({
+        attributes: ['status', [Device.sequelize.fn('COUNT', Device.sequelize.col('id')), 'count']],
+        group: ['status']
+      });
+      logger.info('Get device status count successful');
+      return statusCounts;
+    } catch (error) {
+      logger.error(`Get device status count error: ${error.message}`);
+      throw error;
+    }
+  }
+
+  // 获取部门设备统计
+  static async getDepartmentDeviceCount() {
+    try {
+      const departmentCounts = await Department.findAll({
+        attributes: ['id', 'name'],
+        include: [{
+          model: Device,
+          attributes: [[Device.sequelize.fn('COUNT', Device.sequelize.col('id')), 'deviceCount']]
+        }],
+        group: ['Department.id']
+      });
+      logger.info('Get department device count successful');
+      return departmentCounts;
+    } catch (error) {
+      logger.error(`Get department device count error: ${error.message}`);
+      throw error;
+    }
+  }
+
+  // 获取维护类型统计
+  static async getMaintenanceTypeCount() {
+    try {
+      const typeCounts = await Maintenance.findAll({
+        attributes: ['maintenanceType', [Maintenance.sequelize.fn('COUNT', Maintenance.sequelize.col('id')), 'count']],
+        group: ['maintenanceType']
+      });
+      logger.info('Get maintenance type count successful');
+      return typeCounts;
+    } catch (error) {
+      logger.error(`Get maintenance type count error: ${error.message}`);
+      throw error;
+    }
+  }
+
+  // 获取年度维护成本统计
+  static async getAnnualMaintenanceCost(year) {
+    try {
+      const startDate = new Date(`${year}-01-01`);
+      const endDate = new Date(`${year}-12-31`);
+      
+      const monthlyCosts = await Maintenance.findAll({
+        attributes: [
+          [Maintenance.sequelize.fn('MONTH', Maintenance.sequelize.col('startDate')), 'month'],
+          [Maintenance.sequelize.fn('SUM', Maintenance.sequelize.col('cost')), 'totalCost']
+        ],
+        where: {
+          startDate: {
+            [Op.between]: [startDate, endDate]
+          },
+          cost: {
+            [Op.ne]: null
+          }
+        },
+        group: [Maintenance.sequelize.fn('MONTH', Maintenance.sequelize.col('startDate'))],
+        order: [[Maintenance.sequelize.fn('MONTH', Maintenance.sequelize.col('startDate')), 'ASC']]
+      });
+      logger.info(`Get annual maintenance cost successful for year ${year}`);
+      return monthlyCosts;
+    } catch (error) {
+      logger.error(`Get annual maintenance cost error: ${error.message}`);
+      throw error;
+    }
+  }
+
+  // 获取即将到期的设备 warranty
+  static async getExpiringWarranties() {
+    try {
+      const thirtyDaysLater = new Date();
+      thirtyDaysLater.setDate(thirtyDaysLater.getDate() + 30);
+      
+      const expiringDevices = await Device.findAll({
+        where: {
+          warrantyEndDate: {
+            [Op.between]: [new Date(), thirtyDaysLater]
+          }
+        },
+        include: [{ model: Department, attributes: ['id', 'name'] }]
+      });
+      logger.info(`Get expiring warranties successful: ${expiringDevices.length} devices found`);
+      return expiringDevices;
+    } catch (error) {
+      logger.error(`Get expiring warranties error: ${error.message}`);
+      throw error;
+    }
+  }
+}
+
+module.exports = ReportService;

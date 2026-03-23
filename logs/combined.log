@@ -1,0 +1,530 @@
+2026-03-22 19:29:11 info: Server is running on port 3001
+2026-03-22 19:29:50 info: Server is running on port 3001
+2026-03-22 19:29:50 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:29:50 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:29:50 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:29:51 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:29:52 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:29:54 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:29:56 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:30:01 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:30:09 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:30:23 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:30:47 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:31:27 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:32:36 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:34:33 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:37:51 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 19:43:28 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-03-22 20:04:24 info: Server is running on port 3001
+2026-03-22 20:04:24 info: Redis connected successfully
+2026-03-22 20:32:11 info: Server is running on port 3001
+2026-03-22 20:32:11 info: Redis connected successfully
+2026-03-22 20:33:06 info: Server is running on port 3001
+2026-03-22 20:33:06 info: Redis connected successfully
+2026-03-22 21:11:10 info: Server is running on port 3001
+2026-03-22 21:11:10 info: Redis connected successfully
+2026-03-22 21:45:41 info: Server is running on port 3001
+2026-03-22 21:45:41 info: Redis connected successfully
+2026-03-22 21:47:18 info: Server is running on port 3001
+2026-03-22 21:47:18 info: Redis connected successfully
+2026-03-22 21:47:37 info: Server is running on port 3001
+2026-03-22 21:47:37 info: Redis connected successfully
+2026-03-22 22:05:32 info: Server is running on port 3001
+2026-03-22 22:05:32 info: Redis connected successfully
+2026-03-22 22:06:30 info: Server is running on port 3001
+2026-03-22 22:06:30 info: Redis connected successfully
+2026-03-22 22:07:04 info: Server is running on port 3001
+2026-03-22 22:07:04 info: Redis connected successfully
+2026-03-22 22:07:56 info: Server is running on port 3001
+2026-03-22 22:07:56 info: Redis connected successfully
+2026-03-22 22:09:19 info: Server is running on port 3001
+2026-03-22 22:09:19 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:09:19 info: Redis connected successfully
+2026-03-22 22:10:25 error: Error connecting to Redis: redisClient.connect is not a function
+2026-03-22 22:10:25 info: Server will continue to run without Redis
+2026-03-22 22:10:25 info: Server is running on port 3001
+2026-03-22 22:10:25 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:10:25 info: Redis connected successfully
+2026-03-22 22:11:23 error: Error connecting to Redis: redisClient.connect is not a function
+2026-03-22 22:11:23 info: Server will continue to run without Redis
+2026-03-22 22:11:23 info: Server is running on port 3001
+2026-03-22 22:11:23 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:11:23 info: Redis connected successfully
+2026-03-22 22:14:28 info: Server is running on port 3001
+2026-03-22 22:14:28 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:14:28 info: Redis connected successfully
+2026-03-22 22:17:06 info: Server is running on port 3001
+2026-03-22 22:17:06 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:17:06 info: Redis connected successfully
+2026-03-22 22:18:37 info: Server is running on port 3001
+2026-03-22 22:18:37 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:18:37 info: Redis connected successfully
+2026-03-22 22:21:13 info: Server is running on port 3001
+2026-03-22 22:21:13 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:21:13 info: Redis connected successfully
+2026-03-22 22:22:49 info: Server is running on port 3001
+2026-03-22 22:22:49 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:22:49 info: Redis connected successfully
+2026-03-22 22:26:50 info: Server is running on port 3001
+2026-03-22 22:26:50 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:27:36 info: Server is running on port 3001
+2026-03-22 22:27:36 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:28:18 info: Server is running on port 3001
+2026-03-22 22:28:18 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:28:18 info: Redis connected successfully
+2026-03-22 22:29:05 info: Server is running on port 3001
+2026-03-22 22:29:05 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:29:05 info: Redis connected successfully
+2026-03-22 22:29:52 info: Server is running on port 3001
+2026-03-22 22:29:52 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:29:52 info: Redis connected successfully
+2026-03-22 22:30:39 info: Server is running on port 3001
+2026-03-22 22:30:39 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:30:39 info: Redis connected successfully
+2026-03-22 22:37:24 info: Server is running on port 3001
+2026-03-22 22:37:24 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:37:24 info: Redis connected successfully
+2026-03-22 22:38:14 info: Server is running on port 3001
+2026-03-22 22:38:14 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:38:14 info: Redis connected successfully
+2026-03-22 22:38:49 error: Register error: Unknown column 'User.email' in 'where clause'
+2026-03-22 22:39:29 info: Server is running on port 3001
+2026-03-22 22:39:29 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:39:29 info: Redis connected successfully
+2026-03-22 22:39:40 error: Register error: Unknown column 'email' in 'field list'
+2026-03-22 22:40:43 info: Register successful: User 2
+2026-03-22 22:41:10 info: Login successful: User testuser
+2026-03-22 22:42:27 error: Create device error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`devices`, CONSTRAINT `devices_ibfk_1` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-03-22 22:43:47 error: Create device error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`devices`, CONSTRAINT `devices_ibfk_1` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-03-22 22:45:35 info: Create device successful: Device 3
+2026-03-22 22:50:03 info: Server is running on port 3001
+2026-03-22 22:50:03 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:50:03 info: Redis connected successfully
+2026-03-22 22:51:19 info: Login successful: User admin
+2026-03-22 22:53:47 warn: Register failed: Username admin already exists
+2026-03-22 22:53:47 error: Register error: Username already exists
+2026-03-22 22:53:47 error: Register error: Data truncated for column 'role' at row 1
+2026-03-22 22:53:47 info: Login successful: User admin
+2026-03-22 22:53:47 info: Create device successful: Device 4
+2026-03-22 22:53:47 info: Create device successful: Device 5
+2026-03-22 22:53:47 info: Create device successful: Device 6
+2026-03-22 22:53:47 info: Create device successful: Device 7
+2026-03-22 22:53:47 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 22:53:47 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 22:53:47 info: Create maintenance plan successful: Plan 3
+2026-03-22 22:53:47 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 22:53:47 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 22:53:47 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 22:53:47 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 22:53:47 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 22:53:47 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 22:53:47 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 22:53:47 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 22:53:47 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 22:53:47 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 22:54:36 info: Server is running on port 3001
+2026-03-22 22:54:36 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 22:54:36 info: Redis connected successfully
+2026-03-22 22:54:43 warn: Register failed: Username admin already exists
+2026-03-22 22:54:43 error: Register error: Username already exists
+2026-03-22 22:54:43 error: Register error: Data truncated for column 'role' at row 1
+2026-03-22 22:54:43 info: Login successful: User admin
+2026-03-22 22:54:43 error: Create device error: Validation error
+2026-03-22 22:54:43 error: Create device error: Validation error
+2026-03-22 22:54:43 error: Create device error: Validation error
+2026-03-22 22:54:43 error: Create device error: Validation error
+2026-03-22 22:54:43 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 22:54:43 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 22:54:43 info: Create maintenance plan successful: Plan 6
+2026-03-22 22:54:43 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 22:54:43 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 22:54:43 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 22:54:43 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 22:54:43 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 22:54:43 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 22:54:43 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 22:54:43 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 22:54:43 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 22:54:43 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 22:57:43 warn: Register failed: Username admin already exists
+2026-03-22 22:57:43 error: Register error: Username already exists
+2026-03-22 22:57:43 info: Register successful: User 3
+2026-03-22 22:57:43 info: Login successful: User admin
+2026-03-22 22:57:43 error: Create device error: Validation error
+2026-03-22 22:57:43 error: Create device error: Validation error
+2026-03-22 22:57:43 error: Create device error: Validation error
+2026-03-22 22:57:43 error: Create device error: Validation error
+2026-03-22 22:57:43 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 22:57:43 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 22:57:43 info: Create maintenance plan successful: Plan 9
+2026-03-22 22:58:56 warn: Register failed: Username admin already exists
+2026-03-22 22:58:56 error: Register error: Username already exists
+2026-03-22 22:58:56 warn: Register failed: Username user already exists
+2026-03-22 22:58:56 error: Register error: Username already exists
+2026-03-22 22:58:56 info: Login successful: User admin
+2026-03-22 22:58:56 info: Get devices successful: 5 devices found
+2026-03-22 22:58:56 info: Get devices from cache
+2026-03-22 22:58:56 info: Get devices from cache
+2026-03-22 22:58:56 info: Get devices from cache
+2026-03-22 22:58:56 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 22:58:56 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 22:58:56 info: Create maintenance plan successful: Plan 12
+2026-03-22 22:59:19 warn: Register failed: Username admin already exists
+2026-03-22 22:59:19 error: Register error: Username already exists
+2026-03-22 22:59:19 warn: Register failed: Username user already exists
+2026-03-22 22:59:19 error: Register error: Username already exists
+2026-03-22 22:59:19 info: Login successful: User admin
+2026-03-22 22:59:19 info: Get devices from cache
+2026-03-22 22:59:19 info: Get devices from cache
+2026-03-22 22:59:19 info: Get devices from cache
+2026-03-22 22:59:19 info: Get devices from cache
+2026-03-22 22:59:19 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 22:59:19 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 22:59:19 info: Create maintenance plan successful: Plan 15
+2026-03-22 23:00:27 warn: Register failed: Username admin already exists
+2026-03-22 23:00:27 error: Register error: Username already exists
+2026-03-22 23:00:27 warn: Register failed: Username user already exists
+2026-03-22 23:00:27 error: Register error: Username already exists
+2026-03-22 23:00:27 info: Login successful: User admin
+2026-03-22 23:00:27 info: Get devices from cache
+2026-03-22 23:00:27 info: Get devices from cache
+2026-03-22 23:00:27 info: Get devices from cache
+2026-03-22 23:00:27 info: Get devices from cache
+2026-03-22 23:00:27 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:00:27 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:00:27 info: Create maintenance plan successful: Plan 18
+2026-03-22 23:00:27 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 23:00:27 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 23:00:27 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 23:00:27 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:00:27 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:00:27 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:00:27 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:00:27 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 23:00:27 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 23:00:27 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 23:01:20 warn: Register failed: Username admin already exists
+2026-03-22 23:01:20 error: Register error: Username already exists
+2026-03-22 23:01:20 warn: Register failed: Username user already exists
+2026-03-22 23:01:20 error: Register error: Username already exists
+2026-03-22 23:01:20 info: Login successful: User admin
+2026-03-22 23:01:20 info: Get devices from cache
+2026-03-22 23:01:20 info: Get devices from cache
+2026-03-22 23:01:20 info: Get devices from cache
+2026-03-22 23:01:20 info: Get devices from cache
+2026-03-22 23:01:20 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:01:20 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:01:20 info: Create maintenance plan successful: Plan 21
+2026-03-22 23:02:04 warn: Register failed: Username admin already exists
+2026-03-22 23:02:04 error: Register error: Username already exists
+2026-03-22 23:02:04 warn: Register failed: Username user already exists
+2026-03-22 23:02:04 error: Register error: Username already exists
+2026-03-22 23:02:04 info: Login successful: User admin
+2026-03-22 23:02:04 info: Get devices from cache
+2026-03-22 23:02:04 info: Get devices from cache
+2026-03-22 23:02:04 info: Get devices from cache
+2026-03-22 23:02:04 info: Get devices from cache
+2026-03-22 23:02:04 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:02:04 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:02:04 info: Create maintenance plan successful: Plan 24
+2026-03-22 23:02:04 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 23:02:04 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 23:02:04 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 23:02:04 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:02:04 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:02:04 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:02:04 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:02:04 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 23:02:04 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 23:02:04 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 23:03:41 warn: Register failed: Username admin already exists
+2026-03-22 23:03:41 error: Register error: Username already exists
+2026-03-22 23:03:41 warn: Register failed: Username user already exists
+2026-03-22 23:03:41 error: Register error: Username already exists
+2026-03-22 23:03:41 info: Login successful: User admin
+2026-03-22 23:03:41 info: Get devices from cache
+2026-03-22 23:03:41 info: Get devices from cache
+2026-03-22 23:03:41 info: Get devices from cache
+2026-03-22 23:03:41 info: Get devices from cache
+2026-03-22 23:03:41 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:03:41 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:03:41 info: Create maintenance plan successful: Plan 27
+2026-03-22 23:03:41 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 23:03:41 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 23:03:41 error: Create maintenance error: notNull Violation: Maintenance.maintenanceType cannot be null,
+notNull Violation: Maintenance.description cannot be null,
+notNull Violation: Maintenance.startDate cannot be null
+2026-03-22 23:03:41 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:03:41 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:03:41 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:03:41 error: Create repair order error: notNull Violation: RepairOrder.applicant cannot be null,
+notNull Violation: RepairOrder.applyDate cannot be null
+2026-03-22 23:03:41 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 23:03:41 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 23:03:41 error: Create running data error: notNull Violation: RunningData.date cannot be null,
+notNull Violation: RunningData.production cannot be null,
+notNull Violation: RunningData.energyConsumption cannot be null,
+notNull Violation: RunningData.operator cannot be null
+2026-03-22 23:04:37 info: Server is running on port 3001
+2026-03-22 23:04:37 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 23:04:37 info: Redis connected successfully
+2026-03-22 23:04:43 warn: Register failed: Username admin already exists
+2026-03-22 23:04:43 error: Register error: Username already exists
+2026-03-22 23:04:43 warn: Register failed: Username user already exists
+2026-03-22 23:04:43 error: Register error: Username already exists
+2026-03-22 23:04:43 info: Login successful: User admin
+2026-03-22 23:04:43 info: Get devices successful: 5 devices found
+2026-03-22 23:04:43 info: Get devices from cache
+2026-03-22 23:04:43 info: Get devices from cache
+2026-03-22 23:04:43 info: Get devices from cache
+2026-03-22 23:04:43 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:04:43 error: Create maintenance plan error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenanceplans`, CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:04:43 info: Create maintenance plan successful: Plan 30
+2026-03-22 23:04:43 error: Create maintenance error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenances`, CONSTRAINT `maintenances_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:04:43 error: Create maintenance error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenances`, CONSTRAINT `maintenances_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:04:43 error: Create maintenance error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`maintenances`, CONSTRAINT `maintenances_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:04:43 error: Create repair order error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`repairorders`, CONSTRAINT `repairorders_ibfk_1` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:04:43 error: Create repair order error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`repairorders`, CONSTRAINT `repairorders_ibfk_1` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:04:43 info: Update device status to fault: Device 3
+2026-03-22 23:04:43 info: Create repair order successful: Order 3
+2026-03-22 23:04:43 info: Update device status to fault: Device 4
+2026-03-22 23:04:43 info: Create repair order successful: Order 4
+2026-03-22 23:04:43 error: Create running data error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`runningdata`, CONSTRAINT `runningdata_ibfk_1` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:04:43 error: Create running data error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`runningdata`, CONSTRAINT `runningdata_ibfk_1` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:04:44 error: Create running data error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`runningdata`, CONSTRAINT `runningdata_ibfk_1` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-22 23:05:55 warn: Register failed: Username admin already exists
+2026-03-22 23:05:55 error: Register error: Username already exists
+2026-03-22 23:05:55 warn: Register failed: Username user already exists
+2026-03-22 23:05:55 error: Register error: Username already exists
+2026-03-22 23:05:55 info: Login successful: User admin
+2026-03-22 23:05:55 info: Get devices from cache
+2026-03-22 23:05:55 info: Get devices from cache
+2026-03-22 23:05:55 info: Get devices from cache
+2026-03-22 23:05:55 info: Get devices from cache
+2026-03-22 23:05:55 info: Create maintenance plan successful: Plan 31
+2026-03-22 23:05:55 info: Create maintenance plan successful: Plan 32
+2026-03-22 23:05:55 info: Create maintenance plan successful: Plan 33
+2026-03-22 23:05:55 info: Create maintenance successful: Maintenance 4
+2026-03-22 23:05:55 info: Create maintenance successful: Maintenance 5
+2026-03-22 23:05:55 info: Create maintenance successful: Maintenance 6
+2026-03-22 23:05:55 info: Update device status to fault: Device 4
+2026-03-22 23:05:55 info: Create repair order successful: Order 5
+2026-03-22 23:05:55 info: Update device status to fault: Device 5
+2026-03-22 23:05:55 info: Create repair order successful: Order 6
+2026-03-22 23:05:55 info: Update device status to fault: Device 6
+2026-03-22 23:05:55 info: Create repair order successful: Order 7
+2026-03-22 23:05:56 info: Update device status to fault: Device 7
+2026-03-22 23:05:56 info: Create repair order successful: Order 8
+2026-03-22 23:05:56 info: Update device running hours: Device 4, Running hours 8
+2026-03-22 23:05:56 info: Create running data successful: Data 4
+2026-03-22 23:05:56 info: Update device running hours: Device 5, Running hours 10
+2026-03-22 23:05:56 info: Create running data successful: Data 5
+2026-03-22 23:05:56 info: Update device running hours: Device 6, Running hours 6
+2026-03-22 23:05:56 info: Create running data successful: Data 6
+2026-03-22 23:14:09 info: Server is running on port 3001
+2026-03-22 23:14:09 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 23:14:09 info: Redis connected successfully
+2026-03-22 23:16:39 info: Server is running on port 3001
+2026-03-22 23:16:39 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 23:16:39 info: Redis connected successfully
+2026-03-22 23:31:25 info: Server is running on port 3001
+2026-03-22 23:31:25 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-22 23:31:25 info: Redis connected successfully
+2026-03-22 23:31:34 warn: Register failed: Username admin already exists
+2026-03-22 23:31:34 error: Register error: Username already exists
+2026-03-22 23:31:35 warn: Register failed: Username user already exists
+2026-03-22 23:31:35 error: Register error: Username already exists
+2026-03-22 23:31:35 info: Login successful: User admin
+2026-03-22 23:31:35 info: Get devices successful: 5 devices found
+2026-03-22 23:31:35 info: Get devices from cache
+2026-03-22 23:31:35 info: Get devices from cache
+2026-03-22 23:31:35 info: Get devices from cache
+2026-03-22 23:31:35 info: Create maintenance plan successful: Plan 34
+2026-03-22 23:31:35 info: Create maintenance plan successful: Plan 35
+2026-03-22 23:31:35 info: Create maintenance plan successful: Plan 36
+2026-03-22 23:31:35 info: Create maintenance successful: Maintenance 7
+2026-03-22 23:31:35 info: Create maintenance successful: Maintenance 8
+2026-03-22 23:31:35 info: Create maintenance successful: Maintenance 9
+2026-03-22 23:31:36 info: Update device status to fault: Device 4
+2026-03-22 23:31:36 info: Create repair order successful: Order 9
+2026-03-22 23:31:36 info: Update device status to fault: Device 5
+2026-03-22 23:31:36 info: Create repair order successful: Order 10
+2026-03-22 23:31:36 info: Update device status to fault: Device 6
+2026-03-22 23:31:36 info: Create repair order successful: Order 11
+2026-03-22 23:31:36 info: Update device status to fault: Device 7
+2026-03-22 23:31:36 info: Create repair order successful: Order 12
+2026-03-22 23:31:36 info: Update device running hours: Device 4, Running hours 8
+2026-03-22 23:31:36 info: Create running data successful: Data 7
+2026-03-22 23:31:36 info: Update device running hours: Device 5, Running hours 10
+2026-03-22 23:31:36 info: Create running data successful: Data 8
+2026-03-22 23:31:36 info: Update device running hours: Device 6, Running hours 6
+2026-03-22 23:31:36 info: Create running data successful: Data 9
+2026-03-23 21:23:10 info: Server is running on port 3001
+2026-03-23 21:23:10 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-23 21:23:10 info: Redis connected successfully
+2026-03-23 21:30:41 error: SyntaxError: Bad escaped character in JSON at position 12 (line 1 column 13)
+    at JSON.parse (<anonymous>)
+    at parse (E:\project\EnterpriseEquipmentManagementSystemBackend\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\project\EnterpriseEquipmentManagementSystemBackend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:228:14)
+    at invokeCallback (E:\project\EnterpriseEquipmentManagementSystemBackend\node_modules\raw-body\index.js:238:16)
+    at done (E:\project\EnterpriseEquipmentManagementSystemBackend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\project\EnterpriseEquipmentManagementSystemBackend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2026-03-23 21:31:56 info: Login successful: User admin
+2026-03-23 21:32:14 info: Login successful: User admin
+2026-03-23 21:32:14 info: Get devices successful: 5 devices found
+2026-03-23 21:34:59 info: Login successful: User admin
+2026-03-23 21:34:59 info: Get current user successful: User 1
+2026-03-23 21:34:59 info: Get current user successful: User 1
+2026-03-23 21:35:06 info: Login successful: User admin
+2026-03-23 21:35:06 info: Get current user successful: User 1
+2026-03-23 21:35:17 info: Get current user successful: User 1
+2026-03-23 21:35:25 info: Get devices from cache
+2026-03-23 21:35:43 info: Get devices from cache
+2026-03-23 21:35:43 error: Get running data error: Unknown column 'RunningData.recordTime' in 'order clause'
+2026-03-23 21:39:51 info: Server is running on port 3001
+2026-03-23 21:39:51 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-23 21:39:51 info: Redis connected successfully
+2026-03-23 21:40:09 info: Server is running on port 3001
+2026-03-23 21:40:09 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-23 21:40:09 info: Redis connected successfully
+2026-03-23 21:42:08 info: Server is running on port 3001
+2026-03-23 21:42:08 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-23 21:42:08 info: Redis connected successfully
+2026-03-23 21:42:18 info: Login successful: User admin
+2026-03-23 21:42:18 info: Get running data successful: 6 records found
+2026-03-23 21:42:35 info: Login successful: User admin
+2026-03-23 21:42:35 info: Update device running hours: Device 4, Running hours 9
+2026-03-23 21:42:35 info: Create running data successful: Data 10
+2026-03-23 21:44:01 info: Server is running on port 3001
+2026-03-23 21:44:01 info: Server started successfully. Database sync can be performed manually if needed.
+2026-03-23 21:44:01 info: Redis connected successfully
+2026-03-23 21:45:00 info: Login successful: User admin
+2026-03-23 21:45:00 info: Get devices successful: 5 devices found
+2026-03-23 21:45:00 info: Get maintenances successful: 6 records found
+2026-03-23 21:45:00 info: Get maintenance plans successful: 16 plans found
+2026-03-23 21:45:00 info: Get repair orders successful: 10 orders found
+2026-03-23 21:45:00 info: Get running data successful: 7 records found
+2026-03-23 21:45:00 info: Get users successful: 3 users found
+2026-03-23 21:45:16 info: Login successful: User admin
+2026-03-23 21:45:16 info: Get current user successful: User 1
+2026-03-23 21:45:39 info: Get devices from cache
+2026-03-23 21:45:39 info: Get maintenance plans from cache
+2026-03-23 21:45:39 info: Get maintenances from cache
+2026-03-23 21:45:41 info: Get devices from cache
+2026-03-23 21:45:41 info: Get running data from cache
+2026-03-23 21:45:45 info: Get devices from cache
+2026-03-23 21:45:45 info: Get maintenance plans from cache
+2026-03-23 21:45:45 info: Get maintenances from cache
+2026-03-23 21:45:46 info: Get devices from cache
+2026-03-23 21:45:46 info: Get repair orders from cache
+2026-03-23 21:46:08 info: Get users from cache
+2026-03-23 21:46:16 info: Get users from cache
+2026-03-23 21:46:24 info: Get devices from cache
+2026-03-23 21:46:24 info: Get maintenance plans from cache
+2026-03-23 21:46:24 info: Get maintenances from cache
+2026-03-23 21:46:26 info: Get devices from cache
+2026-03-23 21:46:26 info: Get repair orders from cache
+2026-03-23 21:46:35 info: Get devices from cache
+2026-03-23 21:46:35 info: Get maintenance plans from cache
+2026-03-23 21:46:35 info: Get maintenances from cache
+2026-03-23 21:47:20 info: Get devices from cache
+2026-03-23 21:47:20 info: Get repair orders from cache
+2026-03-23 21:47:20 info: Get devices from cache
+2026-03-23 21:47:20 info: Get maintenance plans from cache
+2026-03-23 21:47:20 info: Get maintenances from cache
+2026-03-23 21:47:21 info: Get devices from cache
+2026-03-23 21:47:21 info: Get running data from cache
