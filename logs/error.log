@@ -236,3 +236,16 @@ notNull Violation: RunningData.operator cannot be null
     at endReadableNT (node:internal/streams/readable:1729:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 2026-03-23 21:35:43 error: Get running data error: Unknown column 'RunningData.recordTime' in 'order clause'
+2026-03-23 22:14:20 error: Create running data error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`runningdata`, CONSTRAINT `runningdata_ibfk_1` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2026-03-23 22:17:57 error: Create running data error: Device not found
+2026-03-30 21:23:22 error: Login error: Invalid username or password
+2026-03-30 21:23:34 error: Login error: Invalid username or password
+2026-03-30 21:23:39 error: Login error: Invalid username or password
+2026-03-30 21:59:05 error: Login error: Invalid username or password
+2026-03-30 22:28:03 error: Register error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-03-30 23:31:47 error: Register error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-03-30 23:31:56 error: Register error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-04-10 21:42:20 error: Register error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-04-10 21:44:12 error: Register error: Cannot add or update a child row: a foreign key constraint fails (`equipment_management`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE)
+2026-04-10 22:04:23 error: Get current user error: User not found
+2026-04-10 22:04:49 error: Login error: Invalid username or password

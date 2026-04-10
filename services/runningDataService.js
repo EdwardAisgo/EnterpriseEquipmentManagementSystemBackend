@@ -67,6 +67,11 @@ class RunningDataService {
         throw new Error('Equipment ID is required');
       }
 
+      const device = await Device.findByPk(equipmentId);
+      if (!device) {
+        throw new Error('Device not found');
+      }
+
       const transformedData = {
         equipmentId,
         date: runningData.date ?? runningData.recordTime,
@@ -92,11 +97,8 @@ class RunningDataService {
       const data = await RunningData.create(transformedData);
       
       // 更新设备的运行小时数
-      const device = await Device.findByPk(data.equipmentId);
-      if (device) {
-        await device.update({ runningHours: data.runningHours });
-        logger.info(`Update device running hours: Device ${device.id}, Running hours ${data.runningHours}`);
-      }
+      await device.update({ runningHours: data.runningHours });
+      logger.info(`Update device running hours: Device ${device.id}, Running hours ${data.runningHours}`);
       
       // 清除运行数据列表缓存
       await RedisCache.del('runningData:all');

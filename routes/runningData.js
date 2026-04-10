@@ -52,6 +52,9 @@ router.post('/', authenticateToken,
       res.status(201).json({ message: 'Running data created successfully', data });
     } catch (error) {
       console.error(error);
+      if (error.message === 'Device not found') {
+        return res.status(404).json({ message: error.message });
+      }
       res.status(500).json({ message: 'Internal server error' });
     }
   }

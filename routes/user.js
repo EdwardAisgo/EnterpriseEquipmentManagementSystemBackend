@@ -114,6 +114,28 @@ router.get('/', authenticateToken, async (req, res) => {
   }
 });
 
+// 更新用户（管理员/系统管理场景）
+router.put('/:id', authenticateToken,
+  body('email').optional().isEmail().withMessage('Email must be a valid email address'),
+  body('name').optional().isLength({ max: 50 }).withMessage('Name must not exceed 50 characters'),
+  body('departmentId').optional().isInt().withMessage('Department ID must be an integer'),
+  body('role').optional().isIn(['admin', 'manager', 'staff']).withMessage('Role must be one of: admin, manager, staff'),
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    try {
+      const user = await UserService.updateUser(req.params.id, req.body);
+      res.json({ message: 'User updated successfully', user });
+    } catch (error) {
+      console.error(error);
+      res.status(404).json({ message: error.message });
+    }
+  }
+);
+
 // 根据ID获取用户信息
 router.get('/:id', authenticateToken, async (req, res) => {
   try {

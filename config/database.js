@@ -18,6 +18,7 @@ async function createDatabaseIfNotExists() {
     // 连接到MySQL服务器
     const connection = await mysql.createConnection({
       ...config,
+      charset: 'utf8mb4',
       multipleStatements: true
     });
     
@@ -51,6 +52,8 @@ const sequelize = new Sequelize(
     host: config.host,
     dialect: 'mysql',
     port: config.port,
+    charset: 'utf8mb4',
+    collate: 'utf8mb4_unicode_ci',
     logging: console.log,
     pool: {
       max: 5,

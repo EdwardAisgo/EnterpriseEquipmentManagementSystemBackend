@@ -1,176 +1,201 @@
-# 企业设备管理系统后端
+# 企业设备管理系统后端（API）
 
-## 项目概述
-
-企业设备管理系统后端是一个基于Node.js和Express框架开发的API服务，用于管理企业设备的全生命周期，包括设备的注册、维护、状态跟踪和报告生成等功能。
+企业设备管理系统后端提供 RESTful API 服务，负责设备全生命周期相关的业务逻辑与数据持久化，包含设备台账、维护计划与维护记录、故障维修工单、运行数据、报表统计与用户管理等能力。
 
 ## 技术栈
 
-- **Node.js** - JavaScript运行环境
-- **Express** - Web应用框架
-- **Sequelize** - ORM数据库工具
-- **MySQL** - 关系型数据库
-- **JWT** - 身份验证
-- **bcrypt** - 密码加密
-- **node-schedule** - 任务调度
+- Node.js + Express
+- MySQL + Sequelize ORM
+- JWT（Authorization: Bearer Token）
+- Redis（缓存）
+- winston（日志）
 
-## 项目结构
+## 目录结构
 
 ```
 EnterpriseEquipmentManagementSystemBackend/
-├── config/
-│   └── database.js       # 数据库配置
-├── middleware/
-│   └── auth.js           # 身份验证中间件
-├── models/
-│   ├── Department.js     # 部门模型
-│   ├── Device.js         # 设备模型
-│   ├── Maintenance.js    # 维护记录模型
-│   ├── User.js           # 用户模型
-│   └── index.js          # 模型导出
-├── routes/
-│   ├── auth.js           # 身份验证路由
-│   ├── device.js         # 设备管理路由
-│   ├── maintenance.js    # 维护管理路由
-│   └── report.js         # 报告生成路由
-├── utils/
-│   └── syncDatabase.js   # 数据库同步工具
-├── .env                  # 环境变量配置
-├── app.js                # 应用入口
-├── ecosystem.config.js   # PM2配置
-├── package-lock.json     # 依赖锁定
-├── package.json          # 项目配置和依赖
-└── README.md             # 项目说明
+├── app.js                      # 应用入口
+├── config/                     # 配置（数据库等）
+├── middleware/                 # 中间件（鉴权等）
+├── models/                     # Sequelize 模型与关联
+├── routes/                     # 路由（REST API）
+├── services/                   # 业务服务层
+├── utils/                      # 工具（日志/redis/同步脚本等）
+├── tests/                      # 单元/接口测试（部分脚本）
+├── logs/                       # 运行日志（本地）
+├── .env.example                # 环境变量模板（建议复制为 .env）
+├── .env                        # 本地环境变量（不要提交）
+└── README.md
 ```
 
-## 安装和运行
+## 环境要求
 
-### 前提条件
+- Node.js >= 16（建议与前端统一 >= 20）
+- MySQL >= 5.7（建议 8.x）
+- Redis（可选但推荐，用于缓存）
 
-- Node.js 12.x或更高版本
-- MySQL 5.7或更高版本
+## 快速开始
 
-### 安装步骤
-
-1. 克隆项目到本地
+### 1. 安装依赖
 
 ```bash
-git clone <repository-url>
 cd EnterpriseEquipmentManagementSystemBackend
-```
-
-2. 安装依赖
-
-```bash
 npm install
 ```
 
-3. 配置环境变量
+### 2. 配置环境变量
 
-复制 `.env` 文件并根据实际情况修改配置：
+复制 `.env.example` 为 `.env`，并按你的本地环境修改：
 
 ```bash
-# 数据库连接信息
+PORT=3001
+
 DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=equipment_management
 DB_USER=root
 DB_PASSWORD=your_password
-DB_NAME=equipment_management
 
-# JWT配置
-JWT_SECRET=your_jwt_secret
-JWT_EXPIRES_IN=24h
+JWT_SECRET=your_jwt_secret_key
+JWT_EXPIRES_IN=7d
 
-# 服务器配置
-PORT=3001
+NODE_ENV=development
 ```
 
-4. 运行项目
+### 3. 初始化/同步数据库
+
+确保已创建数据库（例如 `equipment_management`），然后执行表结构同步：
 
 ```bash
-# 开发模式
+node sync-database.js
+```
+
+说明：该脚本会执行 `sequelize.sync({ alter: true })`，用于开发环境快速对齐表结构；生产环境请使用更可控的迁移方案。
+
+### 4. 启动服务
+
+```bash
+# 开发模式（热重载）
 npm run dev
 
 # 生产模式
 npm start
 ```
 
-## API接口说明
+默认启动地址：`http://localhost:3001`  
+健康检查：`GET http://localhost:3001/health`
 
-### 身份验证接口
+### 5.（可选）导入演示数据
 
-- `POST /api/auth/login` - 用户登录
-- `POST /api/auth/register` - 用户注册
-- `GET /api/auth/me` - 获取当前用户信息
+项目提供了一个导入脚本，可生成演示用户/设备/计划/记录等数据用于前端联调：
 
-### 设备管理接口
+```bash
+node import-frontend-data.js
+```
 
-- `GET /api/device` - 获取设备列表
-- `GET /api/device/:id` - 获取设备详情
-- `POST /api/device` - 添加设备
-- `PUT /api/device/:id` - 更新设备
-- `DELETE /api/device/:id` - 删除设备
-- `GET /api/device/status/:status` - 按状态筛选设备
+默认账号（脚本写死，可自行修改）：
 
-### 维护管理接口
+- admin / admin123
+- user / user123
 
-- `GET /api/maintenance` - 获取维护记录列表
-- `GET /api/maintenance/:id` - 获取维护记录详情
-- `POST /api/maintenance` - 添加维护记录
-- `PUT /api/maintenance/:id` - 更新维护记录
-- `DELETE /api/maintenance/:id` - 删除维护记录
+## API 概览
 
-### 报告生成接口
+所有需要登录的接口均要求请求头携带：
 
-- `GET /api/report/device-status` - 设备状态报告
-- `GET /api/report/maintenance-history` - 维护历史报告
+```
+Authorization: Bearer <token>
+```
 
-## 数据库结构
+### 认证
 
-### 用户表 (users)
-- `id` - 用户ID
-- `username` - 用户名
-- `password` - 密码（加密）
-- `name` - 姓名
-- `role` - 角色
-- `departmentId` - 所属部门ID
-- `createdAt` - 创建时间
-- `updatedAt` - 更新时间
+- POST `/api/auth/login`
+- POST `/api/auth/register`
+- GET `/api/auth/me`
+- POST `/api/auth/logout`（为兼容前端模板提供的占位接口）
 
-### 部门表 (departments)
-- `id` - 部门ID
-- `name` - 部门名称
-- `createdAt` - 创建时间
-- `updatedAt` - 更新时间
+### 用户
 
-### 设备表 (devices)
-- `id` - 设备ID
-- `name` - 设备名称
-- `model` - 设备型号
-- `serialNumber` - 序列号
-- `status` - 状态
-- `departmentId` - 所属部门ID
-- `purchaseDate` - 购买日期
-- `warrantyEndDate` -  warranty结束日期
-- `createdAt` - 创建时间
-- `updatedAt` - 更新时间
+- GET `/api/users`
+- POST `/api/users/register`
+- GET `/api/users/:id`
+- DELETE `/api/users/:id`
 
-### 维护记录表 (maintenances)
-- `id` - 维护记录ID
-- `deviceId` - 设备ID
-- `maintenanceType` - 维护类型
-- `description` - 维护描述
-- `status` - 状态
-- `scheduledDate` - 计划维护日期
-- `completedDate` - 完成日期
-- `createdAt` - 创建时间
-- `updatedAt` - 更新时间
+### 设备
 
-## 许可证
+- GET `/api/device`
+- GET `/api/device/:id`
+- POST `/api/device`
+- PUT `/api/device/:id`
+- PUT `/api/device/:id/scrap`
+- DELETE `/api/device/:id`
+- GET `/api/device/status/:status`
 
-ISC License
+### 维护
 
-## 开发团队
+- GET `/api/maintenance`
+- GET `/api/maintenance/:id`
+- POST `/api/maintenance`
+- PUT `/api/maintenance/:id`
+- DELETE `/api/maintenance/:id`
 
-- 开发人员：[您的名字]
-- 联系邮箱：[您的邮箱]
-# EnterpriseEquipmentManagementSystemBackend
+### 维护计划
+
+- GET `/api/maintenance-plans`
+- GET `/api/maintenance-plans/:id`
+- POST `/api/maintenance-plans`
+- PUT `/api/maintenance-plans/:id`
+- DELETE `/api/maintenance-plans/:id`
+
+### 维修工单
+
+- GET `/api/repair-orders`
+- GET `/api/repair-orders/:id`
+- POST `/api/repair-orders`
+- PUT `/api/repair-orders/:id`
+- DELETE `/api/repair-orders/:id`
+- GET `/api/repair-orders/equipment/:equipmentId`
+- GET `/api/repair-orders/status/:status`
+
+### 运行数据
+
+- GET `/api/running-data`
+- GET `/api/running-data/:id`
+- POST `/api/running-data`
+- PUT `/api/running-data/:id`
+- DELETE `/api/running-data/:id`
+
+### 报表
+
+- GET `/api/report/device-status`
+- GET `/api/report/department-devices`
+- GET `/api/report/maintenance-type`
+- GET `/api/report/maintenance-cost/:year`
+- GET `/api/report/warranty-expiring`
+
+### 前端模板兼容接口（占位）
+
+以下接口用于兼容 Ant Design Pro 模板内置请求，返回空数据：
+
+- GET `/api/notices`
+- GET `/api/rule`
+- POST `/api/rule`
+- GET `/api/login/captcha`
+
+## 常见问题
+
+- 401/403：检查前端是否携带 `Authorization: Bearer <token>`，以及 token 是否过期。
+- 数据库连接失败：检查 `.env` 中 DB_* 配置、MySQL 服务是否启动、数据库是否存在。
+- Redis 连接告警：检查 `utils/redis.js` 配置；若本地 Redis 未设置密码，请避免提供密码参数。
+
+## 如何测试
+
+项目使用 Mocha 和 Chai 进行单元测试和集成测试。
+
+### 运行所有测试
+
+```bash
+npm test
+```
+
+测试文件位于 `tests/` 目录下，并以 `.test.js` 结尾。
+
