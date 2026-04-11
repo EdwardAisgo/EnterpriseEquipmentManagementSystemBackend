@@ -252,3 +252,4 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-11 23:51:08 error: Login error: Invalid username or password
 2026-04-11 23:52:36 error: Login error: Invalid username or password
 2026-04-12 00:51:13 error: Get roles error: Table 'equipment_management.roles' doesn't exist
+2026-04-12 00:55:33 error: Get roles error: Table 'equipment_management.roles' doesn't exist
