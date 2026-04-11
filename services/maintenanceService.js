@@ -64,13 +64,25 @@ class MaintenanceService {
       // 转换数据格式，使其与后端模型匹配
       const transformedData = {
         deviceId: maintenanceData.deviceId,
-        maintenanceType: 'preventive', // 默认值
+        maintenanceType: maintenanceData.maintenanceType || 'preventive',
         description: maintenanceData.maintenanceContent,
         startDate: maintenanceData.maintenanceDate,
+        endDate: maintenanceData.endDate || maintenanceData.maintenanceDate, // 如果没有结束日期，默认为开始日期
+        status: maintenanceData.status || 'completed', // 默认为已完成
         technician: maintenanceData.maintenancePerson,
-        cost: maintenanceData.cost
+        cost: maintenanceData.cost,
+        notes: maintenanceData.notes
       };
       const maintenance = await Maintenance.create(transformedData);
+      
+      // 如果维护记录已完成，确保设备状态为正常（除非它是报废的）
+      if (maintenance.status === 'completed') {
+        const device = await Device.findByPk(maintenance.deviceId);
+        if (device && device.status !== 'scrapped') {
+          await device.update({ status: 'normal' });
+          logger.info(`Update device status to normal after maintenance: Device ${device.id}`);
+        }
+      }
       
       // 清除维护记录列表缓存
       await RedisCache.del('maintenances:all');

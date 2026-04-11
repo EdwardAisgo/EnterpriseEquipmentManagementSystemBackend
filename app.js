@@ -26,6 +26,10 @@ const maintenanceRoutes = require('./routes/maintenance');
 const maintenancePlanRoutes = require('./routes/maintenancePlan');
 const repairOrderRoutes = require('./routes/repairOrder');
 const runningDataRoutes = require('./routes/runningData');
+const reportRoutes = require('./routes/report');
+const departmentRoutes = require('./routes/department');
+const roleRoutes = require('./routes/role');
+const backupRoutes = require('./routes/backup');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
@@ -34,6 +38,10 @@ app.use('/api/maintenance', maintenanceRoutes);
 app.use('/api/maintenance-plans', maintenancePlanRoutes);
 app.use('/api/repair-orders', repairOrderRoutes);
 app.use('/api/running-data', runningDataRoutes);
+app.use('/api/report', reportRoutes);
+app.use('/api/departments', departmentRoutes);
+app.use('/api/roles', roleRoutes);
+app.use('/api/backup', backupRoutes);
 
 app.post('/api/auth/logout', (req, res) => {
   res.json({ success: true });

@@ -60,7 +60,7 @@ class UserService {
 
       // 生成JWT token
       const token = jwt.sign(
-        { id: user.id, username: user.username },
+        { id: user.id, username: user.username, role: user.role },
         process.env.JWT_SECRET || 'your-secret-key',
         { expiresIn: '1h' }
       );
@@ -74,23 +74,33 @@ class UserService {
   }
 
   // 获取用户列表
-  static async getUsers() {
+  static async getUsers(params = {}) {
     try {
-      // 尝试从缓存获取
-      const cachedUsers = await RedisCache.get('users:all');
-      if (cachedUsers) {
-        logger.info('Get users from cache');
-        return cachedUsers;
+      const { username, name, departmentId, role } = params;
+      const where = {};
+      
+      if (username) {
+        const { Op } = require('sequelize');
+        where.username = { [Op.like]: `%${username}%` };
+      }
+      if (name) {
+        const { Op } = require('sequelize');
+        where.name = { [Op.like]: `%${name}%` };
+      }
+      if (departmentId) {
+        where.departmentId = departmentId;
+      }
+      if (role) {
+        where.role = role;
       }
 
       // 从数据库获取
       const users = await User.findAll({
+        where,
         include: [{ model: Department, attributes: ['id', 'name'] }],
         order: [['createdAt', 'DESC']]
       });
 
-      // 缓存结果
-      await RedisCache.set('users:all', users, 300); // 5分钟缓存
       logger.info(`Get users successful: ${users.length} users found`);
       return users;
     } catch (error) {
@@ -184,6 +194,28 @@ class UserService {
       logger.info(`Change password successful: User ${id}`);
     } catch (error) {
       logger.error(`Change password error: ${error.message}`);
+      throw error;
+    }
+  }
+
+  // 管理员重置密码
+  static async resetPassword(id, newPassword) {
+    try {
+      const user = await User.findByPk(id);
+      if (!user) {
+        logger.warn(`Reset password failed: User ${id} not found`);
+        throw new Error('User not found');
+      }
+
+      // 加密新密码
+      const hashedPassword = await bcrypt.hash(newPassword, 10);
+      await user.update({ password: hashedPassword });
+      
+      // 清除相关缓存
+      await RedisCache.del(`user:${id}`);
+      logger.info(`Reset password successful by admin: User ${id}`);
+    } catch (error) {
+      logger.error(`Reset password error: ${error.message}`);
       throw error;
     }
   }

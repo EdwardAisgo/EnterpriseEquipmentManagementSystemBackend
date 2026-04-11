@@ -5,6 +5,7 @@ const Maintenance = require('./Maintenance');
 const MaintenancePlan = require('./MaintenancePlan');
 const RepairOrder = require('./RepairOrder');
 const RunningData = require('./RunningData');
+const Role = require('./Role');
 
 // 模型关联
 Department.hasMany(User, { foreignKey: 'departmentId' });
@@ -32,5 +33,6 @@ module.exports = {
   Maintenance,
   MaintenancePlan,
   RepairOrder,
-  RunningData
+  RunningData,
+  Role
 };

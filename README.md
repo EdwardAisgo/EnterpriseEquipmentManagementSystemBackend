@@ -33,6 +33,7 @@ EnterpriseEquipmentManagementSystemBackend/
 - Node.js >= 16（建议与前端统一 >= 20）
 - MySQL >= 5.7（建议 8.x）
 - Redis（可选但推荐，用于缓存）
+- MySQL 客户端工具（可选但推荐，用于数据备份与恢复：`mysqldump` / `mysql`）
 
 ## 快速开始
 
@@ -85,18 +86,10 @@ npm start
 默认启动地址：`http://localhost:3001`  
 健康检查：`GET http://localhost:3001/health`
 
-### 5.（可选）导入演示数据
+### 5.（可选）准备演示数据
 
-项目提供了一个导入脚本，可生成演示用户/设备/计划/记录等数据用于前端联调：
-
-```bash
-node import-frontend-data.js
-```
-
-默认账号（脚本写死，可自行修改）：
-
-- admin / admin123
-- user / user123
+- 推荐方式：通过前端页面录入部门、用户、设备、维护计划、维护记录、报修与运行数据，便于验证各模块联动效果。
+- 工具脚本：仓库内存在若干测试/辅助脚本（如 `create-department.js`、`test-*.js`），可按需用于快速验证接口连通性。
 
 ## API 概览
 
@@ -115,10 +108,20 @@ Authorization: Bearer <token>
 
 ### 用户
 
-- GET `/api/users`
+- GET `/api/users`（支持查询参数：`username`/`name`/`departmentId`/`role`）
 - POST `/api/users/register`
 - GET `/api/users/:id`
 - DELETE `/api/users/:id`
+- PUT `/api/users/me/password`（个人修改密码）
+- PUT `/api/users/:id/reset-password`（管理员重置密码）
+
+### 部门
+
+- GET `/api/departments`
+- GET `/api/departments/:id`
+- POST `/api/departments`
+- PUT `/api/departments/:id`
+- DELETE `/api/departments/:id`
 
 ### 设备
 
@@ -171,6 +174,24 @@ Authorization: Bearer <token>
 - GET `/api/report/maintenance-type`
 - GET `/api/report/maintenance-cost/:year`
 - GET `/api/report/warranty-expiring`
+
+### 角色与权限（基础模块）
+
+- GET `/api/roles`
+- POST `/api/roles`
+- PUT `/api/roles/:id`
+- DELETE `/api/roles/:id`
+
+说明：当前版本的鉴权以用户 `role`（admin/manager/staff）进行粗粒度控制；角色与权限清单用于权限管理模块的配置基础，用户与角色绑定可按需扩展。
+
+### 数据备份
+
+- GET `/api/backup`（备份列表）
+- POST `/api/backup/create`（创建备份）
+- POST `/api/backup/restore`（恢复备份，body：`{ fileName }`）
+- DELETE `/api/backup/:fileName`（删除备份文件）
+
+说明：备份与恢复依赖系统安装 MySQL 客户端工具（`mysqldump`/`mysql`）并可在命令行中直接调用。
 
 ### 前端模板兼容接口（占位）
 

@@ -106,7 +106,7 @@ router.put('/me/password', authenticateToken,
 // 获取用户列表
 router.get('/', authenticateToken, async (req, res) => {
   try {
-    const users = await UserService.getUsers();
+    const users = await UserService.getUsers(req.query);
     res.json({ users });
   } catch (error) {
     console.error(error);
@@ -146,6 +146,30 @@ router.get('/:id', authenticateToken, async (req, res) => {
     res.status(404).json({ message: error.message });
   }
 });
+
+// 管理员重置密码
+router.put('/:id/reset-password', authenticateToken,
+  body('newPassword').notEmpty().withMessage('New password is required').isLength({ min: 6 }).withMessage('New password must be at least 6 characters'),
+  async (req, res) => {
+    // 权限检查：只有管理员可以重置他人密码
+    if (req.user.role !== 'admin') {
+      return res.status(403).json({ message: 'Only admin can reset password' });
+    }
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    try {
+      await UserService.resetPassword(req.params.id, req.body.newPassword);
+      res.json({ message: 'Password reset successfully' });
+    } catch (error) {
+      console.error(error);
+      res.status(400).json({ message: error.message });
+    }
+  }
+);
 
 // 删除用户
 router.delete('/:id', authenticateToken, async (req, res) => {

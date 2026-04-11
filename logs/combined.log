@@ -907,3 +907,202 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-10 23:05:01 info: Get running data successful: 1 records found
 2026-04-10 23:05:04 info: Get devices from cache
 2026-04-10 23:05:16 info: Get devices from cache
+2026-04-11 23:48:30 info: Server is running on port 3001
+2026-04-11 23:48:30 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-11 23:48:30 info: Redis connected successfully
+2026-04-11 23:51:08 warn: Login failed: User admin not found
+2026-04-11 23:51:08 error: Login error: Invalid username or password
+2026-04-11 23:52:36 warn: Login failed: User admin not found
+2026-04-11 23:52:36 error: Login error: Invalid username or password
+2026-04-11 23:55:20 info: Login successful: User xuxing
+2026-04-11 23:55:20 info: Get current user successful: User 3
+2026-04-11 23:55:21 info: Get current user successful: User 3
+2026-04-11 23:55:22 info: Get device status count successful
+2026-04-11 23:55:22 info: Get annual maintenance cost successful for year 2026
+2026-04-11 23:55:22 info: Get maintenance type count successful
+2026-04-11 23:55:27 info: Get devices successful: 1 devices found
+2026-04-11 23:55:50 info: Get current user successful: User 3
+2026-04-11 23:55:51 info: Get device status count successful
+2026-04-11 23:55:51 info: Get annual maintenance cost successful for year 2026
+2026-04-11 23:55:51 info: Get maintenance type count successful
+2026-04-11 23:55:53 info: Get devices from cache
+2026-04-11 23:55:53 info: Get devices from cache
+2026-04-11 23:55:53 info: Get running data successful: 1 records found
+2026-04-11 23:55:55 info: Get devices from cache
+2026-04-11 23:55:55 info: Get maintenances successful: 1 records found
+2026-04-11 23:55:55 info: Get maintenance plans successful: 1 plans found
+2026-04-11 23:55:55 info: Get devices from cache
+2026-04-11 23:55:55 info: Get repair orders successful: 1 orders found
+2026-04-11 23:55:57 info: Get users successful: 4 users found
+2026-04-11 23:56:15 info: Get devices from cache
+2026-04-11 23:56:15 info: Get repair orders from cache
+2026-04-11 23:56:17 info: Get users from cache
+2026-04-11 23:58:23 info: Get devices from cache
+2026-04-11 23:58:31 info: Get current user successful: User 3
+2026-04-11 23:58:31 info: Get devices from cache
+2026-04-12 00:02:57 info: Get current user successful: User 3
+2026-04-12 00:02:58 info: Get devices successful: 1 devices found
+2026-04-12 00:02:59 info: Get devices from cache
+2026-04-12 00:02:59 info: Get running data successful: 1 records found
+2026-04-12 00:03:08 info: Get devices from cache
+2026-04-12 00:03:08 info: Get maintenance plans successful: 1 plans found
+2026-04-12 00:03:08 info: Get maintenances successful: 1 records found
+2026-04-12 00:03:13 info: Get devices from cache
+2026-04-12 00:03:13 info: Get repair orders successful: 1 orders found
+2026-04-12 00:03:16 info: Get devices from cache
+2026-04-12 00:03:16 info: Get maintenance plans from cache
+2026-04-12 00:03:16 info: Get maintenances from cache
+2026-04-12 00:03:17 info: Get devices from cache
+2026-04-12 00:03:17 info: Get running data from cache
+2026-04-12 00:03:17 info: Get devices from cache
+2026-04-12 00:03:24 info: Get all departments successful: 4 departments found
+2026-04-12 00:03:24 info: Get users successful: 4 users found
+2026-04-12 00:04:00 info: Get devices from cache
+2026-04-12 00:04:07 info: Get current user successful: User 3
+2026-04-12 00:04:08 info: Get device status count successful
+2026-04-12 00:04:08 info: Get annual maintenance cost successful for year 2026
+2026-04-12 00:04:08 info: Get maintenance type count successful
+2026-04-12 00:04:08 info: Get expiring warranties successful: 0 devices found
+2026-04-12 00:04:09 info: Get devices from cache
+2026-04-12 00:04:10 info: Get all departments successful: 4 departments found
+2026-04-12 00:04:31 info: Get devices from cache
+2026-04-12 00:04:31 info: Get maintenance plans from cache
+2026-04-12 00:04:31 info: Get maintenances from cache
+2026-04-12 00:05:19 info: Get devices from cache
+2026-04-12 00:05:19 info: Get maintenance plans from cache
+2026-04-12 00:05:19 info: Get maintenances from cache
+2026-04-12 00:05:19 info: Get devices from cache
+2026-04-12 00:05:20 info: Get current user successful: User 3
+2026-04-12 00:05:22 info: Get devices from cache
+2026-04-12 00:05:22 info: Get maintenance plans from cache
+2026-04-12 00:05:22 info: Get maintenances from cache
+2026-04-12 00:06:04 info: Get devices from cache
+2026-04-12 00:06:05 info: Get all departments successful: 4 departments found
+2026-04-12 00:06:21 info: Update device successful: Device 1
+2026-04-12 00:06:21 info: Get devices successful: 1 devices found
+2026-04-12 00:06:31 info: Get devices from cache
+2026-04-12 00:06:31 info: Get running data from cache
+2026-04-12 00:06:34 info: Get device status count successful
+2026-04-12 00:06:34 info: Get maintenance type count successful
+2026-04-12 00:06:34 info: Get annual maintenance cost successful for year 2026
+2026-04-12 00:06:34 info: Get expiring warranties successful: 0 devices found
+2026-04-12 00:10:28 info: Get current user successful: User 3
+2026-04-12 00:10:28 info: Get device status count successful
+2026-04-12 00:10:28 info: Get annual maintenance cost successful for year 2026
+2026-04-12 00:10:28 info: Get maintenance type count successful
+2026-04-12 00:10:28 info: Get expiring warranties successful: 1 devices found
+2026-04-12 00:10:37 info: Get all departments successful: 5 departments found
+2026-04-12 00:10:37 info: Get users successful: 4 users found
+2026-04-12 00:11:40 info: Login successful: User admin
+2026-04-12 00:11:40 info: Get current user successful: User 1
+2026-04-12 00:11:41 info: Get current user successful: User 1
+2026-04-12 00:11:42 info: Get users from cache
+2026-04-12 00:11:42 info: Get all departments successful: 5 departments found
+2026-04-12 00:11:47 info: Get all departments successful: 5 departments found
+2026-04-12 00:11:54 info: Update user successful: User 1
+2026-04-12 00:11:54 info: Get users successful: 4 users found
+2026-04-12 00:11:55 info: Get all departments successful: 5 departments found
+2026-04-12 00:12:02 info: Get all departments successful: 5 departments found
+2026-04-12 00:12:06 info: Get all departments successful: 5 departments found
+2026-04-12 00:12:09 info: Get all departments successful: 5 departments found
+2026-04-12 00:14:12 info: Get devices successful: 5 devices found
+2026-04-12 00:14:12 info: Get repair orders successful: 2 orders found
+2026-04-12 00:14:18 info: Get devices from cache
+2026-04-12 00:14:18 info: Get maintenance plans successful: 2 plans found
+2026-04-12 00:14:18 info: Get maintenances successful: 2 records found
+2026-04-12 00:14:26 info: Get devices from cache
+2026-04-12 00:14:26 info: Get running data successful: 14 records found
+2026-04-12 00:14:27 info: Get running data from cache
+2026-04-12 00:14:27 info: Get devices from cache
+2026-04-12 00:14:38 info: Get devices from cache
+2026-04-12 00:14:47 info: Get all departments successful: 5 departments found
+2026-04-12 00:14:58 info: Get users from cache
+2026-04-12 00:14:58 info: Get all departments successful: 5 departments found
+2026-04-12 00:15:14 info: Get users from cache
+2026-04-12 00:15:14 info: Get all departments successful: 5 departments found
+2026-04-12 00:15:23 info: Get users from cache
+2026-04-12 00:15:23 info: Get all departments successful: 5 departments found
+2026-04-12 00:15:56 info: Get users from cache
+2026-04-12 00:15:56 info: Get all departments successful: 5 departments found
+2026-04-12 00:16:33 info: Get users from cache
+2026-04-12 00:16:33 info: Get all departments successful: 5 departments found
+2026-04-12 00:17:09 info: Get all departments successful: 5 departments found
+2026-04-12 00:17:09 info: Get users successful: 4 users found
+2026-04-12 00:18:01 info: Get users from cache
+2026-04-12 00:18:01 info: Get all departments successful: 5 departments found
+2026-04-12 00:20:05 info: Get current user successful: User 1
+2026-04-12 00:20:05 info: Get users from cache
+2026-04-12 00:20:05 info: Get all departments successful: 5 departments found
+2026-04-12 00:21:36 info: Get devices successful: 5 devices found
+2026-04-12 00:21:36 info: Get repair orders successful: 2 orders found
+2026-04-12 00:21:54 info: Get devices from cache
+2026-04-12 00:21:54 info: Get maintenance plans successful: 2 plans found
+2026-04-12 00:21:54 info: Get maintenances successful: 2 records found
+2026-04-12 00:22:31 info: Get devices from cache
+2026-04-12 00:22:31 info: Get repair orders from cache
+2026-04-12 00:23:11 info: Get devices from cache
+2026-04-12 00:23:11 info: Get maintenance plans from cache
+2026-04-12 00:23:11 info: Get maintenances from cache
+2026-04-12 00:23:59 info: Get devices from cache
+2026-04-12 00:23:59 info: Get running data successful: 14 records found
+2026-04-12 00:24:37 info: Get devices from cache
+2026-04-12 00:24:38 info: Get all departments successful: 5 departments found
+2026-04-12 00:24:45 info: Get all departments successful: 5 departments found
+2026-04-12 00:35:06 info: Get devices successful: 5 devices found
+2026-04-12 00:35:06 info: Get running data successful: 14 records found
+2026-04-12 00:35:07 info: Get users successful: 4 users found
+2026-04-12 00:35:13 info: Get current user successful: User 1
+2026-04-12 00:35:14 info: Get devices from cache
+2026-04-12 00:35:14 info: Get running data from cache
+2026-04-12 00:35:15 info: Get devices from cache
+2026-04-12 00:35:15 info: Get repair orders successful: 2 orders found
+2026-04-12 00:35:17 info: Get users from cache
+2026-04-12 00:35:25 info: Get current user successful: User 1
+2026-04-12 00:35:26 info: Get devices from cache
+2026-04-12 00:35:26 info: Get repair orders from cache
+2026-04-12 00:45:30 info: Get devices successful: 5 devices found
+2026-04-12 00:45:30 info: Get repair orders successful: 2 orders found
+2026-04-12 00:45:30 info: Get devices from cache
+2026-04-12 00:45:30 info: Get repair orders from cache
+2026-04-12 00:47:50 info: Get current user successful: User 1
+2026-04-12 00:47:51 info: Get devices from cache
+2026-04-12 00:47:51 info: Get repair orders from cache
+2026-04-12 00:47:54 info: Get all departments successful: 5 departments found
+2026-04-12 00:47:54 info: Get users successful: 4 users found
+2026-04-12 00:51:00 info: Server is running on port 3001
+2026-04-12 00:51:00 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 00:51:00 info: Redis connected successfully
+2026-04-12 00:51:12 info: Get current user successful: User 1
+2026-04-12 00:51:13 info: Get users successful: 4 users found
+2026-04-12 00:51:13 info: Get all departments successful: 5 departments found
+2026-04-12 00:51:13 error: Get roles error: Table 'equipment_management.roles' doesn't exist
+2026-04-12 00:53:27 info: Get devices successful: 5 devices found
+2026-04-12 00:53:27 info: Get running data successful: 14 records found
+2026-04-12 00:53:29 info: Get users successful: 4 users found
+2026-04-12 00:53:44 info: Get current user successful: User 1
+2026-04-12 00:53:45 info: Get devices from cache
+2026-04-12 00:53:45 info: Get running data from cache
+2026-04-12 00:54:18 info: Get device status count successful
+2026-04-12 00:54:18 info: Get expiring warranties successful: 1 devices found
+2026-04-12 00:54:18 info: Get annual maintenance cost successful for year 2026
+2026-04-12 00:54:18 info: Get maintenance type count successful
+2026-04-12 00:54:22 info: Get device status count successful
+2026-04-12 00:54:22 info: Get annual maintenance cost successful for year 2025
+2026-04-12 00:54:22 info: Get maintenance type count successful
+2026-04-12 00:54:22 info: Get expiring warranties successful: 1 devices found
+2026-04-12 00:54:26 info: Get device status count successful
+2026-04-12 00:54:26 info: Get annual maintenance cost successful for year 2027
+2026-04-12 00:54:26 info: Get maintenance type count successful
+2026-04-12 00:54:26 info: Get expiring warranties successful: 1 devices found
+2026-04-12 00:54:28 info: Get device status count successful
+2026-04-12 00:54:28 info: Get annual maintenance cost successful for year 2023
+2026-04-12 00:54:28 info: Get maintenance type count successful
+2026-04-12 00:54:28 info: Get expiring warranties successful: 1 devices found
+2026-04-12 00:54:50 info: Get device status count successful
+2026-04-12 00:54:50 info: Get maintenance type count successful
+2026-04-12 00:54:50 info: Get expiring warranties successful: 1 devices found
+2026-04-12 00:54:50 info: Get annual maintenance cost successful for year 2026
+2026-04-12 00:55:00 info: Get devices from cache
+2026-04-12 00:55:02 info: Get all departments successful: 5 departments found
+2026-04-12 00:55:07 info: Get devices from cache
+2026-04-12 00:55:07 info: Get running data from cache
