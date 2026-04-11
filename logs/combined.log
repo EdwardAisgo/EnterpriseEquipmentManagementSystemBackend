@@ -1190,3 +1190,7 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-12 01:24:22 info: Get annual maintenance cost successful for year 2026
 2026-04-12 01:24:22 info: Get maintenance type count successful
 2026-04-12 01:24:22 info: Get expiring warranties successful: 1 devices found
+2026-04-12 01:44:33 info: Get device status count successful
+2026-04-12 01:44:33 info: Get maintenance type count successful
+2026-04-12 01:44:33 info: Get expiring warranties successful: 1 devices found
+2026-04-12 01:44:33 info: Get annual maintenance cost successful for year 2026
