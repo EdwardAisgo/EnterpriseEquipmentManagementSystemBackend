@@ -1,4 +1,4 @@
-const { Device, Department } = require('../models');
+const { Device, Department, RepairOrder } = require('../models');
 const { Op } = require('sequelize');
 const logger = require('../utils/logger');
 const RedisCache = require('../utils/redis');
@@ -68,6 +68,14 @@ class DeviceService {
   // 添加设备
   static async createDevice(deviceData) {
     try {
+      if (deviceData && typeof deviceData.deviceCode === 'string') {
+        const deviceCode = deviceData.deviceCode.trim();
+        const existing = await Device.findOne({ where: { deviceCode } });
+        if (existing) {
+          logger.warn(`Create device failed: Device code ${deviceCode} already exists`);
+          throw new Error('设备编号已存在');
+        }
+      }
       const device = await Device.create(deviceData);
       
       // 清除设备列表缓存
@@ -75,6 +83,9 @@ class DeviceService {
       logger.info(`Create device successful: Device ${device.id}`);
       return device;
     } catch (error) {
+      if (error && (error.name === 'SequelizeUniqueConstraintError' || error.name === 'UniqueConstraintError')) {
+        throw new Error('设备编号已存在');
+      }
       logger.error(`Create device error: ${error.message}`);
       throw error;
     }
@@ -88,6 +99,16 @@ class DeviceService {
         logger.warn(`Update device failed: Device ${id} not found`);
         throw new Error('Device not found');
       }
+      if (deviceData && typeof deviceData.deviceCode === 'string') {
+        const deviceCode = deviceData.deviceCode.trim();
+        if (deviceCode !== '' && deviceCode !== device.deviceCode) {
+          const existing = await Device.findOne({ where: { deviceCode, id: { [Op.ne]: id } } });
+          if (existing) {
+            logger.warn(`Update device failed: Device code ${deviceCode} already exists`);
+            throw new Error('设备编号已存在');
+          }
+        }
+      }
       await device.update(deviceData);
       
       // 清除相关缓存
@@ -96,6 +117,9 @@ class DeviceService {
       logger.info(`Update device successful: Device ${id}`);
       return device;
     } catch (error) {
+      if (error && (error.name === 'SequelizeUniqueConstraintError' || error.name === 'UniqueConstraintError')) {
+        throw new Error('设备编号已存在');
+      }
       logger.error(`Update device error: ${error.message}`);
       throw error;
     }
@@ -114,10 +138,40 @@ class DeviceService {
         scrapDate: new Date(),
         scrapReason
       });
+
+      const equipmentId = Number(id);
+      const openRepairOrders = await RepairOrder.findAll({
+        where: {
+          equipmentId,
+          status: { [Op.in]: ['pending', 'assigned', 'in_progress'] },
+        },
+        attributes: ['id'],
+      });
+      if (openRepairOrders.length > 0) {
+        await RepairOrder.update(
+          {
+            status: 'completed',
+            repairDate: new Date(),
+            repairContent: '设备已报废，工单自动关闭',
+            notes: '设备已报废，工单自动关闭',
+          },
+          {
+            where: { id: { [Op.in]: openRepairOrders.map((o) => o.id) } },
+          }
+        );
+      }
       
       // 清除相关缓存
       await RedisCache.del('devices:all');
       await RedisCache.del(`device:${id}`);
+      await RedisCache.del('repairOrders:all');
+      await RedisCache.del(`repairOrders:equipment:${equipmentId}`);
+      await RedisCache.del('repairOrders:status:pending');
+      await RedisCache.del('repairOrders:status:assigned');
+      await RedisCache.del('repairOrders:status:in_progress');
+      for (const order of openRepairOrders) {
+        await RedisCache.del(`repairOrder:${order.id}`);
+      }
       logger.info(`Scrap device successful: Device ${id}`);
       return device;
     } catch (error) {
