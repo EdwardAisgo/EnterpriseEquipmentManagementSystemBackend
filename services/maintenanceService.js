@@ -102,9 +102,23 @@ class MaintenanceService {
         logger.warn(`Update maintenance failed: Maintenance ${id} not found`);
         throw new Error('Maintenance record not found');
       }
-      await maintenance.update(maintenanceData);
+
+      // Transform data to match the model fields
+      const transformedData = {
+        deviceId: maintenanceData.deviceId,
+        maintenanceType: maintenanceData.maintenanceType,
+        description: maintenanceData.maintenanceContent,
+        startDate: maintenanceData.maintenanceDate,
+        endDate: maintenanceData.endDate || maintenanceData.maintenanceDate,
+        status: maintenanceData.status,
+        technician: maintenanceData.maintenancePerson,
+        cost: maintenanceData.cost,
+        notes: maintenanceData.notes,
+      };
+
+      await maintenance.update(transformedData);
       
-      // 清除相关缓存
+      // Clear related cache
       await RedisCache.del('maintenances:all');
       await RedisCache.del(`maintenance:${id}`);
       logger.info(`Update maintenance successful: Maintenance ${id}`);

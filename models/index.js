@@ -6,8 +6,13 @@ const MaintenancePlan = require('./MaintenancePlan');
 const RepairOrder = require('./RepairOrder');
 const RunningData = require('./RunningData');
 const Role = require('./Role');
+const Menu = require('./Menu');
+const OperationLog = require('./OperationLog');
 
 // 模型关联
+Role.hasMany(User, { foreignKey: 'roleId' });
+User.belongsTo(Role, { foreignKey: 'roleId' });
+
 Department.hasMany(User, { foreignKey: 'departmentId' });
 User.belongsTo(Department, { foreignKey: 'departmentId' });
 
@@ -34,5 +39,7 @@ module.exports = {
   MaintenancePlan,
   RepairOrder,
   RunningData,
-  Role
+  Role,
+  Menu,
+  OperationLog
 };

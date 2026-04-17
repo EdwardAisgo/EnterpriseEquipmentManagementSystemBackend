@@ -73,6 +73,14 @@ node sync-database.js
 
 说明：该脚本会执行 `sequelize.sync({ alter: true })`，用于开发环境快速对齐表结构；生产环境请使用更可控的迁移方案。
 
+### 4. 默认账号与基础数据
+
+执行 `node sync-database.js` 后，系统会尽量自动准备一套可用的基础数据：
+
+- 默认管理员账号：`admin / admin123`
+- 默认角色：`admin` / `manager` / `staff`
+- 默认菜单：写入 `Menus` 表（用于前端动态侧边栏与角色菜单授权）
+
 ### 4. 启动服务
 
 ```bash
@@ -182,7 +190,18 @@ Authorization: Bearer <token>
 - PUT `/api/roles/:id`
 - DELETE `/api/roles/:id`
 
-说明：当前版本的鉴权以用户 `role`（admin/manager/staff）进行粗粒度控制；角色与权限清单用于权限管理模块的配置基础，用户与角色绑定可按需扩展。
+说明：
+
+- `Roles.permissions` 保存“菜单 ID 列表”（例如 `system_roles`），用于菜单级权限控制。
+- 前端的“角色管理”页面会以菜单树形式勾选并保存到 `Roles.permissions`。
+
+### 菜单（动态路由/侧边栏）
+
+- GET `/api/menus/me`（返回当前用户可见菜单树）
+- GET `/api/menus/all`（返回完整菜单树，仅管理员）
+- POST `/api/menus/sync`（同步菜单到数据库，仅管理员）
+
+说明：前端侧边栏与权限拦截依赖 `/api/menus/me` 返回结果。
 
 ### 数据备份
 
@@ -192,6 +211,22 @@ Authorization: Bearer <token>
 - DELETE `/api/backup/:fileName`（删除备份文件）
 
 说明：备份与恢复依赖系统安装 MySQL 客户端工具（`mysqldump`/`mysql`）并可在命令行中直接调用。
+
+### 操作日志（日志管理）
+
+- GET `/api/logs`（分页/筛选查询，仅管理员）
+
+查询参数示例：
+
+```
+/api/logs?current=1&pageSize=10&username=&action=&entityType=&entityId=
+```
+
+说明：
+
+- 操作日志落库到 `OperationLogs` 表，包含操作人、角色、对象、详情、IP 等信息。
+- 已在设备/维修/维护/运行数据/备份等关键写操作中自动记录日志。
+- 可用脚本写入演示日志：`node scripts/seed-operation-logs.js`
 
 ### 前端模板兼容接口（占位）
 

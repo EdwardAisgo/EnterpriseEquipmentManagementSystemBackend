@@ -3,6 +3,7 @@ const router = express.Router();
 const { body, query, validationResult } = require('express-validator');
 const RunningDataService = require('../services/runningDataService');
 const authenticateToken = require('../middleware/auth');
+const OperationLogService = require('../services/operationLogService');
 
 // 获取运行数据列表
 router.get('/', authenticateToken, async (req, res) => {
@@ -49,6 +50,15 @@ router.post('/', authenticateToken,
         return res.status(400).json({ message: 'Equipment ID is required' });
       }
       const data = await RunningDataService.createRunningData(req.body);
+      try {
+        await OperationLogService.record(req, {
+          action: '新增运行数据',
+          entityType: 'running_data',
+          entityId: data?.id,
+          entityName: data?.id,
+          details: { body: req.body },
+        });
+      } catch (_e) {}
       res.status(201).json({ message: 'Running data created successfully', data });
     } catch (error) {
       console.error(error);
@@ -77,6 +87,15 @@ router.put('/:id', authenticateToken,
     
     try {
       const data = await RunningDataService.updateRunningData(req.params.id, req.body);
+      try {
+        await OperationLogService.record(req, {
+          action: '更新运行数据',
+          entityType: 'running_data',
+          entityId: data?.id ?? req.params.id,
+          entityName: data?.id ?? req.params.id,
+          details: { body: req.body },
+        });
+      } catch (_e) {}
       res.json({ message: 'Running data updated successfully', data });
     } catch (error) {
       console.error(error);
@@ -89,6 +108,15 @@ router.put('/:id', authenticateToken,
 router.delete('/:id', authenticateToken, async (req, res) => {
   try {
     const result = await RunningDataService.deleteRunningData(req.params.id);
+    try {
+      await OperationLogService.record(req, {
+        action: '删除运行数据',
+        entityType: 'running_data',
+        entityId: req.params.id,
+        entityName: req.params.id,
+        details: {},
+      });
+    } catch (_e) {}
     res.json(result);
   } catch (error) {
     console.error(error);

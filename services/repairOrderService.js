@@ -61,8 +61,27 @@ class RepairOrderService {
   // 添加维修工单
   static async createRepairOrder(repairOrderData) {
     try {
+      // 检查设备状态
+      const device = await Device.findByPk(repairOrderData.equipmentId);
+      if (!device) {
+        throw new Error('设备不存在');
+      }
+      if (device.status === 'scrapped') {
+        throw new Error('设备已报废，无法提交报修');
+      }
+      if (device.status === 'fault' || device.status === 'maintenance') {
+        throw new Error('设备已在故障维修中，请勿重复报修');
+      }
+
       // 转换数据格式，使其与后端模型匹配
+      // 生成工单编号：WO + yyyyMMdd + 设备ID(补位) + 4位随机数
+      const dateStr = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+      const deviceIdStr = String(repairOrderData.equipmentId).padStart(4, '0');
+      const randomStr = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+      const orderId = `WO${dateStr}${deviceIdStr}${randomStr}`;
+
       const transformedData = {
+        id: orderId,
         equipmentId: repairOrderData.equipmentId,
         faultDescription: repairOrderData.faultDescription,
         applicant: repairOrderData.reporter,
@@ -72,7 +91,6 @@ class RepairOrderService {
       const repairOrder = await RepairOrder.create(transformedData);
       
       // 更新设备状态为故障
-      const device = await Device.findByPk(repairOrder.equipmentId);
       if (device) {
         await device.update({ status: 'fault' });
         logger.info(`Update device status to fault: Device ${device.id}`);

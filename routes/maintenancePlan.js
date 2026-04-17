@@ -3,6 +3,7 @@ const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const MaintenancePlanService = require('../services/maintenancePlanService');
 const authenticateToken = require('../middleware/auth');
+const OperationLogService = require('../services/operationLogService');
 
 // 获取维护计划列表
 router.get('/', authenticateToken, async (req, res) => {
@@ -43,6 +44,15 @@ router.post('/', authenticateToken,
     
     try {
       const plan = await MaintenancePlanService.createMaintenancePlan(req.body);
+      try {
+        await OperationLogService.record(req, {
+          action: '新增维护计划',
+          entityType: 'maintenance_plan',
+          entityId: plan?.id,
+          entityName: plan?.id,
+          details: { body: req.body },
+        });
+      } catch (_e) {}
       res.status(201).json({ message: 'Maintenance plan created successfully', plan });
     } catch (error) {
       console.error(error);
@@ -66,6 +76,15 @@ router.put('/:id', authenticateToken,
     
     try {
       const plan = await MaintenancePlanService.updateMaintenancePlan(req.params.id, req.body);
+      try {
+        await OperationLogService.record(req, {
+          action: '更新维护计划',
+          entityType: 'maintenance_plan',
+          entityId: plan?.id ?? req.params.id,
+          entityName: plan?.id ?? req.params.id,
+          details: { body: req.body },
+        });
+      } catch (_e) {}
       res.json({ message: 'Maintenance plan updated successfully', plan });
     } catch (error) {
       console.error(error);
@@ -78,6 +97,15 @@ router.put('/:id', authenticateToken,
 router.delete('/:id', authenticateToken, async (req, res) => {
   try {
     const result = await MaintenancePlanService.deleteMaintenancePlan(req.params.id);
+    try {
+      await OperationLogService.record(req, {
+        action: '删除维护计划',
+        entityType: 'maintenance_plan',
+        entityId: req.params.id,
+        entityName: req.params.id,
+        details: {},
+      });
+    } catch (_e) {}
     res.json(result);
   } catch (error) {
     console.error(error);

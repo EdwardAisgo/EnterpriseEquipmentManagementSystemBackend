@@ -1,26 +1,33 @@
 const { Device, Department } = require('../models');
+const { Op } = require('sequelize');
 const logger = require('../utils/logger');
 const RedisCache = require('../utils/redis');
 
 class DeviceService {
   // 获取设备列表
-  static async getDevices() {
+  static async getDevices(query) {
     try {
-      // 尝试从缓存获取
-      const cachedDevices = await RedisCache.get('devices:all');
-      if (cachedDevices) {
-        logger.info('Get devices from cache');
-        return cachedDevices;
+      const { search, status } = query;
+      const where = {};
+
+      if (status && status !== 'all' && status !== '') {
+        where.status = status;
       }
 
-      // 从数据库获取
+      if (search && search.trim() !== '') {
+        const searchKeyword = `%${search.trim()}%`;
+        where[Op.or] = [
+          { name: { [Op.like]: searchKeyword } },
+          { deviceCode: { [Op.like]: searchKeyword } },
+        ];
+      }
+
       const devices = await Device.findAll({
+        where,
         include: [{ model: Department, attributes: ['id', 'name'] }],
         order: [['createdAt', 'DESC']]
       });
 
-      // 缓存结果
-      await RedisCache.set('devices:all', devices, 300); // 5分钟缓存
       logger.info(`Get devices successful: ${devices.length} devices found`);
       return devices;
     } catch (error) {

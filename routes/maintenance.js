@@ -3,6 +3,22 @@ const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const MaintenanceService = require('../services/maintenanceService');
 const authenticateToken = require('../middleware/auth');
+const OperationLogService = require('../services/operationLogService');
+
+const normalizeMaintenancePayload = (req, _res, next) => {
+  if (req.body && typeof req.body === 'object') {
+    if (req.body.maintenanceDate === undefined && req.body.startDate !== undefined) {
+      req.body.maintenanceDate = req.body.startDate;
+    }
+    if (req.body.maintenanceContent === undefined && req.body.description !== undefined) {
+      req.body.maintenanceContent = req.body.description;
+    }
+    if (req.body.maintenancePerson === undefined && req.body.technician !== undefined) {
+      req.body.maintenancePerson = req.body.technician;
+    }
+  }
+  next();
+};
 
 // 获取维护记录列表
 router.get('/', authenticateToken, async (req, res) => {
@@ -27,7 +43,7 @@ router.get('/:id', authenticateToken, async (req, res) => {
 });
 
 // 添加维护记录
-router.post('/', authenticateToken,
+router.post('/', authenticateToken, normalizeMaintenancePayload,
   body('deviceId').notEmpty().withMessage('Device ID is required').isInt().withMessage('Device ID must be an integer'),
   body('maintenanceDate').notEmpty().withMessage('Maintenance date is required').isISO8601().withMessage('Maintenance date must be a valid date'),
   body('maintenanceContent').notEmpty().withMessage('Maintenance content is required'),
@@ -42,6 +58,15 @@ router.post('/', authenticateToken,
     
     try {
       const maintenance = await MaintenanceService.createMaintenance(req.body);
+      try {
+        await OperationLogService.record(req, {
+          action: '新增维护记录',
+          entityType: 'maintenance',
+          entityId: maintenance?.id,
+          entityName: maintenance?.id,
+          details: { body: req.body },
+        });
+      } catch (_e) {}
       res.status(201).json({ message: 'Maintenance record created successfully', maintenance });
     } catch (error) {
       console.error(error);
@@ -51,7 +76,7 @@ router.post('/', authenticateToken,
 );
 
 // 更新维护记录
-router.put('/:id', authenticateToken,
+router.put('/:id', authenticateToken, normalizeMaintenancePayload,
   body('maintenanceDate').optional().isISO8601().withMessage('Maintenance date must be a valid date'),
   body('maintenanceContent').optional().notEmpty().withMessage('Maintenance content is required'),
   body('maintenancePerson').optional().isLength({ max: 50 }).withMessage('Maintenance person must not exceed 50 characters'),
@@ -65,6 +90,15 @@ router.put('/:id', authenticateToken,
     
     try {
       const maintenance = await MaintenanceService.updateMaintenance(req.params.id, req.body);
+      try {
+        await OperationLogService.record(req, {
+          action: '更新维护记录',
+          entityType: 'maintenance',
+          entityId: maintenance?.id ?? req.params.id,
+          entityName: maintenance?.id ?? req.params.id,
+          details: { body: req.body },
+        });
+      } catch (_e) {}
       res.json({ message: 'Maintenance record updated successfully', maintenance });
     } catch (error) {
       console.error(error);
@@ -77,6 +111,15 @@ router.put('/:id', authenticateToken,
 router.delete('/:id', authenticateToken, async (req, res) => {
   try {
     const result = await MaintenanceService.deleteMaintenance(req.params.id);
+    try {
+      await OperationLogService.record(req, {
+        action: '删除维护记录',
+        entityType: 'maintenance',
+        entityId: req.params.id,
+        entityName: req.params.id,
+        details: {},
+      });
+    } catch (_e) {}
     res.json(result);
   } catch (error) {
     console.error(error);

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const RepairOrderService = require('../services/repairOrderService');
+const OperationLogService = require('../services/operationLogService');
 const authenticateToken = require('../middleware/auth');
 
 // 获取维修工单列表
@@ -41,10 +42,19 @@ router.post('/', authenticateToken,
     
     try {
       const repairOrder = await RepairOrderService.createRepairOrder(req.body);
+      try {
+        await OperationLogService.record(req, {
+          action: '提交报修',
+          entityType: 'repair_order',
+          entityId: repairOrder?.id,
+          entityName: repairOrder?.id,
+          details: { body: req.body },
+        });
+      } catch (_e) {}
       res.status(201).json({ message: 'Repair order created successfully', repairOrder });
     } catch (error) {
       console.error(error);
-      res.status(500).json({ message: 'Internal server error' });
+      res.status(400).json({ message: error.message });
     }
   }
 );
@@ -71,6 +81,15 @@ router.put('/:id', authenticateToken,
     
     try {
       const repairOrder = await RepairOrderService.updateRepairOrder(req.params.id, req.body);
+      try {
+        await OperationLogService.record(req, {
+          action: '更新工单',
+          entityType: 'repair_order',
+          entityId: repairOrder?.id ?? req.params.id,
+          entityName: repairOrder?.id ?? req.params.id,
+          details: { body: req.body },
+        });
+      } catch (_e) {}
       res.json({ message: 'Repair order updated successfully', repairOrder });
     } catch (error) {
       console.error(error);
@@ -83,6 +102,15 @@ router.put('/:id', authenticateToken,
 router.delete('/:id', authenticateToken, async (req, res) => {
   try {
     const result = await RepairOrderService.deleteRepairOrder(req.params.id);
+    try {
+      await OperationLogService.record(req, {
+        action: '删除工单',
+        entityType: 'repair_order',
+        entityId: req.params.id,
+        entityName: req.params.id,
+        details: {},
+      });
+    } catch (_e) {}
     res.json(result);
   } catch (error) {
     console.error(error);

@@ -30,6 +30,8 @@ const reportRoutes = require('./routes/report');
 const departmentRoutes = require('./routes/department');
 const roleRoutes = require('./routes/role');
 const backupRoutes = require('./routes/backup');
+const menuRoutes = require('./routes/menu');
+const logRoutes = require('./routes/log');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
@@ -42,6 +44,8 @@ app.use('/api/report', reportRoutes);
 app.use('/api/departments', departmentRoutes);
 app.use('/api/roles', roleRoutes);
 app.use('/api/backup', backupRoutes);
+app.use('/api/menus', menuRoutes);
+app.use('/api/logs', logRoutes);
 
 app.post('/api/auth/logout', (req, res) => {
   res.json({ success: true });

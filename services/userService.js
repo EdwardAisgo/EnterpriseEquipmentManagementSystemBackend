@@ -1,10 +1,64 @@
-const { User, Department } = require('../models');
+const { User, Department, Role } = require('../models');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const logger = require('../utils/logger');
 const RedisCache = require('../utils/redis');
 
 class UserService {
+  static async normalizeRoleFields(userData) {
+    const normalized = { ...userData };
+
+    const hasRole = Object.prototype.hasOwnProperty.call(normalized, 'role');
+    const roleValue = hasRole ? normalized.role : undefined;
+    if (hasRole) delete normalized.role;
+
+    const hasRoleId = Object.prototype.hasOwnProperty.call(normalized, 'roleId');
+    const roleIdValue = hasRoleId ? normalized.roleId : undefined;
+
+    const candidate = hasRole ? roleValue : roleIdValue;
+    if (candidate === undefined) return normalized;
+
+    if (candidate === null) {
+      normalized.roleId = null;
+      return normalized;
+    }
+
+    if (typeof candidate === 'number') {
+      normalized.roleId = candidate;
+      return normalized;
+    }
+
+    if (typeof candidate === 'string') {
+      const trimmed = candidate.trim();
+      if (trimmed === '') {
+        normalized.roleId = null;
+        return normalized;
+      }
+      if (/^\d+$/.test(trimmed)) {
+        normalized.roleId = Number(trimmed);
+        return normalized;
+      }
+      const role = await Role.findOne({ where: { name: trimmed } });
+      if (!role) throw new Error('Role not found');
+      normalized.roleId = role.id;
+      return normalized;
+    }
+
+    if (typeof candidate === 'object') {
+      const obj = candidate;
+      if (obj && (obj.id !== undefined || obj.name !== undefined)) {
+        if (obj.id !== undefined) {
+          return UserService.normalizeRoleFields({ ...normalized, roleId: obj.id });
+        }
+        if (typeof obj.name === 'string') {
+          return UserService.normalizeRoleFields({ ...normalized, role: obj.name });
+        }
+      }
+    }
+
+    throw new Error('Role not found');
+  }
+
   // 用户注册
   static async register(userData) {
     try {
@@ -25,11 +79,20 @@ class UserService {
       // 加密密码
       const hashedPassword = await bcrypt.hash(userData.password, 10);
 
+      const newUserData = await UserService.normalizeRoleFields(userData);
+
       // 创建用户
       const user = await User.create({
-        ...userData,
-        password: hashedPassword
+        ...newUserData,
+        password: hashedPassword,
       });
+
+      // 获取关联的角色信息
+      await user.reload({ include: [{ model: Role, attributes: ['id', 'name'] }] });
+      // 为了兼容现有前端或 JWT token 生成，将 roleName 附加到 user 对象
+      if (user.Role) {
+        user.setDataValue('role', user.Role.name);
+      }
 
       // 清除用户列表缓存
       await RedisCache.del('users:all');
@@ -58,9 +121,19 @@ class UserService {
         throw new Error('Invalid username or password');
       }
 
+      await user.reload({ include: [{ model: Role, attributes: ['id', 'name'] }] });
+      if (user.Role) {
+        user.setDataValue('role', user.Role.name);
+      }
+
       // 生成JWT token
       const token = jwt.sign(
-        { id: user.id, username: user.username, role: user.role },
+        {
+          id: user.id,
+          username: user.username,
+          role: user.getDataValue('role'),
+          roleId: user.roleId,
+        },
         process.env.JWT_SECRET || 'your-secret-key',
         { expiresIn: '1h' }
       );
@@ -76,7 +149,7 @@ class UserService {
   // 获取用户列表
   static async getUsers(params = {}) {
     try {
-      const { username, name, departmentId, role } = params;
+      const { username, name, departmentId, roleId } = params;
       const where = {};
       
       if (username) {
@@ -90,15 +163,25 @@ class UserService {
       if (departmentId) {
         where.departmentId = departmentId;
       }
-      if (role) {
-        where.role = role;
+      if (roleId) {
+        where.roleId = roleId;
       }
 
       // 从数据库获取
       const users = await User.findAll({
         where,
-        include: [{ model: Department, attributes: ['id', 'name'] }],
+        include: [
+          { model: Department, attributes: ['id', 'name'] },
+          { model: Role, attributes: ['id', 'name'] } // 包含 Role 模型
+        ],
         order: [['createdAt', 'DESC']]
+      });
+
+      // 为每个用户附加 roleName，以便兼容前端或 JWT token 生成
+      users.forEach(user => {
+        if (user.Role) {
+          user.setDataValue('role', user.Role.name);
+        }
       });
 
       logger.info(`Get users successful: ${users.length} users found`);
@@ -121,13 +204,20 @@ class UserService {
 
       // 从数据库获取
       const user = await User.findByPk(id, {
-        include: [{ model: Department, attributes: ['id', 'name'] }]
+        include: [
+          { model: Department, attributes: ['id', 'name'] },
+          { model: Role, attributes: ['id', 'name'] } // 包含 Role 模型
+        ]
       });
       if (!user) {
         logger.warn(`Get user by id failed: User ${id} not found`);
         throw new Error('User not found');
       }
 
+      // 为用户附加 roleName，以便兼容前端或 JWT token 生成
+      if (user.Role) {
+        user.setDataValue('role', user.Role.name);
+      }
       // 缓存结果
       await RedisCache.set(`user:${id}`, user, 600); // 10分钟缓存
       logger.info(`Get user by id successful: User ${id}`);
@@ -156,7 +246,24 @@ class UserService {
         }
       }
 
-      await user.update(userData);
+      const updateFields = await UserService.normalizeRoleFields(userData);
+
+      // 更新用户数据
+      if (updateFields.roleId !== undefined && updateFields.roleId !== null) {
+        const role = await Role.findByPk(updateFields.roleId);
+        if (!role) {
+          logger.warn(`Update user failed: Role with ID ${updateFields.roleId} not found`);
+          throw new Error('Role not found');
+        }
+      }
+      await user.update(updateFields);
+
+      // 获取关联的角色信息
+      await user.reload({ include: [{ model: Role, attributes: ['id', 'name'] }] });
+      // 为了兼容现有前端或 JWT token 生成，将 roleName 附加到 user 对象
+      if (user.Role) {
+        user.setDataValue('role', user.Role.name);
+      }
       
       // 清除相关缓存
       await RedisCache.del('users:all');

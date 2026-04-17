@@ -3,9 +3,9 @@ const { sequelize } = require('../config/database');
 
 const RepairOrder = sequelize.define('RepairOrder', {
   id: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING(32),
     primaryKey: true,
-    autoIncrement: true
+    allowNull: false
   },
   equipmentId: {
     type: DataTypes.INTEGER,

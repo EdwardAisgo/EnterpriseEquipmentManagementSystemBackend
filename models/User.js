@@ -25,9 +25,13 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING(50),
     allowNull: false
   },
-  role: {
-    type: DataTypes.ENUM('admin', 'manager', 'staff'),
-    defaultValue: 'staff'
+  roleId: {
+    type: DataTypes.INTEGER,
+    allowNull: true, // 根据业务需求，角色是否可以为空
+    references: {
+      model: 'Roles', // 引用Roles表
+      key: 'id'
+    }
   },
   departmentId: {
     type: DataTypes.INTEGER,

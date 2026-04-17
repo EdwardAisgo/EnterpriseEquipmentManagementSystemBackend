@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const jwt = require('jsonwebtoken');
 const { body, validationResult } = require('express-validator');
-const AuthService = require('../services/authService');
+const UserService = require('../services/userService');
 require('dotenv').config();
 
 // 登录
@@ -18,7 +17,7 @@ router.post('/login',
     
     try {
       const { username, password } = req.body;
-      const result = await AuthService.login(username, password);
+      const result = await UserService.login(username, password);
       res.json(result);
     } catch (error) {
       console.error(error);
@@ -32,7 +31,7 @@ router.post('/register',
   body('username').notEmpty().withMessage('Username is required').isLength({ min: 3, max: 50 }).withMessage('Username must be between 3 and 50 characters'),
   body('password').notEmpty().withMessage('Password is required').isLength({ min: 6 }).withMessage('Password must be at least 6 characters'),
   body('name').notEmpty().withMessage('Name is required'),
-  body('role').isIn(['admin', 'manager', 'staff']).withMessage('Role must be one of: admin, manager, staff'),
+  body('email').notEmpty().withMessage('Email is required').isEmail().withMessage('Email must be a valid email address'),
   async (req, res) => {
     // 验证请求数据
     const errors = validationResult(req);
@@ -41,8 +40,7 @@ router.post('/register',
     }
     
     try {
-      const { username, password, name, role, departmentId } = req.body;
-      const user = await AuthService.register(username, password, name, role, departmentId);
+      const user = await UserService.register(req.body);
       res.status(201).json({ message: 'User created successfully', user });
     } catch (error) {
       console.error(error);
@@ -59,8 +57,9 @@ router.get('/me', async (req, res) => {
       return res.status(401).json({ message: 'Access token required' });
     }
     
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    const user = await AuthService.getCurrentUser(decoded.id);
+    const jwt = require('jsonwebtoken');
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'your-secret-key');
+    const user = await UserService.getUserById(decoded.id);
     res.json({ user });
   } catch (error) {
     console.error(error);

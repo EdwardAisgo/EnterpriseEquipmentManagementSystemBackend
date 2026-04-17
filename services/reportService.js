@@ -1,8 +1,35 @@
-const { Device, Maintenance, Department } = require('../models');
+const { Device, Maintenance, Department, MaintenancePlan } = require('../models');
 const { Op } = require('sequelize');
 const logger = require('../utils/logger');
 
 class ReportService {
+  // 获取 30 天内需要执行的维护计划
+  static async getExpiringMaintenancePlans() {
+    try {
+      const thirtyDaysLater = new Date();
+      thirtyDaysLater.setDate(thirtyDaysLater.getDate() + 30);
+      
+      const expiringPlans = await MaintenancePlan.findAll({
+        where: {
+          nextMaintenance: {
+            [Op.between]: [new Date(), thirtyDaysLater]
+          },
+          status: 'active'
+        },
+        include: [{ 
+          model: Device, 
+          attributes: ['id', 'name', 'deviceCode', 'status'],
+          include: [{ model: Department, attributes: ['id', 'name'] }]
+        }]
+      });
+      logger.info(`Get expiring maintenance plans successful: ${expiringPlans.length} plans found`);
+      return expiringPlans;
+    } catch (error) {
+      logger.error(`Get expiring maintenance plans error: ${error.message}`);
+      throw error;
+    }
+  }
+
   // 获取设备状态统计
   static async getDeviceStatusCount() {
     try {
@@ -78,28 +105,6 @@ class ReportService {
       return monthlyCosts;
     } catch (error) {
       logger.error(`Get annual maintenance cost error: ${error.message}`);
-      throw error;
-    }
-  }
-
-  // 获取即将到期的设备 warranty
-  static async getExpiringWarranties() {
-    try {
-      const thirtyDaysLater = new Date();
-      thirtyDaysLater.setDate(thirtyDaysLater.getDate() + 30);
-      
-      const expiringDevices = await Device.findAll({
-        where: {
-          warrantyEndDate: {
-            [Op.between]: [new Date(), thirtyDaysLater]
-          }
-        },
-        include: [{ model: Department, attributes: ['id', 'name'] }]
-      });
-      logger.info(`Get expiring warranties successful: ${expiringDevices.length} devices found`);
-      return expiringDevices;
-    } catch (error) {
-      logger.error(`Get expiring warranties error: ${error.message}`);
       throw error;
     }
   }

@@ -253,3 +253,37 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-11 23:52:36 error: Login error: Invalid username or password
 2026-04-12 00:51:13 error: Get roles error: Table 'equipment_management.roles' doesn't exist
 2026-04-12 00:55:33 error: Get roles error: Table 'equipment_management.roles' doesn't exist
+2026-04-12 03:55:53 error: Get current user error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:55:57 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:56:02 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:56:06 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:56:16 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:56:43 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:56:49 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 04:14:24 error: Error creating log: Table 'equipment_management.logs' doesn't exist
+2026-04-12 14:05:14 error: Login error: Invalid username or password
+2026-04-12 14:05:22 error: Login error: Invalid username or password
+2026-04-12 14:07:00 error: Registration error: Username already exists
+2026-04-12 14:07:08 error: Login error: Invalid username or password
+2026-04-12 14:07:35 error: Get role ID by name error: Role ????? not found
+2026-04-12 14:09:47 error: Login error: Invalid username or password
+2026-04-12 14:10:24 error: Get user by id error: User not found
+2026-04-12 14:10:41 error: Create role error: Validation error
+2026-04-12 14:11:08 error: Get user by id error: User not found
+2026-04-12 14:11:55 error: Get user by id error: User not found
+2026-04-12 14:16:54 error: Update user error: Role not found
+2026-04-12 14:18:42 error: Update user error: Role not found
+2026-04-12 14:19:05 error: Delete role error: Cannot delete or update a parent row: a foreign key constraint fails (`equipment_management`.`users`, CONSTRAINT `Users_roleId_foreign_idx` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`))
+2026-04-12 14:22:12 error: Register error: Username already exists
+2026-04-12 23:08:45 error: Login error: Invalid username or password
+2026-04-12 23:09:30 error: Register error: Username already exists
+2026-04-12 23:09:30 error: Register error: Incorrect integer value: 'staff' for column 'roleId' at row 1
+2026-04-12 23:09:30 error: Login error: Invalid username or password
+2026-04-12 23:24:59 error: Login error: Invalid username or password
+2026-04-12 23:25:11 error: Register error: Username already exists
+2026-04-12 23:25:11 error: Register error: Incorrect integer value: 'staff' for column 'roleId' at row 1
+2026-04-12 23:25:11 error: Login error: Invalid username or password
+2026-04-13 00:48:45 error: Create repair order error: Incorrect integer value: 'WO2026041200021280' for column 'id' at row 1
+2026-04-13 02:42:53 error: Login error: Invalid username or password
+2026-04-13 02:49:58 error: Update user error: Role not found
+2026-04-13 02:50:59 error: Update user error: Role not found

@@ -48,11 +48,11 @@ router.get('/maintenance-cost/:year', authenticateToken, async (req, res) => {
   }
 });
 
-// 获取即将到期的设备 warranty
-router.get('/warranty-expiring', authenticateToken, async (req, res) => {
+// 获取即将到期的维护计划 (30天内)
+router.get('/maintenance-expiring', authenticateToken, async (req, res) => {
   try {
-    const expiringDevices = await ReportService.getExpiringWarranties();
-    res.json({ expiringDevices });
+    const expiringPlans = await ReportService.getExpiringMaintenancePlans();
+    res.json({ expiringPlans });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Internal server error' });

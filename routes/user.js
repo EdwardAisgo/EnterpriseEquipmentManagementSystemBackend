@@ -28,38 +28,6 @@ router.post('/register',
   }
 );
 
-// 用户登录
-router.post('/login',
-  body('username').notEmpty().withMessage('Username is required'),
-  body('password').notEmpty().withMessage('Password is required'),
-  async (req, res) => {
-    // 验证请求数据
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
-    
-    try {
-      const { token, user } = await UserService.login(req.body.username, req.body.password);
-      res.json({ message: 'Login successful', token, user });
-    } catch (error) {
-      console.error(error);
-      res.status(401).json({ message: error.message });
-    }
-  }
-);
-
-// 获取当前用户信息
-router.get('/me', authenticateToken, async (req, res) => {
-  try {
-    const user = await UserService.getUserById(req.user.id);
-    res.json({ user });
-  } catch (error) {
-    console.error(error);
-    res.status(404).json({ message: error.message });
-  }
-});
-
 // 更新用户信息
 router.put('/me', authenticateToken,
   body('email').optional().isEmail().withMessage('Email must be a valid email address'),
@@ -119,7 +87,7 @@ router.put('/:id', authenticateToken,
   body('email').optional().isEmail().withMessage('Email must be a valid email address'),
   body('name').optional().isLength({ max: 50 }).withMessage('Name must not exceed 50 characters'),
   body('departmentId').optional().isInt().withMessage('Department ID must be an integer'),
-  body('role').optional().isIn(['admin', 'manager', 'staff']).withMessage('Role must be one of: admin, manager, staff'),
+  body('roleId').optional().isInt().withMessage('Role ID must be an integer'),
   async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -152,7 +120,14 @@ router.put('/:id/reset-password', authenticateToken,
   body('newPassword').notEmpty().withMessage('New password is required').isLength({ min: 6 }).withMessage('New password must be at least 6 characters'),
   async (req, res) => {
     // 权限检查：只有管理员可以重置他人密码
-    if (req.user.role !== 'admin') {
+    const isAdmin =
+      req.user &&
+      (req.user.username === 'admin' ||
+        req.user.role === 'admin' ||
+        req.user.role === '系统管理员' ||
+        req.user.roleId === 1 ||
+        req.user.roleId === 12);
+    if (!isAdmin) {
       return res.status(403).json({ message: 'Only admin can reset password' });
     }
 

@@ -2,12 +2,13 @@ const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const DeviceService = require('../services/deviceService');
+const OperationLogService = require('../services/operationLogService');
 const authenticateToken = require('../middleware/auth');
 
 // 获取设备列表
 router.get('/', authenticateToken, async (req, res) => {
   try {
-    const devices = await DeviceService.getDevices();
+    const devices = await DeviceService.getDevices(req.query);
     res.json({ devices });
   } catch (error) {
     console.error(error);
@@ -42,6 +43,15 @@ router.post('/', authenticateToken,
     
     try {
       const device = await DeviceService.createDevice(req.body);
+      try {
+        await OperationLogService.record(req, {
+          action: '新增设备',
+          entityType: 'device',
+          entityId: device?.id,
+          entityName: device?.name || device?.deviceCode,
+          details: { body: req.body },
+        });
+      } catch (_e) {}
       res.status(201).json({ message: 'Device created successfully', device });
     } catch (error) {
       console.error(error);
@@ -66,6 +76,15 @@ router.put('/:id', authenticateToken,
     
     try {
       const device = await DeviceService.updateDevice(req.params.id, req.body);
+      try {
+        await OperationLogService.record(req, {
+          action: '更新设备',
+          entityType: 'device',
+          entityId: device?.id ?? req.params.id,
+          entityName: device?.name || device?.deviceCode,
+          details: { body: req.body },
+        });
+      } catch (_e) {}
       res.json({ message: 'Device updated successfully', device });
     } catch (error) {
       console.error(error);
@@ -86,6 +105,15 @@ router.put('/:id/scrap', authenticateToken,
     
     try {
       const device = await DeviceService.scrapDevice(req.params.id, req.body.scrapReason);
+      try {
+        await OperationLogService.record(req, {
+          action: '报废设备',
+          entityType: 'device',
+          entityId: device?.id ?? req.params.id,
+          entityName: device?.name || device?.deviceCode,
+          details: { scrapReason: req.body.scrapReason },
+        });
+      } catch (_e) {}
       res.json({ message: 'Device scrapped successfully', device });
     } catch (error) {
       console.error(error);
@@ -98,6 +126,14 @@ router.put('/:id/scrap', authenticateToken,
 router.delete('/:id', authenticateToken, async (req, res) => {
   try {
     const result = await DeviceService.deleteDevice(req.params.id);
+    try {
+      await OperationLogService.record(req, {
+        action: '删除设备',
+        entityType: 'device',
+        entityId: req.params.id,
+        details: {},
+      });
+    } catch (_e) {}
     res.json(result);
   } catch (error) {
     console.error(error);

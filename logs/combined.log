@@ -1194,3 +1194,1998 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-12 01:44:33 info: Get maintenance type count successful
 2026-04-12 01:44:33 info: Get expiring warranties successful: 1 devices found
 2026-04-12 01:44:33 info: Get annual maintenance cost successful for year 2026
+2026-04-12 02:35:32 info: Server is running on port 3001
+2026-04-12 02:35:32 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 02:35:32 info: Redis connected successfully
+2026-04-12 02:51:45 info: Get current user successful: User 1
+2026-04-12 02:51:46 info: Get device status count successful
+2026-04-12 02:51:46 info: Get annual maintenance cost successful for year 2026
+2026-04-12 02:51:46 info: Get maintenance type count successful
+2026-04-12 02:51:46 info: Get expiring warranties successful: 1 devices found
+2026-04-12 02:51:56 info: Login successful: User admin
+2026-04-12 02:51:56 info: Get current user successful: User 1
+2026-04-12 02:51:57 info: Get current user successful: User 1
+2026-04-12 02:51:57 info: Get device status count successful
+2026-04-12 02:51:57 info: Get annual maintenance cost successful for year 2026
+2026-04-12 02:51:57 info: Get maintenance type count successful
+2026-04-12 02:51:57 info: Get expiring warranties successful: 1 devices found
+2026-04-12 02:51:59 info: Get devices successful: 5 devices found
+2026-04-12 02:51:59 info: Get devices from cache
+2026-04-12 02:51:59 info: Get running data successful: 14 records found
+2026-04-12 02:52:01 info: Get users successful: 4 users found
+2026-04-12 02:52:04 info: Get devices from cache
+2026-04-12 02:52:04 info: Get maintenance plans successful: 2 plans found
+2026-04-12 02:52:04 info: Get maintenances successful: 2 records found
+2026-04-12 02:52:05 info: Get users successful: 4 users found
+2026-04-12 02:52:09 info: Get devices from cache
+2026-04-12 02:52:09 info: Get repair orders successful: 2 orders found
+2026-04-12 02:52:28 info: Update repair order successful: Order 1
+2026-04-12 02:52:28 info: Get repair orders successful: 2 orders found
+2026-04-12 02:52:54 info: Get users successful: 4 users found
+2026-04-12 02:52:55 info: Get device status count successful
+2026-04-12 02:52:55 info: Get annual maintenance cost successful for year 2026
+2026-04-12 02:52:55 info: Get maintenance type count successful
+2026-04-12 02:52:55 info: Get expiring warranties successful: 1 devices found
+2026-04-12 02:55:07 info: Login successful: User admin
+2026-04-12 02:55:07 info: Get current user successful: User 1
+2026-04-12 02:55:07 info: Get current user successful: User 1
+2026-04-12 02:55:08 info: Get device status count successful
+2026-04-12 02:55:08 info: Get annual maintenance cost successful for year 2026
+2026-04-12 02:55:08 info: Get maintenance type count successful
+2026-04-12 02:55:08 info: Get expiring warranties successful: 1 devices found
+2026-04-12 02:55:12 info: Get device status count successful
+2026-04-12 02:55:12 info: Get annual maintenance cost successful for year 2023
+2026-04-12 02:55:12 info: Get maintenance type count successful
+2026-04-12 02:55:12 info: Get expiring warranties successful: 1 devices found
+2026-04-12 02:55:15 info: Get device status count successful
+2026-04-12 02:55:15 info: Get annual maintenance cost successful for year 2026
+2026-04-12 02:55:15 info: Get maintenance type count successful
+2026-04-12 02:55:15 info: Get expiring warranties successful: 1 devices found
+2026-04-12 02:55:16 info: Get devices from cache
+2026-04-12 02:55:16 info: Get devices from cache
+2026-04-12 02:55:16 info: Get running data from cache
+2026-04-12 02:55:17 info: Get devices from cache
+2026-04-12 02:55:17 info: Get maintenance plans from cache
+2026-04-12 02:55:17 info: Get maintenances from cache
+2026-04-12 02:55:18 info: Get devices from cache
+2026-04-12 02:55:18 info: Get repair orders from cache
+2026-04-12 02:55:19 info: Get users successful: 4 users found
+2026-04-12 02:55:21 info: Get devices from cache
+2026-04-12 02:55:29 info: Get users successful: 4 users found
+2026-04-12 03:03:01 info: Get current user successful: User 1
+2026-04-12 03:03:02 info: Get users successful: 4 users found
+2026-04-12 03:03:28 info: Get users successful: 4 users found
+2026-04-12 03:03:28 info: Get all departments successful: 5 departments found
+2026-04-12 03:03:32 info: Get current user successful: User 1
+2026-04-12 03:03:33 info: Get users successful: 4 users found
+2026-04-12 03:03:33 info: Get all departments successful: 5 departments found
+2026-04-12 03:04:00 info: Get devices successful: 5 devices found
+2026-04-12 03:04:00 info: Get repair orders successful: 2 orders found
+2026-04-12 03:04:10 info: Get devices from cache
+2026-04-12 03:04:10 info: Get maintenance plans successful: 2 plans found
+2026-04-12 03:04:10 info: Get maintenances successful: 2 records found
+2026-04-12 03:04:12 info: Get users successful: 4 users found
+2026-04-12 03:04:16 info: Get devices from cache
+2026-04-12 03:04:16 info: Get repair orders from cache
+2026-04-12 03:04:25 info: Get devices from cache
+2026-04-12 03:04:25 info: Get running data successful: 14 records found
+2026-04-12 03:04:27 info: Get devices from cache
+2026-04-12 03:04:27 info: Get repair orders from cache
+2026-04-12 03:04:52 info: Update device status to fault: Device 1
+2026-04-12 03:04:52 info: Create repair order successful: Order 3
+2026-04-12 03:04:52 info: Get repair orders successful: 3 orders found
+2026-04-12 03:05:11 info: Get users successful: 4 users found
+2026-04-12 03:05:11 info: Get all departments successful: 5 departments found
+2026-04-12 03:05:15 info: Get current user successful: User 1
+2026-04-12 03:05:16 info: Get users successful: 4 users found
+2026-04-12 03:05:16 info: Get all departments successful: 5 departments found
+2026-04-12 03:06:21 info: Get users successful: 4 users found
+2026-04-12 03:06:21 info: Get all departments successful: 5 departments found
+2026-04-12 03:06:34 info: Get devices from cache
+2026-04-12 03:06:34 info: Get repair orders from cache
+2026-04-12 03:06:36 info: Get devices from cache
+2026-04-12 03:06:36 info: Get maintenance plans from cache
+2026-04-12 03:06:36 info: Get maintenances from cache
+2026-04-12 03:06:37 info: Get devices from cache
+2026-04-12 03:06:37 info: Get running data from cache
+2026-04-12 03:06:38 info: Get devices from cache
+2026-04-12 03:06:39 info: Get device status count successful
+2026-04-12 03:06:39 info: Get maintenance type count successful
+2026-04-12 03:06:39 info: Get annual maintenance cost successful for year 2026
+2026-04-12 03:06:39 info: Get expiring warranties successful: 1 devices found
+2026-04-12 03:06:53 info: Get devices from cache
+2026-04-12 03:06:53 info: Get repair orders from cache
+2026-04-12 03:06:54 info: Get users successful: 4 users found
+2026-04-12 03:06:54 info: Get all departments successful: 5 departments found
+2026-04-12 03:19:05 info: Get devices successful: 5 devices found
+2026-04-12 03:19:05 info: Get repair orders successful: 3 orders found
+2026-04-12 03:19:17 info: Get users successful: 4 users found
+2026-04-12 03:19:17 info: Get all departments successful: 5 departments found
+2026-04-12 03:22:13 info: Get devices from cache
+2026-04-12 03:22:13 info: Get repair orders from cache
+2026-04-12 03:22:14 info: Get devices from cache
+2026-04-12 03:22:14 info: Get maintenance plans successful: 2 plans found
+2026-04-12 03:22:14 info: Get maintenances successful: 2 records found
+2026-04-12 03:22:15 info: Get devices from cache
+2026-04-12 03:22:15 info: Get running data successful: 14 records found
+2026-04-12 03:22:16 info: Get devices from cache
+2026-04-12 03:22:16 info: Get maintenance plans from cache
+2026-04-12 03:22:16 info: Get maintenances from cache
+2026-04-12 03:22:20 info: Get users successful: 4 users found
+2026-04-12 03:22:31 info: Get users successful: 4 users found
+2026-04-12 03:23:03 info: Update device status to normal after maintenance: Device 1
+2026-04-12 03:23:03 info: Create maintenance successful: Maintenance 3
+2026-04-12 03:23:03 info: Get maintenances successful: 3 records found
+2026-04-12 03:23:27 info: Login successful: User admin
+2026-04-12 03:23:27 info: Get current user successful: User 1
+2026-04-12 03:23:28 info: Get current user successful: User 1
+2026-04-12 03:23:29 info: Get devices from cache
+2026-04-12 03:23:29 info: Get maintenance plans from cache
+2026-04-12 03:23:29 info: Get maintenances from cache
+2026-04-12 03:23:30 info: Get users successful: 4 users found
+2026-04-12 03:23:30 info: Get all departments successful: 5 departments found
+2026-04-12 03:23:56 info: Register successful: User 5
+2026-04-12 03:23:56 info: Get users successful: 5 users found
+2026-04-12 03:24:08 info: Update user successful: User 5
+2026-04-12 03:24:08 info: Get users successful: 5 users found
+2026-04-12 03:27:15 info: Update user successful: User 5
+2026-04-12 03:27:15 info: Get users successful: 5 users found
+2026-04-12 03:29:46 info: Get current user successful: User 1
+2026-04-12 03:29:46 info: Get users successful: 5 users found
+2026-04-12 03:29:46 info: Get all departments successful: 5 departments found
+2026-04-12 03:31:54 info: Update user successful: User 5
+2026-04-12 03:31:54 info: Get users successful: 5 users found
+2026-04-12 03:46:51 info: Get all departments successful: 5 departments found
+2026-04-12 03:46:51 info: Get users successful: 5 users found
+2026-04-12 03:46:51 info: Get all departments successful: 5 departments found
+2026-04-12 03:46:51 info: Get users successful: 5 users found
+2026-04-12 03:46:51 info: Get all departments successful: 5 departments found
+2026-04-12 03:46:52 info: Get all departments successful: 5 departments found
+2026-04-12 03:46:52 info: Get users successful: 5 users found
+2026-04-12 03:46:52 info: Get all departments successful: 5 departments found
+2026-04-12 03:47:01 info: Get all departments successful: 5 departments found
+2026-04-12 03:47:30 info: Get all departments successful: 5 departments found
+2026-04-12 03:49:52 info: Get all departments successful: 5 departments found
+2026-04-12 03:53:15 info: Get all departments successful: 5 departments found
+2026-04-12 03:53:56 info: Server is running on port 3001
+2026-04-12 03:53:56 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 03:53:56 info: Redis connected successfully
+2026-04-12 03:55:53 error: Get current user error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:55:57 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:56:02 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:56:06 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:56:16 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:56:43 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:56:49 error: Login error: Unknown column 'roleId' in 'field list'
+2026-04-12 03:58:24 info: Server is running on port 3001
+2026-04-12 03:58:25 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 03:58:25 info: Redis connected successfully
+2026-04-12 03:59:37 info: Login successful: User admin
+2026-04-12 03:59:37 info: Get current user successful: User 1
+2026-04-12 03:59:38 info: Get current user successful: User 1
+2026-04-12 03:59:39 info: Get device status count successful
+2026-04-12 03:59:39 info: Get annual maintenance cost successful for year 2026
+2026-04-12 03:59:39 info: Get maintenance type count successful
+2026-04-12 03:59:39 info: Get expiring warranties successful: 1 devices found
+2026-04-12 03:59:41 info: Get all departments successful: 5 departments found
+2026-04-12 03:59:41 info: Get users successful: 5 users found
+2026-04-12 03:59:41 info: Get all departments successful: 5 departments found
+2026-04-12 03:59:42 info: Get devices successful: 5 devices found
+2026-04-12 03:59:42 info: Get repair orders successful: 3 orders found
+2026-04-12 03:59:44 info: Get all departments successful: 5 departments found
+2026-04-12 03:59:44 info: Get users successful: 5 users found
+2026-04-12 03:59:44 info: Get all departments successful: 5 departments found
+2026-04-12 03:59:49 info: Update user successful: User 5
+2026-04-12 03:59:49 info: Get users successful: 5 users found
+2026-04-12 04:00:15 info: Update user successful: User 3
+2026-04-12 04:00:15 info: Get users successful: 5 users found
+2026-04-12 04:00:18 info: Update user successful: User 4
+2026-04-12 04:00:18 info: Get users successful: 5 users found
+2026-04-12 04:01:51 info: Server is running on port 3001
+2026-04-12 04:01:51 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 04:01:51 info: Redis connected successfully
+2026-04-12 04:02:27 info: Update user successful: User 5
+2026-04-12 04:02:27 info: Get users successful: 5 users found
+2026-04-12 04:05:05 info: Server is running on port 3001
+2026-04-12 04:05:05 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 04:05:05 info: Redis connected successfully
+2026-04-12 04:05:29 info: Update user successful: User 5
+2026-04-12 04:05:29 info: Get users successful: 5 users found
+2026-04-12 04:05:34 info: Update user successful: User 1
+2026-04-12 04:05:34 info: Get users successful: 5 users found
+2026-04-12 04:05:38 info: Update user successful: User 5
+2026-04-12 04:05:38 info: Get users successful: 5 users found
+2026-04-12 04:05:44 info: Update user successful: User 2
+2026-04-12 04:05:44 info: Get users successful: 5 users found
+2026-04-12 04:05:48 info: Update user successful: User 3
+2026-04-12 04:05:48 info: Get users successful: 5 users found
+2026-04-12 04:05:52 info: Update user successful: User 4
+2026-04-12 04:05:52 info: Get users successful: 5 users found
+2026-04-12 04:09:56 info: Get current user successful: User 1
+2026-04-12 04:09:57 info: Get all departments successful: 5 departments found
+2026-04-12 04:09:57 info: Get users successful: 5 users found
+2026-04-12 04:09:57 info: Get all departments successful: 5 departments found
+2026-04-12 04:10:07 info: Get device status count successful
+2026-04-12 04:10:07 info: Get annual maintenance cost successful for year 2026
+2026-04-12 04:10:07 info: Get maintenance type count successful
+2026-04-12 04:10:07 info: Get expiring warranties successful: 1 devices found
+2026-04-12 04:10:14 info: Get devices successful: 5 devices found
+2026-04-12 04:10:21 info: Get devices from cache
+2026-04-12 04:10:21 info: Get running data successful: 14 records found
+2026-04-12 04:10:22 info: Get devices from cache
+2026-04-12 04:10:22 info: Get maintenance plans successful: 2 plans found
+2026-04-12 04:10:22 info: Get maintenances successful: 3 records found
+2026-04-12 04:10:22 info: Get devices from cache
+2026-04-12 04:10:22 info: Get repair orders successful: 3 orders found
+2026-04-12 04:10:29 info: Get all departments successful: 5 departments found
+2026-04-12 04:10:29 info: Get users successful: 5 users found
+2026-04-12 04:10:29 info: Get all departments successful: 5 departments found
+2026-04-12 04:14:03 info: Server is running on port 3001
+2026-04-12 04:14:03 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 04:14:03 info: Redis connected successfully
+2026-04-12 04:14:24 info: Login successful: User admin
+2026-04-12 04:14:24 error: Error creating log: Table 'equipment_management.logs' doesn't exist
+2026-04-12 04:14:24 info: Get current user successful: User 1
+2026-04-12 04:14:24 info: Get current user successful: User 1
+2026-04-12 04:14:25 info: Get device status count successful
+2026-04-12 04:14:25 info: Get annual maintenance cost successful for year 2026
+2026-04-12 04:14:25 info: Get maintenance type count successful
+2026-04-12 04:14:25 info: Get expiring warranties successful: 1 devices found
+2026-04-12 04:14:27 info: Get all departments successful: 5 departments found
+2026-04-12 04:14:27 info: Get users successful: 5 users found
+2026-04-12 04:14:27 info: Get all departments successful: 5 departments found
+2026-04-12 04:15:04 info: Get users successful: 5 users found
+2026-04-12 04:15:04 info: Get all departments successful: 5 departments found
+2026-04-12 04:15:12 info: Get all departments successful: 5 departments found
+2026-04-12 04:15:12 info: Get users successful: 5 users found
+2026-04-12 04:15:12 info: Get all departments successful: 5 departments found
+2026-04-12 04:15:18 info: Get users successful: 5 users found
+2026-04-12 04:15:18 info: Get all departments successful: 5 departments found
+2026-04-12 04:15:24 info: Get all departments successful: 5 departments found
+2026-04-12 04:15:24 info: Get users successful: 5 users found
+2026-04-12 04:15:24 info: Get all departments successful: 5 departments found
+2026-04-12 04:15:30 info: Get users successful: 5 users found
+2026-04-12 04:15:30 info: Get all departments successful: 5 departments found
+2026-04-12 04:15:55 info: Get current user successful: User 1
+2026-04-12 04:19:02 info: Get current user successful: User 1
+2026-04-12 04:19:07 info: Get current user successful: User 1
+2026-04-12 04:19:07 info: Get devices successful: 5 devices found
+2026-04-12 04:19:07 info: Get repair orders successful: 3 orders found
+2026-04-12 04:19:10 info: Get device status count successful
+2026-04-12 04:19:10 info: Get annual maintenance cost successful for year 2026
+2026-04-12 04:19:10 info: Get maintenance type count successful
+2026-04-12 04:19:10 info: Get expiring warranties successful: 1 devices found
+2026-04-12 04:19:11 info: Get devices from cache
+2026-04-12 04:19:12 info: Get devices from cache
+2026-04-12 04:19:12 info: Get running data successful: 14 records found
+2026-04-12 04:19:13 info: Get devices from cache
+2026-04-12 04:19:13 info: Get maintenance plans successful: 2 plans found
+2026-04-12 04:19:13 info: Get maintenances successful: 3 records found
+2026-04-12 04:19:49 info: Get current user successful: User 1
+2026-04-12 04:19:53 info: Get current user successful: User 1
+2026-04-12 04:20:18 info: Get current user successful: User 1
+2026-04-12 04:21:00 info: Get current user successful: User 1
+2026-04-12 04:21:01 info: Get all departments successful: 5 departments found
+2026-04-12 04:21:01 info: Get users successful: 5 users found
+2026-04-12 04:21:01 info: Get all departments successful: 5 departments found
+2026-04-12 04:21:10 info: Update user successful: User 3
+2026-04-12 04:21:10 info: Get users successful: 5 users found
+2026-04-12 04:21:14 info: Update user successful: User 3
+2026-04-12 04:21:14 info: Get users successful: 5 users found
+2026-04-12 04:21:18 info: Get current user successful: User 1
+2026-04-12 04:21:19 info: Get all departments successful: 5 departments found
+2026-04-12 04:21:19 info: Get users successful: 5 users found
+2026-04-12 04:21:19 info: Get all departments successful: 5 departments found
+2026-04-12 13:48:58 info: Server is running on port 3001
+2026-04-12 13:48:58 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 13:48:58 info: Redis connected successfully
+2026-04-12 13:49:53 info: Get current user successful: User 1
+2026-04-12 13:49:54 info: Get device status count successful
+2026-04-12 13:49:54 info: Get maintenance type count successful
+2026-04-12 13:49:54 info: Get annual maintenance cost successful for year 2026
+2026-04-12 13:49:54 info: Get expiring warranties successful: 1 devices found
+2026-04-12 13:50:13 info: Get all departments successful: 5 departments found
+2026-04-12 13:50:13 info: Get all departments successful: 5 departments found
+2026-04-12 13:50:13 info: Get users successful: 5 users found
+2026-04-12 13:50:25 info: Get devices successful: 5 devices found
+2026-04-12 13:50:25 info: Get repair orders successful: 3 orders found
+2026-04-12 13:51:22 info: Get all departments successful: 5 departments found
+2026-04-12 13:51:22 info: Get users successful: 5 users found
+2026-04-12 13:51:22 info: Get all departments successful: 5 departments found
+2026-04-12 14:05:01 info: Server is running on port 3001
+2026-04-12 14:05:01 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 14:05:01 info: Redis connected successfully
+2026-04-12 14:05:14 warn: Login failed: Invalid password for user admin
+2026-04-12 14:05:14 error: Login error: Invalid username or password
+2026-04-12 14:05:22 warn: Login failed: Invalid password for user admin
+2026-04-12 14:05:22 error: Login error: Invalid username or password
+2026-04-12 14:05:35 info: Get devices successful: 5 devices found
+2026-04-12 14:05:35 info: Get repair orders successful: 3 orders found
+2026-04-12 14:06:08 info: Server is running on port 3001
+2026-04-12 14:06:08 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 14:06:08 info: Redis connected successfully
+2026-04-12 14:06:45 info: Server is running on port 3001
+2026-04-12 14:06:45 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 14:06:45 info: Redis connected successfully
+2026-04-12 14:07:00 warn: Registration failed: Username admin already exists
+2026-04-12 14:07:00 error: Registration error: Username already exists
+2026-04-12 14:07:08 warn: Login failed: Invalid password for user admin
+2026-04-12 14:07:08 error: Login error: Invalid username or password
+2026-04-12 14:07:28 info: Server is running on port 3001
+2026-04-12 14:07:28 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 14:07:28 info: Redis connected successfully
+2026-04-12 14:07:35 warn: Get role ID failed: Role ????? not found
+2026-04-12 14:07:35 error: Get role ID by name error: Role ????? not found
+2026-04-12 14:08:23 info: Server is running on port 3001
+2026-04-12 14:08:23 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 14:08:23 info: Redis connected successfully
+2026-04-12 14:08:38 info: Create user with role ID successful: User 6
+2026-04-12 14:08:57 info: Get all departments successful: 5 departments found
+2026-04-12 14:08:57 info: Get users successful: 6 users found
+2026-04-12 14:08:57 info: Get all departments successful: 5 departments found
+2026-04-12 14:09:38 info: Server is running on port 3001
+2026-04-12 14:09:38 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 14:09:38 info: Redis connected successfully
+2026-04-12 14:09:47 warn: Login failed: Invalid password for user admin
+2026-04-12 14:09:47 error: Login error: Invalid username or password
+2026-04-12 14:09:56 info: Get current user successful: User 1
+2026-04-12 14:09:56 info: Get all departments successful: 5 departments found
+2026-04-12 14:09:56 info: Get users successful: 6 users found
+2026-04-12 14:09:57 info: Get all departments successful: 5 departments found
+2026-04-12 14:09:59 info: Login successful: User engineer1
+2026-04-12 14:10:16 info: Login successful: User engineer1
+2026-04-12 14:10:24 warn: Get user by id failed: User maintenance-engineers not found
+2026-04-12 14:10:24 error: Get user by id error: User not found
+2026-04-12 14:10:41 error: Create role error: Validation error
+2026-04-12 14:10:59 info: Register successful: User 7
+2026-04-12 14:11:08 info: Get current user successful: User 1
+2026-04-12 14:11:08 warn: Get user by id failed: User maintenance-engineers not found
+2026-04-12 14:11:08 error: Get user by id error: User not found
+2026-04-12 14:11:08 info: Get all departments successful: 5 departments found
+2026-04-12 14:11:08 info: Get users successful: 7 users found
+2026-04-12 14:11:08 info: Get all departments successful: 5 departments found
+2026-04-12 14:11:17 info: Get devices successful: 5 devices found
+2026-04-12 14:11:17 info: Get maintenances successful: 3 records found
+2026-04-12 14:11:17 info: Get maintenance plans successful: 2 plans found
+2026-04-12 14:11:18 info: Get devices from cache
+2026-04-12 14:11:18 info: Get repair orders successful: 3 orders found
+2026-04-12 14:11:41 info: Server is running on port 3001
+2026-04-12 14:11:41 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 14:11:41 info: Redis connected successfully
+2026-04-12 14:11:47 info: Login successful: User engineer1
+2026-04-12 14:11:55 warn: Get user by id failed: User maintenance-engineers not found
+2026-04-12 14:11:55 error: Get user by id error: User not found
+2026-04-12 14:12:58 info: Server is running on port 3001
+2026-04-12 14:12:58 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 14:12:58 info: Redis connected successfully
+2026-04-12 14:13:03 info: Get devices from cache
+2026-04-12 14:13:03 info: Get maintenance plans from cache
+2026-04-12 14:13:03 info: Get maintenances from cache
+2026-04-12 14:13:04 info: Get devices from cache
+2026-04-12 14:13:04 info: Get repair orders from cache
+2026-04-12 14:13:05 info: Login successful: User engineer1
+2026-04-12 14:13:05 info: Get all departments successful: 5 departments found
+2026-04-12 14:13:05 info: Get users successful: 7 users found
+2026-04-12 14:13:05 info: Get all departments successful: 5 departments found
+2026-04-12 14:13:08 info: Get devices from cache
+2026-04-12 14:13:08 info: Get repair orders from cache
+2026-04-12 14:13:18 info: Get devices from cache
+2026-04-12 14:13:18 info: Get running data successful: 14 records found
+2026-04-12 14:13:19 info: Get users successful: 7 users found
+2026-04-12 14:13:25 info: Get devices from cache
+2026-04-12 14:13:25 info: Get maintenance plans from cache
+2026-04-12 14:13:25 info: Get maintenances from cache
+2026-04-12 14:13:27 info: Get users successful: 7 users found
+2026-04-12 14:13:31 info: Get users successful: 7 users found
+2026-04-12 14:13:36 info: Get all departments successful: 5 departments found
+2026-04-12 14:13:36 info: Get users successful: 7 users found
+2026-04-12 14:13:36 info: Get all departments successful: 5 departments found
+2026-04-12 14:16:38 info: Register successful: User 8
+2026-04-12 14:16:38 info: Get users successful: 8 users found
+2026-04-12 14:16:54 warn: Update user failed: Role with ID 维修工程师 not found
+2026-04-12 14:16:54 error: Update user error: Role not found
+2026-04-12 14:18:31 info: Get current user successful: User 1
+2026-04-12 14:18:32 info: Get all departments successful: 5 departments found
+2026-04-12 14:18:32 info: Get users successful: 8 users found
+2026-04-12 14:18:32 info: Get all departments successful: 5 departments found
+2026-04-12 14:18:42 warn: Update user failed: Role with ID 维修工程师 not found
+2026-04-12 14:18:42 error: Update user error: Role not found
+2026-04-12 14:19:05 error: Delete role error: Cannot delete or update a parent row: a foreign key constraint fails (`equipment_management`.`users`, CONSTRAINT `Users_roleId_foreign_idx` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`))
+2026-04-12 14:19:19 info: Get current user successful: User 1
+2026-04-12 14:19:20 info: Get all departments successful: 5 departments found
+2026-04-12 14:19:20 info: Get users successful: 8 users found
+2026-04-12 14:19:20 info: Get all departments successful: 5 departments found
+2026-04-12 14:21:35 info: Delete user successful: User 7
+2026-04-12 14:21:35 info: Get users successful: 7 users found
+2026-04-12 14:22:12 warn: Register failed: Username engineer1 already exists
+2026-04-12 14:22:12 error: Register error: Username already exists
+2026-04-12 14:22:23 info: Delete user successful: User 6
+2026-04-12 14:22:23 info: Get users successful: 6 users found
+2026-04-12 14:22:26 info: Register successful: User 9
+2026-04-12 14:22:26 info: Get users successful: 7 users found
+2026-04-12 14:24:39 info: Backup successful: backup_equipment_management_2026-04-12T06-24-38-783Z.sql
+2026-04-12 14:25:49 info: Get current user successful: User 1
+2026-04-12 14:25:50 info: Get all departments successful: 5 departments found
+2026-04-12 14:25:50 info: Get users successful: 7 users found
+2026-04-12 14:25:50 info: Get all departments successful: 5 departments found
+2026-04-12 14:25:56 info: Update user successful: User 5
+2026-04-12 14:25:56 info: Get users successful: 7 users found
+2026-04-12 14:32:48 info: Get current user successful: User 1
+2026-04-12 14:32:49 info: Get all departments successful: 5 departments found
+2026-04-12 14:32:49 info: Get users successful: 7 users found
+2026-04-12 14:32:49 info: Get all departments successful: 5 departments found
+2026-04-12 14:34:16 info: Get users successful: 2 users found
+2026-04-12 14:34:46 info: Get users successful: 7 users found
+2026-04-12 14:34:46 info: Get all departments successful: 5 departments found
+2026-04-12 14:35:59 info: Get all departments successful: 5 departments found
+2026-04-12 14:35:59 info: Get users successful: 7 users found
+2026-04-12 14:35:59 info: Get all departments successful: 5 departments found
+2026-04-12 14:37:21 info: Get users successful: 7 users found
+2026-04-12 14:37:21 info: Get all departments successful: 5 departments found
+2026-04-12 14:37:24 info: Get current user successful: User 1
+2026-04-12 14:37:25 info: Get all departments successful: 5 departments found
+2026-04-12 14:37:25 info: Get users successful: 7 users found
+2026-04-12 14:37:25 info: Get all departments successful: 5 departments found
+2026-04-12 14:39:02 info: Get all departments successful: 5 departments found
+2026-04-12 14:39:02 info: Get users successful: 7 users found
+2026-04-12 14:39:02 info: Get all departments successful: 5 departments found
+2026-04-12 14:39:06 info: Get users successful: 7 users found
+2026-04-12 14:40:16 info: Get users successful: 0 users found
+2026-04-12 14:40:44 info: Get users successful: 7 users found
+2026-04-12 14:40:44 info: Get all departments successful: 5 departments found
+2026-04-12 14:40:51 info: Get users successful: 7 users found
+2026-04-12 14:41:25 info: Get users successful: 7 users found
+2026-04-12 14:42:16 info: Get devices successful: 5 devices found
+2026-04-12 14:42:16 info: Get repair orders successful: 3 orders found
+2026-04-12 14:42:21 info: Get all departments successful: 5 departments found
+2026-04-12 14:42:21 info: Get users successful: 7 users found
+2026-04-12 14:42:21 info: Get all departments successful: 5 departments found
+2026-04-12 14:43:00 info: Get users successful: 2 users found
+2026-04-12 14:43:05 info: Get users successful: 7 users found
+2026-04-12 14:43:41 info: Delete user successful: User 8
+2026-04-12 14:43:41 info: Get users successful: 6 users found
+2026-04-12 14:47:13 info: Get users successful: 6 users found
+2026-04-12 14:47:16 info: Get current user successful: User 1
+2026-04-12 14:47:17 info: Get all departments successful: 5 departments found
+2026-04-12 14:47:17 info: Get users successful: 6 users found
+2026-04-12 14:47:17 info: Get all departments successful: 5 departments found
+2026-04-12 14:47:20 info: Get users successful: 6 users found
+2026-04-12 14:48:05 info: Get users successful: 6 users found
+2026-04-12 14:48:09 info: Get users successful: 0 users found
+2026-04-12 14:48:14 info: Get users successful: 0 users found
+2026-04-12 14:48:18 info: Get users successful: 0 users found
+2026-04-12 14:48:33 info: Get users successful: 0 users found
+2026-04-12 14:48:34 info: Get users successful: 0 users found
+2026-04-12 14:48:34 info: Get users successful: 0 users found
+2026-04-12 14:48:37 info: Get current user successful: User 1
+2026-04-12 14:48:38 info: Get all departments successful: 5 departments found
+2026-04-12 14:48:38 info: Get users successful: 6 users found
+2026-04-12 14:48:38 info: Get all departments successful: 5 departments found
+2026-04-12 14:48:40 info: Get users successful: 6 users found
+2026-04-12 14:48:43 info: Get users successful: 0 users found
+2026-04-12 14:48:46 info: Get users successful: 0 users found
+2026-04-12 14:48:56 info: Get users successful: 0 users found
+2026-04-12 14:48:56 info: Get users successful: 0 users found
+2026-04-12 14:48:57 info: Get users successful: 0 users found
+2026-04-12 14:48:59 info: Get current user successful: User 1
+2026-04-12 14:48:59 info: Get all departments successful: 5 departments found
+2026-04-12 14:48:59 info: Get users successful: 6 users found
+2026-04-12 14:48:59 info: Get all departments successful: 5 departments found
+2026-04-12 14:49:04 info: Get users successful: 0 users found
+2026-04-12 14:50:27 info: Get current user successful: User 1
+2026-04-12 14:50:28 info: Get all departments successful: 5 departments found
+2026-04-12 14:50:28 info: Get users successful: 6 users found
+2026-04-12 14:50:28 info: Get all departments successful: 5 departments found
+2026-04-12 14:50:50 info: Register successful: User 10
+2026-04-12 14:50:50 info: Get users successful: 7 users found
+2026-04-12 14:52:19 info: Server is running on port 3001
+2026-04-12 14:52:19 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 14:52:19 info: Redis connected successfully
+2026-04-12 14:52:51 info: Get current user successful: User 1
+2026-04-12 14:52:52 info: Get all departments successful: 5 departments found
+2026-04-12 14:52:52 info: Get users successful: 7 users found
+2026-04-12 14:52:52 info: Get all departments successful: 5 departments found
+2026-04-12 14:52:59 info: Get current user successful: User 1
+2026-04-12 14:53:00 info: Get all departments successful: 5 departments found
+2026-04-12 14:53:00 info: Get users successful: 7 users found
+2026-04-12 14:53:00 info: Get all departments successful: 5 departments found
+2026-04-12 14:53:04 info: Get users successful: 2 users found
+2026-04-12 14:53:09 info: Get users successful: 0 users found
+2026-04-12 14:53:12 info: Get users successful: 1 users found
+2026-04-12 14:53:18 info: Get users successful: 1 users found
+2026-04-12 14:53:30 info: Get device status count successful
+2026-04-12 14:53:30 info: Get maintenance type count successful
+2026-04-12 14:53:30 info: Get expiring warranties successful: 1 devices found
+2026-04-12 14:53:30 info: Get annual maintenance cost successful for year 2026
+2026-04-12 14:53:31 info: Get devices successful: 5 devices found
+2026-04-12 14:53:32 info: Get devices from cache
+2026-04-12 14:53:32 info: Get running data successful: 14 records found
+2026-04-12 14:53:33 info: Get devices from cache
+2026-04-12 14:53:33 info: Get maintenance plans successful: 2 plans found
+2026-04-12 14:53:33 info: Get maintenances successful: 3 records found
+2026-04-12 14:53:49 info: Get all departments successful: 5 departments found
+2026-04-12 14:53:49 info: Get users successful: 7 users found
+2026-04-12 14:53:49 info: Get all departments successful: 5 departments found
+2026-04-12 14:53:50 info: Get devices from cache
+2026-04-12 14:53:50 info: Get repair orders successful: 3 orders found
+2026-04-12 14:55:36 info: Get devices from cache
+2026-04-12 14:55:36 info: Get maintenance plans from cache
+2026-04-12 14:55:36 info: Get maintenances from cache
+2026-04-12 14:55:38 info: Get users successful: 7 users found
+2026-04-12 14:55:43 info: Get devices from cache
+2026-04-12 14:55:44 info: Get repair orders from cache
+2026-04-12 14:56:07 info: Get devices from cache
+2026-04-12 14:56:07 info: Get maintenance plans from cache
+2026-04-12 14:56:07 info: Get maintenances from cache
+2026-04-12 14:56:08 info: Get users successful: 7 users found
+2026-04-12 14:58:30 info: Get devices from cache
+2026-04-12 14:58:30 info: Get maintenance plans from cache
+2026-04-12 14:58:30 info: Get maintenances from cache
+2026-04-12 14:58:30 info: Get users successful: 7 users found
+2026-04-12 14:58:30 info: Get users successful: 7 users found
+2026-04-12 14:58:30 info: Get devices from cache
+2026-04-12 14:58:30 info: Get maintenance plans from cache
+2026-04-12 14:58:30 info: Get maintenances from cache
+2026-04-12 14:58:41 info: Get repair orders from cache
+2026-04-12 14:58:41 info: Get devices successful: 5 devices found
+2026-04-12 14:58:42 info: Get users successful: 2 users found
+2026-04-12 14:58:47 info: Get all departments successful: 5 departments found
+2026-04-12 14:58:47 info: Get users successful: 7 users found
+2026-04-12 14:58:47 info: Get all departments successful: 5 departments found
+2026-04-12 14:58:51 info: Get users successful: 2 users found
+2026-04-12 14:58:57 info: Get devices from cache
+2026-04-12 14:58:57 info: Get repair orders successful: 3 orders found
+2026-04-12 14:58:58 info: Get users successful: 2 users found
+2026-04-12 14:59:02 info: Get users successful: 2 users found
+2026-04-12 15:00:23 info: Get devices from cache
+2026-04-12 15:00:23 info: Get repair orders from cache
+2026-04-12 15:00:23 info: Get users successful: 2 users found
+2026-04-12 15:00:23 info: Get users successful: 2 users found
+2026-04-12 15:00:23 info: Get devices from cache
+2026-04-12 15:00:23 info: Get repair orders from cache
+2026-04-12 15:00:38 info: Get users successful: 7 users found
+2026-04-12 15:00:42 info: Get users successful: 2 users found
+2026-04-12 15:00:44 info: Get users successful: 7 users found
+2026-04-12 15:01:11 info: Get users successful: 7 users found
+2026-04-12 15:01:43 info: Get users successful: 7 users found
+2026-04-12 15:06:32 info: Get current user successful: User 1
+2026-04-12 15:07:28 info: Get current user successful: User 1
+2026-04-12 15:07:29 info: Get all departments successful: 5 departments found
+2026-04-12 15:07:29 info: Get users successful: 7 users found
+2026-04-12 15:07:29 info: Get all departments successful: 5 departments found
+2026-04-12 15:07:32 info: Get users successful: 7 users found
+2026-04-12 15:07:32 info: Get devices successful: 5 devices found
+2026-04-12 15:07:32 info: Get repair orders successful: 3 orders found
+2026-04-12 15:08:34 info: Update device status to fault: Device 5
+2026-04-12 15:08:34 info: Create repair order successful: Order 4
+2026-04-12 15:08:34 info: Get repair orders successful: 4 orders found
+2026-04-12 15:08:41 info: Get users successful: 2 users found
+2026-04-12 15:10:04 info: Update device status to fault: Device 4
+2026-04-12 15:10:04 info: Create repair order successful: Order 5
+2026-04-12 15:10:04 info: Get repair orders successful: 5 orders found
+2026-04-12 15:11:09 info: Update device status to fault: Device 3
+2026-04-12 15:11:09 info: Create repair order successful: Order 6
+2026-04-12 15:11:09 info: Get repair orders successful: 6 orders found
+2026-04-12 15:11:15 info: Get devices from cache
+2026-04-12 15:11:15 info: Get maintenance plans successful: 2 plans found
+2026-04-12 15:11:15 info: Get maintenances successful: 3 records found
+2026-04-12 15:11:20 info: Get users successful: 7 users found
+2026-04-12 15:11:25 info: Get device status count successful
+2026-04-12 15:11:25 info: Get annual maintenance cost successful for year 2026
+2026-04-12 15:11:25 info: Get maintenance type count successful
+2026-04-12 15:11:25 info: Get expiring warranties successful: 1 devices found
+2026-04-12 15:11:27 info: Get devices from cache
+2026-04-12 15:11:27 info: Get maintenance plans from cache
+2026-04-12 15:11:27 info: Get maintenances from cache
+2026-04-12 15:11:28 info: Get users successful: 7 users found
+2026-04-12 15:11:56 info: Get users successful: 7 users found
+2026-04-12 15:12:00 info: Get devices from cache
+2026-04-12 15:12:00 info: Get running data successful: 14 records found
+2026-04-12 15:12:27 info: Get users successful: 7 users found
+2026-04-12 15:12:32 info: Get devices successful: 5 devices found
+2026-04-12 15:12:44 info: Get devices from cache
+2026-04-12 15:12:44 info: Get repair orders from cache
+2026-04-12 15:12:44 info: Get users successful: 7 users found
+2026-04-12 15:12:45 info: Get all departments successful: 5 departments found
+2026-04-12 15:12:45 info: Get users successful: 7 users found
+2026-04-12 15:12:45 info: Get all departments successful: 5 departments found
+2026-04-12 15:14:22 info: Get all departments successful: 5 departments found
+2026-04-12 15:14:22 info: Get all departments successful: 5 departments found
+2026-04-12 15:14:23 info: Get users successful: 7 users found
+2026-04-12 15:14:23 info: Get all departments successful: 5 departments found
+2026-04-12 15:14:24 info: Get users successful: 7 users found
+2026-04-12 15:14:24 info: Get all departments successful: 5 departments found
+2026-04-12 17:04:26 info: Get users successful: 7 users found
+2026-04-12 17:04:26 info: Get devices successful: 5 devices found
+2026-04-12 17:04:26 info: Get repair orders successful: 6 orders found
+2026-04-12 17:04:27 info: Get all departments successful: 5 departments found
+2026-04-12 17:04:27 info: Get users successful: 7 users found
+2026-04-12 17:04:27 info: Get all departments successful: 5 departments found
+2026-04-12 17:04:32 info: Delete user successful: User 10
+2026-04-12 17:04:32 info: Get users successful: 6 users found
+2026-04-12 17:04:34 info: Get device status count successful
+2026-04-12 17:04:34 info: Get annual maintenance cost successful for year 2026
+2026-04-12 17:04:34 info: Get maintenance type count successful
+2026-04-12 17:04:34 info: Get expiring warranties successful: 1 devices found
+2026-04-12 17:04:36 info: Get devices from cache
+2026-04-12 17:04:37 info: Get devices from cache
+2026-04-12 17:04:37 info: Get running data successful: 14 records found
+2026-04-12 17:04:37 info: Get devices from cache
+2026-04-12 17:04:37 info: Get maintenance plans successful: 2 plans found
+2026-04-12 17:04:37 info: Get maintenances successful: 3 records found
+2026-04-12 17:04:38 info: Get devices from cache
+2026-04-12 17:04:38 info: Get users successful: 6 users found
+2026-04-12 17:04:38 info: Get repair orders from cache
+2026-04-12 17:04:40 info: Get devices from cache
+2026-04-12 17:04:40 info: Get running data from cache
+2026-04-12 17:04:42 info: Get all departments successful: 5 departments found
+2026-04-12 17:04:42 info: Get users successful: 6 users found
+2026-04-12 17:04:42 info: Get all departments successful: 5 departments found
+2026-04-12 17:04:58 info: Get users successful: 1 users found
+2026-04-12 17:05:01 info: Get users successful: 6 users found
+2026-04-12 17:43:34 info: Server is running on port 3001
+2026-04-12 17:43:34 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 17:43:34 info: Redis connected successfully
+2026-04-12 17:57:28 info: Get all departments successful: 5 departments found
+2026-04-12 17:57:28 info: Get users successful: 6 users found
+2026-04-12 17:57:28 info: Get all departments successful: 5 departments found
+2026-04-12 17:58:09 info: Get devices successful: 5 devices found
+2026-04-12 17:58:16 info: Get all departments successful: 5 departments found
+2026-04-12 17:58:22 info: Get devices from cache
+2026-04-12 17:58:22 info: Get users successful: 6 users found
+2026-04-12 17:58:22 info: Get repair orders successful: 6 orders found
+2026-04-12 17:58:24 info: Get users successful: 2 users found
+2026-04-12 17:58:29 info: Update repair order successful: Order 6
+2026-04-12 17:58:29 info: Get repair orders successful: 6 orders found
+2026-04-12 17:58:30 info: Get users successful: 2 users found
+2026-04-12 17:58:32 info: Update repair order successful: Order 5
+2026-04-12 17:58:32 info: Get repair orders successful: 6 orders found
+2026-04-12 17:58:33 info: Get users successful: 2 users found
+2026-04-12 17:58:35 info: Update repair order successful: Order 4
+2026-04-12 17:58:35 info: Get repair orders successful: 6 orders found
+2026-04-12 17:58:36 info: Get users successful: 2 users found
+2026-04-12 17:58:38 info: Update repair order successful: Order 3
+2026-04-12 17:58:38 info: Get repair orders successful: 6 orders found
+2026-04-12 17:58:57 info: Update device status to normal: Device 3
+2026-04-12 17:58:57 info: Update repair order successful: Order 6
+2026-04-12 17:58:57 info: Get repair orders successful: 6 orders found
+2026-04-12 17:59:00 info: Update device status to normal: Device 4
+2026-04-12 17:59:00 info: Update repair order successful: Order 5
+2026-04-12 17:59:00 info: Get repair orders successful: 6 orders found
+2026-04-12 17:59:03 info: Update device status to normal: Device 5
+2026-04-12 17:59:03 info: Update repair order successful: Order 4
+2026-04-12 17:59:03 info: Get repair orders successful: 6 orders found
+2026-04-12 17:59:05 info: Update device status to normal: Device 1
+2026-04-12 17:59:05 info: Update repair order successful: Order 3
+2026-04-12 17:59:05 info: Get repair orders successful: 6 orders found
+2026-04-12 17:59:07 info: Update device status to normal: Device 2
+2026-04-12 17:59:07 info: Update repair order successful: Order 1
+2026-04-12 17:59:07 info: Get repair orders successful: 6 orders found
+2026-04-12 17:59:10 info: Get devices from cache
+2026-04-12 17:59:13 info: Get current user successful: User 1
+2026-04-12 17:59:14 info: Get devices from cache
+2026-04-12 17:59:16 info: Get all departments successful: 5 departments found
+2026-04-12 17:59:20 info: Update device successful: Device 2
+2026-04-12 17:59:20 info: Get devices successful: 5 devices found
+2026-04-12 17:59:38 info: Get devices from cache
+2026-04-12 17:59:38 info: Get repair orders from cache
+2026-04-12 17:59:38 info: Get users successful: 6 users found
+2026-04-12 17:59:40 info: Get devices from cache
+2026-04-12 17:59:40 info: Get maintenance plans successful: 2 plans found
+2026-04-12 17:59:40 info: Get maintenances successful: 3 records found
+2026-04-12 17:59:41 info: Get devices from cache
+2026-04-12 17:59:41 info: Get running data successful: 14 records found
+2026-04-12 17:59:41 info: Get devices from cache
+2026-04-12 17:59:44 info: Get devices from cache
+2026-04-12 17:59:44 info: Get maintenance plans from cache
+2026-04-12 17:59:44 info: Get maintenances from cache
+2026-04-12 17:59:46 info: Get users successful: 6 users found
+2026-04-12 18:00:11 info: Create maintenance plan successful: Plan 3
+2026-04-12 18:00:11 info: Get maintenance plans successful: 3 plans found
+2026-04-12 18:00:15 info: Get users successful: 6 users found
+2026-04-12 18:00:26 info: Get users successful: 6 users found
+2026-04-12 18:00:39 info: Get users successful: 6 users found
+2026-04-12 18:00:46 info: Get current user successful: User 1
+2026-04-12 18:00:47 info: Get devices from cache
+2026-04-12 18:00:47 info: Get maintenance plans from cache
+2026-04-12 18:00:47 info: Get maintenances from cache
+2026-04-12 18:03:41 info: Get devices from cache
+2026-04-12 18:03:41 info: Get maintenance plans from cache
+2026-04-12 18:03:41 info: Get maintenances from cache
+2026-04-12 18:04:18 info: Get devices from cache
+2026-04-12 18:04:18 info: Get maintenance plans from cache
+2026-04-12 18:04:18 info: Get maintenances from cache
+2026-04-12 18:11:15 info: Get current user successful: User 1
+2026-04-12 18:14:24 info: Get current user successful: User 1
+2026-04-12 18:16:12 info: Get current user successful: User 1
+2026-04-12 18:17:50 info: Get current user successful: User 1
+2026-04-12 18:17:51 info: Get devices successful: 5 devices found
+2026-04-12 18:17:51 info: Get maintenance plans successful: 3 plans found
+2026-04-12 18:17:51 info: Get maintenances successful: 3 records found
+2026-04-12 18:17:53 info: Get users successful: 6 users found
+2026-04-12 18:18:05 info: Get users successful: 6 users found
+2026-04-12 18:18:08 info: Create maintenance plan successful: Plan 4
+2026-04-12 18:18:08 info: Get maintenance plans successful: 4 plans found
+2026-04-12 18:18:29 info: Get users successful: 6 users found
+2026-04-12 18:19:04 info: Get current user successful: User 1
+2026-04-12 18:19:05 info: Get devices from cache
+2026-04-12 18:19:05 info: Get maintenance plans from cache
+2026-04-12 18:19:05 info: Get maintenances from cache
+2026-04-12 18:21:40 info: Get users successful: 6 users found
+2026-04-12 18:21:44 info: Create maintenance plan successful: Plan 5
+2026-04-12 18:21:44 info: Get maintenance plans successful: 5 plans found
+2026-04-12 18:22:12 info: Get users successful: 6 users found
+2026-04-12 18:22:14 info: Get users successful: 6 users found
+2026-04-12 18:22:21 info: Get users successful: 6 users found
+2026-04-12 18:22:32 info: Update device status to normal after maintenance: Device 1
+2026-04-12 18:22:32 info: Create maintenance successful: Maintenance 4
+2026-04-12 18:22:32 info: Get maintenances successful: 4 records found
+2026-04-12 18:22:43 info: Get users successful: 6 users found
+2026-04-12 18:22:45 info: Get users successful: 6 users found
+2026-04-12 18:23:11 info: Get users successful: 6 users found
+2026-04-12 18:23:11 info: Get devices successful: 5 devices found
+2026-04-12 18:23:11 info: Get repair orders successful: 6 orders found
+2026-04-12 18:23:32 info: Get all departments successful: 5 departments found
+2026-04-12 18:23:32 info: Get users successful: 6 users found
+2026-04-12 18:23:32 info: Get all departments successful: 5 departments found
+2026-04-12 18:23:37 info: Get devices from cache
+2026-04-12 18:24:20 info: Create device successful: Device 6
+2026-04-12 18:24:20 info: Get devices successful: 6 devices found
+2026-04-12 18:24:30 info: Scrap device successful: Device 6
+2026-04-12 18:24:30 info: Get devices successful: 6 devices found
+2026-04-12 18:24:32 info: Get all departments successful: 5 departments found
+2026-04-12 19:01:55 info: Get devices successful: 6 devices found
+2026-04-12 19:01:55 info: Get running data successful: 14 records found
+2026-04-12 19:01:56 info: Get devices from cache
+2026-04-12 19:01:56 info: Get maintenance plans successful: 5 plans found
+2026-04-12 19:01:56 info: Get maintenances successful: 4 records found
+2026-04-12 19:01:58 info: Get users successful: 6 users found
+2026-04-12 19:02:00 info: Get users successful: 6 users found
+2026-04-12 19:02:01 info: Get users successful: 6 users found
+2026-04-12 19:02:01 info: Get devices from cache
+2026-04-12 19:02:01 info: Get maintenance plans from cache
+2026-04-12 19:02:01 info: Get maintenances from cache
+2026-04-12 19:02:06 info: Get current user successful: User 1
+2026-04-12 19:02:07 info: Get devices from cache
+2026-04-12 19:02:07 info: Get maintenance plans from cache
+2026-04-12 19:02:07 info: Get maintenances from cache
+2026-04-12 19:02:31 info: Get users successful: 6 users found
+2026-04-12 19:02:33 info: Get users successful: 6 users found
+2026-04-12 19:24:49 info: Get current user successful: User 1
+2026-04-12 19:24:50 info: Get devices successful: 6 devices found
+2026-04-12 19:24:50 info: Get maintenance plans successful: 5 plans found
+2026-04-12 19:24:50 info: Get maintenances successful: 4 records found
+2026-04-12 19:26:56 info: Get devices from cache
+2026-04-12 19:26:56 info: Get maintenance plans from cache
+2026-04-12 19:26:56 info: Get maintenances from cache
+2026-04-12 19:32:53 info: Get current user successful: User 1
+2026-04-12 19:32:53 info: Get devices successful: 6 devices found
+2026-04-12 19:32:53 info: Get maintenance plans successful: 5 plans found
+2026-04-12 19:32:53 info: Get maintenances successful: 4 records found
+2026-04-12 19:33:46 info: Get devices from cache
+2026-04-12 19:33:46 info: Get maintenance plans from cache
+2026-04-12 19:33:46 info: Get maintenances from cache
+2026-04-12 19:33:51 info: Get users successful: 6 users found
+2026-04-12 19:33:54 info: Get users successful: 6 users found
+2026-04-12 19:35:15 info: Get devices from cache
+2026-04-12 19:35:15 info: Get maintenance plans from cache
+2026-04-12 19:35:15 info: Get maintenances from cache
+2026-04-12 19:37:59 info: Get devices successful: 6 devices found
+2026-04-12 19:37:59 info: Get maintenance plans successful: 5 plans found
+2026-04-12 19:37:59 info: Get maintenances successful: 4 records found
+2026-04-12 19:41:57 info: Get devices from cache
+2026-04-12 19:41:57 info: Get maintenance plans from cache
+2026-04-12 19:41:57 info: Get maintenances from cache
+2026-04-12 19:42:11 info: Get devices from cache
+2026-04-12 19:42:11 info: Get maintenance plans from cache
+2026-04-12 19:42:11 info: Get maintenances from cache
+2026-04-12 19:47:06 info: Get current user successful: User 1
+2026-04-12 19:47:09 info: Get current user successful: User 1
+2026-04-12 19:47:10 info: Get devices successful: 6 devices found
+2026-04-12 19:47:10 info: Get maintenance plans successful: 5 plans found
+2026-04-12 19:47:10 info: Get maintenances successful: 4 records found
+2026-04-12 19:53:30 info: Get users successful: 6 users found
+2026-04-12 19:54:14 info: Get current user successful: User 1
+2026-04-12 19:54:15 info: Get devices successful: 6 devices found
+2026-04-12 19:54:15 info: Get maintenance plans successful: 5 plans found
+2026-04-12 19:54:15 info: Get maintenances successful: 4 records found
+2026-04-12 19:55:04 info: Get devices from cache
+2026-04-12 19:55:04 info: Get maintenance plans from cache
+2026-04-12 19:55:04 info: Get maintenances from cache
+2026-04-12 19:56:09 info: Get devices from cache
+2026-04-12 19:56:09 info: Get maintenance plans from cache
+2026-04-12 19:56:09 info: Get maintenances from cache
+2026-04-12 19:56:31 info: Get devices from cache
+2026-04-12 19:56:31 info: Get maintenance plans from cache
+2026-04-12 19:56:31 info: Get maintenances from cache
+2026-04-12 19:56:44 info: Get users successful: 6 users found
+2026-04-12 19:56:47 info: Get users successful: 6 users found
+2026-04-12 19:57:18 info: Get devices from cache
+2026-04-12 19:57:18 info: Get maintenance plans from cache
+2026-04-12 19:57:18 info: Get maintenances from cache
+2026-04-12 19:57:22 info: Get devices from cache
+2026-04-12 19:57:22 info: Get maintenance plans from cache
+2026-04-12 19:57:22 info: Get maintenances from cache
+2026-04-12 19:57:37 info: Get users successful: 6 users found
+2026-04-12 19:57:50 info: Get users successful: 6 users found
+2026-04-12 19:57:58 info: Get current user successful: User 1
+2026-04-12 19:57:59 info: Get devices from cache
+2026-04-12 19:57:59 info: Get maintenance plans from cache
+2026-04-12 19:57:59 info: Get maintenances from cache
+2026-04-12 19:58:32 info: Get devices from cache
+2026-04-12 19:58:32 info: Get maintenance plans from cache
+2026-04-12 19:58:32 info: Get maintenances from cache
+2026-04-12 19:58:51 info: Get devices from cache
+2026-04-12 19:58:51 info: Get maintenance plans from cache
+2026-04-12 19:58:51 info: Get maintenances from cache
+2026-04-12 19:58:55 info: Get devices from cache
+2026-04-12 19:58:55 info: Get maintenance plans from cache
+2026-04-12 19:58:55 info: Get maintenances from cache
+2026-04-12 19:58:57 info: Get users successful: 6 users found
+2026-04-12 19:59:15 info: Get devices successful: 6 devices found
+2026-04-12 19:59:15 info: Get maintenance plans successful: 5 plans found
+2026-04-12 19:59:15 info: Get maintenances successful: 4 records found
+2026-04-12 19:59:37 info: Get devices from cache
+2026-04-12 19:59:37 info: Get maintenance plans from cache
+2026-04-12 19:59:37 info: Get maintenances from cache
+2026-04-12 19:59:47 info: Get devices from cache
+2026-04-12 19:59:47 info: Get maintenance plans from cache
+2026-04-12 19:59:47 info: Get maintenances from cache
+2026-04-12 20:00:01 info: Get devices from cache
+2026-04-12 20:00:01 info: Get maintenance plans from cache
+2026-04-12 20:00:01 info: Get maintenances from cache
+2026-04-12 20:01:53 info: Get current user successful: User 1
+2026-04-12 20:02:07 info: Get current user successful: User 1
+2026-04-12 20:02:08 info: Get devices from cache
+2026-04-12 20:02:08 info: Get maintenance plans from cache
+2026-04-12 20:02:08 info: Get maintenances from cache
+2026-04-12 20:02:09 info: Get users successful: 6 users found
+2026-04-12 20:05:14 info: Server is running on port 3001
+2026-04-12 20:05:14 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 20:05:14 info: Redis connected successfully
+2026-04-12 20:05:19 info: Get users successful: 6 users found
+2026-04-12 20:07:08 info: Get users successful: 6 users found
+2026-04-12 20:07:08 info: Get maintenances successful: 4 records found
+2026-04-12 20:07:08 info: Get devices successful: 6 devices found
+2026-04-12 20:07:08 info: Get maintenance plans successful: 5 plans found
+2026-04-12 20:07:53 info: Update maintenance plan successful: Plan 5
+2026-04-12 20:07:53 info: Get maintenance plans successful: 5 plans found
+2026-04-12 20:09:01 info: Get devices from cache
+2026-04-12 20:09:01 info: Get maintenance plans from cache
+2026-04-12 20:09:01 info: Get maintenances from cache
+2026-04-12 20:09:01 info: Get devices from cache
+2026-04-12 20:09:01 info: Get maintenance plans from cache
+2026-04-12 20:09:01 info: Get maintenances from cache
+2026-04-12 20:09:01 info: Get devices from cache
+2026-04-12 20:09:01 info: Get maintenance plans from cache
+2026-04-12 20:09:01 info: Get maintenances from cache
+2026-04-12 20:09:02 info: Get current user successful: User 1
+2026-04-12 20:09:04 info: Get devices from cache
+2026-04-12 20:09:04 info: Get maintenance plans from cache
+2026-04-12 20:09:04 info: Get maintenances from cache
+2026-04-12 20:09:16 info: Get users successful: 6 users found
+2026-04-12 20:09:19 info: Get users successful: 6 users found
+2026-04-12 20:09:21 info: Get users successful: 6 users found
+2026-04-12 20:10:21 info: Get devices from cache
+2026-04-12 20:10:21 info: Get maintenance plans from cache
+2026-04-12 20:10:21 info: Get maintenances from cache
+2026-04-12 20:11:39 info: Get devices from cache
+2026-04-12 20:11:39 info: Get maintenance plans from cache
+2026-04-12 20:11:39 info: Get maintenances from cache
+2026-04-12 20:17:26 info: Get devices successful: 6 devices found
+2026-04-12 20:17:26 info: Get maintenances successful: 4 records found
+2026-04-12 20:17:26 info: Get maintenance plans successful: 5 plans found
+2026-04-12 20:20:22 info: Get users successful: 6 users found
+2026-04-12 20:20:24 info: Get users successful: 6 users found
+2026-04-12 20:21:26 info: Get users successful: 6 users found
+2026-04-12 20:21:32 info: Get current user successful: User 1
+2026-04-12 20:21:33 info: Get devices from cache
+2026-04-12 20:21:33 info: Get maintenance plans from cache
+2026-04-12 20:21:33 info: Get maintenances from cache
+2026-04-12 20:21:53 info: Get users successful: 6 users found
+2026-04-12 20:21:56 info: Get users successful: 6 users found
+2026-04-12 20:21:59 info: Get users successful: 6 users found
+2026-04-12 20:23:16 info: Get users successful: 6 users found
+2026-04-12 20:23:20 info: Get users successful: 6 users found
+2026-04-12 20:23:27 info: Get current user successful: User 1
+2026-04-12 20:23:28 info: Get devices successful: 6 devices found
+2026-04-12 20:23:28 info: Get maintenance plans successful: 5 plans found
+2026-04-12 20:23:28 info: Get maintenances successful: 4 records found
+2026-04-12 20:23:34 info: Get users successful: 6 users found
+2026-04-12 20:23:37 info: Get users successful: 6 users found
+2026-04-12 20:23:39 info: Get users successful: 6 users found
+2026-04-12 20:23:41 info: Get users successful: 6 users found
+2026-04-12 20:23:45 info: Get users successful: 6 users found
+2026-04-12 20:24:35 info: Get users successful: 6 users found
+2026-04-12 20:25:11 info: Get users successful: 6 users found
+2026-04-12 20:25:14 info: Get users successful: 6 users found
+2026-04-12 20:25:16 info: Get users successful: 6 users found
+2026-04-12 20:25:26 info: Update maintenance successful: Maintenance 4
+2026-04-12 20:25:26 info: Get maintenance plans from cache
+2026-04-12 20:28:11 info: Get devices from cache
+2026-04-12 20:28:11 info: Get maintenance plans from cache
+2026-04-12 20:28:11 info: Get maintenances successful: 4 records found
+2026-04-12 20:28:26 info: Get devices from cache
+2026-04-12 20:28:26 info: Get maintenance plans from cache
+2026-04-12 20:28:26 info: Get maintenances from cache
+2026-04-12 20:28:37 info: Get maintenances from cache
+2026-04-12 20:28:37 info: Get devices successful: 6 devices found
+2026-04-12 20:28:37 info: Get maintenance plans successful: 5 plans found
+2026-04-12 20:28:49 info: Get devices from cache
+2026-04-12 20:28:49 info: Get maintenance plans from cache
+2026-04-12 20:28:49 info: Get maintenances from cache
+2026-04-12 20:34:40 info: Get users successful: 6 users found
+2026-04-12 20:34:45 info: Get users successful: 6 users found
+2026-04-12 20:34:50 info: Get users successful: 6 users found
+2026-04-12 20:34:52 info: Get users successful: 6 users found
+2026-04-12 20:35:08 info: Create maintenance successful: Maintenance 5
+2026-04-12 20:35:08 info: Get maintenances successful: 5 records found
+2026-04-12 20:35:32 info: Get users successful: 6 users found
+2026-04-12 21:02:39 info: Get current user successful: User 1
+2026-04-12 21:02:39 info: Get devices successful: 6 devices found
+2026-04-12 21:02:39 info: Get maintenance plans successful: 5 plans found
+2026-04-12 21:02:39 info: Get maintenances successful: 5 records found
+2026-04-12 21:02:43 info: Get users successful: 6 users found
+2026-04-12 21:02:46 info: Get users successful: 6 users found
+2026-04-12 21:03:38 info: Get users successful: 6 users found
+2026-04-12 21:03:42 info: Get users successful: 6 users found
+2026-04-12 21:06:54 info: Get devices from cache
+2026-04-12 21:06:54 info: Get maintenance plans from cache
+2026-04-12 21:06:54 info: Get maintenances from cache
+2026-04-12 21:06:56 info: Get devices from cache
+2026-04-12 21:06:56 info: Get maintenance plans from cache
+2026-04-12 21:06:56 info: Get maintenances from cache
+2026-04-12 21:08:18 info: Get devices successful: 6 devices found
+2026-04-12 21:08:18 info: Get maintenance plans successful: 5 plans found
+2026-04-12 21:08:18 info: Get maintenances successful: 5 records found
+2026-04-12 21:08:21 info: Get devices from cache
+2026-04-12 21:08:21 info: Get maintenance plans from cache
+2026-04-12 21:08:21 info: Get maintenances from cache
+2026-04-12 21:08:31 info: Get devices from cache
+2026-04-12 21:08:31 info: Get maintenance plans from cache
+2026-04-12 21:08:31 info: Get maintenances from cache
+2026-04-12 21:08:32 info: Get devices from cache
+2026-04-12 21:08:32 info: Get maintenance plans from cache
+2026-04-12 21:08:32 info: Get maintenances from cache
+2026-04-12 21:08:34 info: Get devices from cache
+2026-04-12 21:08:34 info: Get maintenance plans from cache
+2026-04-12 21:08:34 info: Get maintenances from cache
+2026-04-12 21:08:35 info: Get devices from cache
+2026-04-12 21:08:35 info: Get maintenance plans from cache
+2026-04-12 21:08:35 info: Get maintenances from cache
+2026-04-12 21:08:57 info: Get devices from cache
+2026-04-12 21:08:57 info: Get maintenance plans from cache
+2026-04-12 21:08:57 info: Get maintenances from cache
+2026-04-12 21:09:06 info: Get devices from cache
+2026-04-12 21:09:06 info: Get maintenance plans from cache
+2026-04-12 21:09:06 info: Get maintenances from cache
+2026-04-12 21:09:21 info: Get devices from cache
+2026-04-12 21:09:21 info: Get maintenance plans from cache
+2026-04-12 21:09:21 info: Get maintenances from cache
+2026-04-12 21:09:24 info: Get devices from cache
+2026-04-12 21:09:24 info: Get maintenance plans from cache
+2026-04-12 21:09:24 info: Get maintenances from cache
+2026-04-12 21:09:26 info: Get devices from cache
+2026-04-12 21:09:26 info: Get maintenance plans from cache
+2026-04-12 21:09:26 info: Get maintenances from cache
+2026-04-12 21:09:28 info: Get devices from cache
+2026-04-12 21:09:28 info: Get maintenance plans from cache
+2026-04-12 21:09:28 info: Get maintenances from cache
+2026-04-12 21:09:29 info: Get devices from cache
+2026-04-12 21:09:29 info: Get maintenance plans from cache
+2026-04-12 21:09:29 info: Get maintenances from cache
+2026-04-12 21:10:30 info: Get users successful: 6 users found
+2026-04-12 21:10:34 info: Get users successful: 6 users found
+2026-04-12 21:10:38 info: Get users successful: 6 users found
+2026-04-12 21:10:54 info: Get users successful: 6 users found
+2026-04-12 21:14:25 info: Get devices successful: 6 devices found
+2026-04-12 21:14:25 info: Get maintenances successful: 5 records found
+2026-04-12 21:14:25 info: Get maintenance plans successful: 5 plans found
+2026-04-12 21:14:36 info: Get devices from cache
+2026-04-12 21:14:36 info: Get maintenance plans from cache
+2026-04-12 21:14:36 info: Get maintenances from cache
+2026-04-12 21:16:24 info: Get devices from cache
+2026-04-12 21:16:24 info: Get maintenance plans from cache
+2026-04-12 21:16:24 info: Get maintenances from cache
+2026-04-12 21:19:28 info: Get devices successful: 6 devices found
+2026-04-12 21:19:28 info: Get maintenance plans successful: 5 plans found
+2026-04-12 21:19:28 info: Get maintenances successful: 5 records found
+2026-04-12 21:19:33 info: Get devices from cache
+2026-04-12 21:19:33 info: Get maintenance plans from cache
+2026-04-12 21:19:33 info: Get maintenances from cache
+2026-04-12 21:19:34 info: Get devices from cache
+2026-04-12 21:19:34 info: Get maintenance plans from cache
+2026-04-12 21:19:34 info: Get maintenances from cache
+2026-04-12 21:19:38 info: Get devices from cache
+2026-04-12 21:19:38 info: Get maintenance plans from cache
+2026-04-12 21:19:38 info: Get maintenances from cache
+2026-04-12 21:19:39 info: Get devices from cache
+2026-04-12 21:19:39 info: Get maintenance plans from cache
+2026-04-12 21:19:39 info: Get maintenances from cache
+2026-04-12 21:19:45 info: Get devices from cache
+2026-04-12 21:19:45 info: Get maintenance plans from cache
+2026-04-12 21:19:45 info: Get maintenances from cache
+2026-04-12 21:19:50 info: Get devices from cache
+2026-04-12 21:19:50 info: Get maintenance plans from cache
+2026-04-12 21:19:50 info: Get maintenances from cache
+2026-04-12 21:19:51 info: Get devices from cache
+2026-04-12 21:19:51 info: Get maintenance plans from cache
+2026-04-12 21:19:51 info: Get maintenances from cache
+2026-04-12 21:19:53 info: Get devices from cache
+2026-04-12 21:19:53 info: Get maintenance plans from cache
+2026-04-12 21:19:53 info: Get maintenances from cache
+2026-04-12 21:20:17 info: Get devices from cache
+2026-04-12 21:20:17 info: Get maintenance plans from cache
+2026-04-12 21:20:17 info: Get maintenances from cache
+2026-04-12 21:20:22 info: Get devices from cache
+2026-04-12 21:20:22 info: Get maintenance plans from cache
+2026-04-12 21:20:22 info: Get maintenances from cache
+2026-04-12 21:20:45 info: Get devices from cache
+2026-04-12 21:20:45 info: Get maintenance plans from cache
+2026-04-12 21:20:45 info: Get maintenances from cache
+2026-04-12 21:20:56 info: Get users successful: 6 users found
+2026-04-12 21:21:02 info: Get users successful: 6 users found
+2026-04-12 21:21:05 info: Get users successful: 6 users found
+2026-04-12 21:21:07 info: Update maintenance successful: Maintenance 1
+2026-04-12 21:21:07 info: Get maintenances successful: 5 records found
+2026-04-12 21:21:09 info: Get users successful: 6 users found
+2026-04-12 21:21:15 info: Get devices from cache
+2026-04-12 21:21:15 info: Get running data successful: 14 records found
+2026-04-12 21:21:17 info: Get users successful: 6 users found
+2026-04-12 21:21:22 info: Get devices from cache
+2026-04-12 21:21:30 info: Get devices from cache
+2026-04-12 21:21:30 info: Get running data from cache
+2026-04-12 21:21:31 info: Get devices from cache
+2026-04-12 21:21:34 info: Get devices from cache
+2026-04-12 21:21:34 info: Get running data from cache
+2026-04-12 21:21:35 info: Get users successful: 6 users found
+2026-04-12 21:21:37 info: Get devices from cache
+2026-04-12 21:22:15 info: Get devices from cache
+2026-04-12 21:24:48 info: Get devices successful: 6 devices found
+2026-04-12 21:25:31 info: Get all departments successful: 5 departments found
+2026-04-12 21:25:42 info: Get devices from cache
+2026-04-12 21:25:42 info: Get maintenances from cache
+2026-04-12 21:25:42 info: Get maintenance plans successful: 5 plans found
+2026-04-12 21:25:46 info: Get devices from cache
+2026-04-12 21:25:46 info: Get users successful: 6 users found
+2026-04-12 21:25:46 info: Get repair orders successful: 6 orders found
+2026-04-12 21:26:17 info: Get devices from cache
+2026-04-12 21:56:42 info: Get devices successful: 6 devices found
+2026-04-12 22:05:18 info: Get devices successful: 6 devices found
+2026-04-12 22:07:13 info: Get current user successful: User 1
+2026-04-12 22:07:14 info: Get devices from cache
+2026-04-12 22:09:31 info: Get devices from cache
+2026-04-12 22:10:14 info: Get devices from cache
+2026-04-12 22:10:17 info: Get devices from cache
+2026-04-12 22:10:48 info: Get devices successful: 6 devices found
+2026-04-12 22:10:51 info: Get devices from cache
+2026-04-12 22:10:58 info: Get devices from cache
+2026-04-12 22:11:01 info: Get devices from cache
+2026-04-12 22:11:06 info: Get devices from cache
+2026-04-12 22:11:49 info: Get devices from cache
+2026-04-12 22:11:49 info: Get devices from cache
+2026-04-12 22:11:56 info: Get current user successful: User 1
+2026-04-12 22:11:57 info: Get devices from cache
+2026-04-12 22:12:10 info: Get devices from cache
+2026-04-12 22:12:14 info: Get current user successful: User 1
+2026-04-12 22:12:15 info: Get devices from cache
+2026-04-12 22:12:18 info: Get devices from cache
+2026-04-12 22:12:52 info: Get devices from cache
+2026-04-12 22:12:53 info: Get devices from cache
+2026-04-12 22:13:47 info: Get devices from cache
+2026-04-12 22:45:30 info: Get devices successful: 6 devices found
+2026-04-12 22:45:36 info: Get devices from cache
+2026-04-12 22:51:48 info: Get devices successful: 6 devices found
+2026-04-12 22:52:24 info: Get devices from cache
+2026-04-12 22:52:25 info: Get devices from cache
+2026-04-12 22:52:26 info: Get devices from cache
+2026-04-12 22:52:26 info: Get devices from cache
+2026-04-12 22:52:26 info: Get devices from cache
+2026-04-12 22:54:18 info: Get devices from cache
+2026-04-12 22:54:41 info: Get devices from cache
+2026-04-12 22:54:43 info: Get devices from cache
+2026-04-12 22:54:45 info: Get devices from cache
+2026-04-12 22:54:46 info: Get devices from cache
+2026-04-12 22:54:47 info: Get devices from cache
+2026-04-12 22:55:50 info: Get devices from cache
+2026-04-12 22:56:56 info: Get devices successful: 6 devices found
+2026-04-12 23:08:45 warn: Login failed: Invalid password for user admin
+2026-04-12 23:08:45 error: Login error: Invalid username or password
+2026-04-12 23:09:30 warn: Register failed: Username admin already exists
+2026-04-12 23:09:30 error: Register error: Username already exists
+2026-04-12 23:09:30 error: Register error: Incorrect integer value: 'staff' for column 'roleId' at row 1
+2026-04-12 23:09:30 warn: Login failed: Invalid password for user admin
+2026-04-12 23:09:30 error: Login error: Invalid username or password
+2026-04-12 23:11:49 info: Get devices successful: 6 devices found
+2026-04-12 23:11:56 info: Get devices from cache
+2026-04-12 23:22:35 info: Get devices successful: 6 devices found
+2026-04-12 23:22:39 info: Get devices from cache
+2026-04-12 23:22:43 info: Get current user successful: User 1
+2026-04-12 23:22:44 info: Get devices from cache
+2026-04-12 23:22:46 info: Get devices from cache
+2026-04-12 23:22:48 info: Get devices from cache
+2026-04-12 23:24:14 info: Get devices from cache
+2026-04-12 23:24:14 info: Get running data successful: 14 records found
+2026-04-12 23:24:16 info: Get devices from cache
+2026-04-12 23:24:48 info: Server is running on port 3001
+2026-04-12 23:24:48 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 23:24:48 info: Redis connected successfully
+2026-04-12 23:24:59 warn: Login failed: Invalid password for user admin
+2026-04-12 23:24:59 error: Login error: Invalid username or password
+2026-04-12 23:25:11 warn: Register failed: Username admin already exists
+2026-04-12 23:25:11 error: Register error: Username already exists
+2026-04-12 23:25:11 error: Register error: Incorrect integer value: 'staff' for column 'roleId' at row 1
+2026-04-12 23:25:11 warn: Login failed: Invalid password for user admin
+2026-04-12 23:25:11 error: Login error: Invalid username or password
+2026-04-12 23:25:22 info: Server is running on port 3001
+2026-04-12 23:25:22 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 23:25:22 info: Redis connected successfully
+2026-04-12 23:25:40 info: Login successful: User admin
+2026-04-12 23:25:40 info: Get devices successful: 1 devices found
+2026-04-12 23:26:06 info: Login successful: User admin
+2026-04-12 23:26:06 info: Get devices successful: 1 devices found
+2026-04-12 23:27:19 info: Login successful: User admin
+2026-04-12 23:27:19 info: Get devices successful: 0 devices found
+2026-04-12 23:27:52 info: Server is running on port 3001
+2026-04-12 23:27:52 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 23:27:52 info: Redis connected successfully
+2026-04-12 23:28:42 info: Login successful: User admin
+2026-04-12 23:28:42 info: Get devices successful: 0 devices found
+2026-04-12 23:29:38 info: Server is running on port 3001
+2026-04-12 23:29:38 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 23:29:38 info: Redis connected successfully
+2026-04-12 23:29:47 info: Login successful: User admin
+2026-04-12 23:29:47 info: Get devices successful: 1 devices found
+2026-04-12 23:30:21 info: Server is running on port 3001
+2026-04-12 23:30:21 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 23:30:21 info: Redis connected successfully
+2026-04-12 23:30:32 info: Login successful: User admin
+2026-04-12 23:30:32 info: Get devices successful: 1 devices found
+2026-04-12 23:31:00 info: Server is running on port 3001
+2026-04-12 23:31:00 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 23:31:00 info: Redis connected successfully
+2026-04-12 23:31:55 info: Get devices successful: 1 devices found
+2026-04-12 23:31:57 info: Get devices successful: 0 devices found
+2026-04-12 23:32:28 info: Get devices successful: 6 devices found
+2026-04-12 23:32:30 info: Get devices successful: 5 devices found
+2026-04-12 23:32:32 info: Get devices successful: 0 devices found
+2026-04-12 23:32:34 info: Get devices successful: 6 devices found
+2026-04-12 23:32:34 info: Get running data successful: 14 records found
+2026-04-12 23:32:35 info: Get users successful: 6 users found
+2026-04-12 23:32:44 info: Get devices successful: 6 devices found
+2026-04-12 23:32:44 info: Get maintenance plans successful: 5 plans found
+2026-04-12 23:32:44 info: Get maintenances successful: 5 records found
+2026-04-12 23:32:49 info: Get users successful: 6 users found
+2026-04-12 23:32:53 info: Get devices successful: 6 devices found
+2026-04-12 23:32:57 info: Get devices successful: 6 devices found
+2026-04-12 23:32:57 info: Get running data from cache
+2026-04-12 23:32:57 info: Get devices successful: 6 devices found
+2026-04-12 23:32:57 info: Get maintenance plans from cache
+2026-04-12 23:32:57 info: Get maintenances from cache
+2026-04-12 23:33:00 info: Get users successful: 6 users found
+2026-04-12 23:33:03 info: Get users successful: 6 users found
+2026-04-12 23:33:13 info: Get users successful: 6 users found
+2026-04-12 23:33:17 info: Get devices successful: 6 devices found
+2026-04-12 23:33:17 info: Get users successful: 6 users found
+2026-04-12 23:33:17 info: Get repair orders successful: 6 orders found
+2026-04-12 23:33:44 info: Update device status to fault: Device 6
+2026-04-12 23:33:44 info: Create repair order successful: Order 7
+2026-04-12 23:33:44 info: Get repair orders successful: 7 orders found
+2026-04-12 23:33:47 info: Get users successful: 2 users found
+2026-04-12 23:33:51 info: Update repair order successful: Order 7
+2026-04-12 23:33:51 info: Get repair orders successful: 7 orders found
+2026-04-12 23:33:53 info: Get devices successful: 6 devices found
+2026-04-12 23:34:10 info: Get repair orders from cache
+2026-04-12 23:34:10 info: Get devices successful: 6 devices found
+2026-04-12 23:34:10 info: Get users successful: 6 users found
+2026-04-12 23:34:17 info: Get devices successful: 6 devices found
+2026-04-12 23:34:21 info: Scrap device successful: Device 6
+2026-04-12 23:34:21 info: Get devices successful: 6 devices found
+2026-04-12 23:34:25 info: Get devices successful: 6 devices found
+2026-04-12 23:34:25 info: Get users successful: 6 users found
+2026-04-12 23:34:25 info: Get repair orders from cache
+2026-04-12 23:38:50 info: Server is running on port 3001
+2026-04-12 23:38:50 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 23:38:50 info: Redis connected successfully
+2026-04-12 23:39:14 info: Server is running on port 3001
+2026-04-12 23:39:14 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 23:39:14 info: Redis connected successfully
+2026-04-12 23:39:26 info: Login successful: User admin
+2026-04-12 23:39:26 info: Get all departments successful: 5 departments found
+2026-04-12 23:39:26 info: Get users successful: 6 users found
+2026-04-12 23:40:14 info: Get current user successful: User 1
+2026-04-12 23:40:15 info: Get all departments successful: 5 departments found
+2026-04-12 23:40:15 info: Get users successful: 6 users found
+2026-04-12 23:40:15 info: Get all departments successful: 5 departments found
+2026-04-12 23:42:01 info: Get devices successful: 6 devices found
+2026-04-12 23:42:01 info: Get users successful: 6 users found
+2026-04-12 23:42:01 info: Get repair orders successful: 7 orders found
+2026-04-12 23:42:02 info: Get devices successful: 6 devices found
+2026-04-12 23:42:02 info: Get maintenance plans successful: 5 plans found
+2026-04-12 23:42:02 info: Get maintenances successful: 5 records found
+2026-04-12 23:42:10 info: Get devices successful: 6 devices found
+2026-04-12 23:42:10 info: Get running data successful: 14 records found
+2026-04-12 23:42:11 info: Get devices successful: 6 devices found
+2026-04-12 23:42:13 info: Get device status count successful
+2026-04-12 23:42:13 info: Get annual maintenance cost successful for year 2026
+2026-04-12 23:42:13 info: Get maintenance type count successful
+2026-04-12 23:42:13 info: Get expiring warranties successful: 1 devices found
+2026-04-12 23:42:14 info: Get devices successful: 6 devices found
+2026-04-12 23:42:15 info: Get device status count successful
+2026-04-12 23:42:15 info: Get annual maintenance cost successful for year 2026
+2026-04-12 23:42:15 info: Get maintenance type count successful
+2026-04-12 23:42:15 info: Get expiring warranties successful: 1 devices found
+2026-04-12 23:42:20 info: Get device status count successful
+2026-04-12 23:42:20 info: Get annual maintenance cost successful for year 2023
+2026-04-12 23:42:20 info: Get maintenance type count successful
+2026-04-12 23:42:20 info: Get expiring warranties successful: 1 devices found
+2026-04-12 23:42:22 info: Get device status count successful
+2026-04-12 23:42:22 info: Get annual maintenance cost successful for year 2026
+2026-04-12 23:42:22 info: Get maintenance type count successful
+2026-04-12 23:42:22 info: Get expiring warranties successful: 1 devices found
+2026-04-12 23:42:37 info: Get current user successful: User 1
+2026-04-12 23:42:38 info: Get device status count successful
+2026-04-12 23:42:38 info: Get annual maintenance cost successful for year 2026
+2026-04-12 23:42:38 info: Get maintenance type count successful
+2026-04-12 23:42:38 info: Get expiring warranties successful: 1 devices found
+2026-04-12 23:43:15 info: Get current user successful: User 1
+2026-04-12 23:44:53 info: Get current user successful: User 1
+2026-04-12 23:44:53 info: Get device status count successful
+2026-04-12 23:44:53 info: Get annual maintenance cost successful for year 2026
+2026-04-12 23:44:53 info: Get maintenance type count successful
+2026-04-12 23:44:53 info: Get expiring warranties successful: 1 devices found
+2026-04-12 23:45:10 info: Get repair orders from cache
+2026-04-12 23:45:10 info: Get devices successful: 6 devices found
+2026-04-12 23:45:10 info: Get users successful: 6 users found
+2026-04-12 23:45:11 info: Get devices successful: 6 devices found
+2026-04-12 23:45:11 info: Get maintenance plans from cache
+2026-04-12 23:45:11 info: Get maintenances from cache
+2026-04-12 23:47:39 info: Get current user successful: User 1
+2026-04-12 23:47:40 info: Get devices successful: 6 devices found
+2026-04-12 23:47:40 info: Get maintenance plans successful: 5 plans found
+2026-04-12 23:47:40 info: Get maintenances successful: 5 records found
+2026-04-12 23:49:55 info: Get devices successful: 6 devices found
+2026-04-12 23:49:55 info: Get running data successful: 14 records found
+2026-04-12 23:49:56 info: Get devices successful: 6 devices found
+2026-04-12 23:49:57 info: Get device status count successful
+2026-04-12 23:49:57 info: Get annual maintenance cost successful for year 2026
+2026-04-12 23:49:57 info: Get maintenance type count successful
+2026-04-12 23:49:57 info: Get expiring warranties successful: 1 devices found
+2026-04-12 23:50:04 info: Get devices successful: 6 devices found
+2026-04-12 23:50:06 info: Get all departments successful: 5 departments found
+2026-04-12 23:50:16 info: Get device status count successful
+2026-04-12 23:50:16 info: Get annual maintenance cost successful for year 2026
+2026-04-12 23:50:16 info: Get maintenance type count successful
+2026-04-12 23:50:16 info: Get expiring warranties successful: 1 devices found
+2026-04-12 23:52:12 info: Get current user successful: User 1
+2026-04-12 23:52:13 info: Get device status count successful
+2026-04-12 23:52:13 info: Get annual maintenance cost successful for year 2026
+2026-04-12 23:52:13 info: Get maintenance type count successful
+2026-04-12 23:52:13 info: Get expiring warranties successful: 1 devices found
+2026-04-12 23:52:15 info: Get devices successful: 6 devices found
+2026-04-12 23:52:16 info: Get devices successful: 6 devices found
+2026-04-12 23:52:16 info: Get running data from cache
+2026-04-12 23:52:17 info: Get devices successful: 6 devices found
+2026-04-12 23:52:17 info: Get maintenance plans from cache
+2026-04-12 23:52:17 info: Get maintenances from cache
+2026-04-12 23:52:19 info: Get devices successful: 6 devices found
+2026-04-12 23:52:19 info: Get users successful: 6 users found
+2026-04-12 23:52:19 info: Get repair orders successful: 7 orders found
+2026-04-12 23:53:16 info: Server is running on port 3001
+2026-04-12 23:53:16 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-12 23:53:16 info: Redis connected successfully
+2026-04-12 23:55:02 info: Get devices successful: 6 devices found
+2026-04-12 23:55:02 info: Get maintenances successful: 5 records found
+2026-04-12 23:55:02 info: Get maintenance plans successful: 5 plans found
+2026-04-12 23:59:11 info: Get current user successful: User 1
+2026-04-12 23:59:12 info: Get devices successful: 6 devices found
+2026-04-12 23:59:12 info: Get maintenance plans from cache
+2026-04-12 23:59:12 info: Get maintenances from cache
+2026-04-13 00:00:12 info: Get current user successful: User 1
+2026-04-13 00:00:12 info: Get devices successful: 6 devices found
+2026-04-13 00:00:12 info: Get maintenance plans successful: 5 plans found
+2026-04-13 00:00:12 info: Get maintenances successful: 5 records found
+2026-04-13 00:04:03 info: Get current user successful: User 1
+2026-04-13 00:04:05 info: Get devices successful: 6 devices found
+2026-04-13 00:04:05 info: Get maintenance plans from cache
+2026-04-13 00:04:11 info: Get device status count successful
+2026-04-13 00:04:11 info: Get annual maintenance cost successful for year 2026
+2026-04-13 00:04:11 info: Get maintenance type count successful
+2026-04-13 00:04:11 info: Get expiring warranties successful: 1 devices found
+2026-04-13 00:04:14 info: Get current user successful: User 1
+2026-04-13 00:04:15 info: Get device status count successful
+2026-04-13 00:04:15 info: Get annual maintenance cost successful for year 2026
+2026-04-13 00:04:15 info: Get maintenance type count successful
+2026-04-13 00:04:15 info: Get expiring warranties successful: 1 devices found
+2026-04-13 00:04:16 info: Get current user successful: User 1
+2026-04-13 00:04:18 info: Get device status count successful
+2026-04-13 00:04:18 info: Get annual maintenance cost successful for year 2026
+2026-04-13 00:04:18 info: Get maintenance type count successful
+2026-04-13 00:04:18 info: Get expiring warranties successful: 1 devices found
+2026-04-13 00:04:29 info: Get devices successful: 6 devices found
+2026-04-13 00:04:32 info: Get devices successful: 0 devices found
+2026-04-13 00:04:33 info: Get devices successful: 0 devices found
+2026-04-13 00:04:34 info: Get devices successful: 1 devices found
+2026-04-13 00:04:38 info: Get devices successful: 6 devices found
+2026-04-13 00:04:38 info: Get running data successful: 14 records found
+2026-04-13 00:04:46 info: Get device status count successful
+2026-04-13 00:04:46 info: Get annual maintenance cost successful for year 2026
+2026-04-13 00:04:46 info: Get maintenance type count successful
+2026-04-13 00:04:46 info: Get expiring warranties successful: 1 devices found
+2026-04-13 00:04:49 info: Get devices successful: 6 devices found
+2026-04-13 00:04:49 info: Get running data from cache
+2026-04-13 00:04:59 info: Get running data from cache
+2026-04-13 00:04:59 info: Get devices successful: 6 devices found
+2026-04-13 00:05:05 info: Get devices successful: 6 devices found
+2026-04-13 00:05:05 info: Get maintenance plans from cache
+2026-04-13 00:05:06 info: Get devices successful: 6 devices found
+2026-04-13 00:05:06 info: Get maintenances from cache
+2026-04-13 00:05:08 info: Get devices successful: 6 devices found
+2026-04-13 00:05:08 info: Get users successful: 6 users found
+2026-04-13 00:05:08 info: Get repair orders successful: 7 orders found
+2026-04-13 00:05:16 info: Get devices successful: 6 devices found
+2026-04-13 00:05:16 info: Get maintenances successful: 5 records found
+2026-04-13 00:05:18 info: Get devices successful: 6 devices found
+2026-04-13 00:05:18 info: Get maintenance plans successful: 5 plans found
+2026-04-13 00:05:22 info: Get device status count successful
+2026-04-13 00:05:22 info: Get annual maintenance cost successful for year 2026
+2026-04-13 00:05:22 info: Get maintenance type count successful
+2026-04-13 00:05:22 info: Get expiring warranties successful: 1 devices found
+2026-04-13 00:06:37 info: Server is running on port 3001
+2026-04-13 00:06:37 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:06:37 info: Redis connected successfully
+2026-04-13 00:07:05 info: Server is running on port 3001
+2026-04-13 00:07:05 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:07:05 info: Redis connected successfully
+2026-04-13 00:07:13 info: Server is running on port 3001
+2026-04-13 00:07:13 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:07:13 info: Redis connected successfully
+2026-04-13 00:08:23 info: Get current user successful: User 1
+2026-04-13 00:08:24 info: Get device status count successful
+2026-04-13 00:08:24 info: Get annual maintenance cost successful for year 2026
+2026-04-13 00:08:24 info: Get maintenance type count successful
+2026-04-13 00:08:24 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 00:08:33 info: Get devices successful: 6 devices found
+2026-04-13 00:08:35 info: Get devices successful: 6 devices found
+2026-04-13 00:08:35 info: Get running data from cache
+2026-04-13 00:09:57 info: Get current user successful: User 1
+2026-04-13 00:10:01 info: Get current user successful: User 1
+2026-04-13 00:10:02 info: Get devices successful: 6 devices found
+2026-04-13 00:10:02 info: Get running data successful: 14 records found
+2026-04-13 00:10:13 info: Get all departments successful: 5 departments found
+2026-04-13 00:10:13 info: Get users successful: 6 users found
+2026-04-13 00:10:13 info: Get all departments successful: 5 departments found
+2026-04-13 00:11:01 info: Get all departments successful: 5 departments found
+2026-04-13 00:11:26 info: Get all departments successful: 5 departments found
+2026-04-13 00:11:26 info: Get all departments successful: 5 departments found
+2026-04-13 00:11:26 info: Get users successful: 6 users found
+2026-04-13 00:11:26 info: Get all departments successful: 5 departments found
+2026-04-13 00:14:41 info: Get all departments successful: 5 departments found
+2026-04-13 00:14:42 info: Get all departments successful: 5 departments found
+2026-04-13 00:14:42 info: Get users successful: 6 users found
+2026-04-13 00:14:42 info: Get all departments successful: 5 departments found
+2026-04-13 00:14:54 info: Get all departments successful: 5 departments found
+2026-04-13 00:14:55 info: Get all departments successful: 5 departments found
+2026-04-13 00:14:55 info: Get users successful: 6 users found
+2026-04-13 00:14:55 info: Get all departments successful: 5 departments found
+2026-04-13 00:14:56 info: Get devices successful: 6 devices found
+2026-04-13 00:14:56 info: Get users successful: 6 users found
+2026-04-13 00:14:56 info: Get repair orders successful: 7 orders found
+2026-04-13 00:16:33 info: Get devices successful: 6 devices found
+2026-04-13 00:16:33 info: Get maintenance plans successful: 5 plans found
+2026-04-13 00:16:34 info: Get devices successful: 6 devices found
+2026-04-13 00:16:34 info: Get maintenances successful: 5 records found
+2026-04-13 00:16:37 info: Get devices successful: 6 devices found
+2026-04-13 00:16:37 info: Get running data successful: 14 records found
+2026-04-13 00:16:39 info: Get devices successful: 6 devices found
+2026-04-13 00:16:41 info: Get device status count successful
+2026-04-13 00:16:41 info: Get annual maintenance cost successful for year 2026
+2026-04-13 00:16:41 info: Get maintenance type count successful
+2026-04-13 00:16:41 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 00:16:54 info: Server is running on port 3001
+2026-04-13 00:16:54 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:16:54 info: Redis connected successfully
+2026-04-13 00:16:54 info: Server is running on port 3001
+2026-04-13 00:16:54 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:16:54 info: Redis connected successfully
+2026-04-13 00:21:24 info: Get devices successful: 6 devices found
+2026-04-13 00:21:47 info: Get users successful: 6 users found
+2026-04-13 00:21:47 info: Get all departments successful: 5 departments found
+2026-04-13 00:21:47 info: Get all departments successful: 5 departments found
+2026-04-13 00:21:55 info: Get current user successful: User 1
+2026-04-13 00:21:56 info: Get all departments successful: 5 departments found
+2026-04-13 00:21:56 info: Get users successful: 6 users found
+2026-04-13 00:21:56 info: Get all departments successful: 5 departments found
+2026-04-13 00:22:03 info: Get all departments successful: 5 departments found
+2026-04-13 00:22:32 info: Server is running on port 3001
+2026-04-13 00:22:32 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:22:32 info: Redis connected successfully
+2026-04-13 00:24:05 info: Server is running on port 3001
+2026-04-13 00:24:05 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:24:05 info: Redis connected successfully
+2026-04-13 00:27:22 info: Get all departments successful: 5 departments found
+2026-04-13 00:27:22 info: Get users successful: 6 users found
+2026-04-13 00:27:22 info: Get all departments successful: 5 departments found
+2026-04-13 00:27:23 info: Get all departments successful: 5 departments found
+2026-04-13 00:27:40 info: Get devices successful: 6 devices found
+2026-04-13 00:27:40 info: Get users successful: 6 users found
+2026-04-13 00:27:40 info: Get repair orders successful: 7 orders found
+2026-04-13 00:27:44 info: Get devices successful: 6 devices found
+2026-04-13 00:27:44 info: Get maintenance plans successful: 5 plans found
+2026-04-13 00:27:47 info: Get devices successful: 6 devices found
+2026-04-13 00:27:47 info: Get users successful: 6 users found
+2026-04-13 00:27:47 info: Get repair orders from cache
+2026-04-13 00:27:49 info: Get devices successful: 6 devices found
+2026-04-13 00:27:49 info: Get maintenance plans from cache
+2026-04-13 00:27:51 info: Get devices successful: 6 devices found
+2026-04-13 00:27:51 info: Get maintenances successful: 5 records found
+2026-04-13 00:27:54 info: Get devices successful: 6 devices found
+2026-04-13 00:27:54 info: Get running data successful: 14 records found
+2026-04-13 00:27:56 info: Get devices successful: 6 devices found
+2026-04-13 00:27:59 info: Get devices successful: 6 devices found
+2026-04-13 00:27:59 info: Get users successful: 6 users found
+2026-04-13 00:27:59 info: Get repair orders from cache
+2026-04-13 00:28:18 info: Server is running on port 3001
+2026-04-13 00:28:18 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:28:18 info: Redis connected successfully
+2026-04-13 00:28:39 info: Server is running on port 3001
+2026-04-13 00:28:39 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:28:39 info: Redis connected successfully
+2026-04-13 00:28:45 info: Server is running on port 3001
+2026-04-13 00:28:45 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:28:45 info: Redis connected successfully
+2026-04-13 00:29:21 info: Server is running on port 3001
+2026-04-13 00:29:21 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:29:21 info: Redis connected successfully
+2026-04-13 00:45:14 info: Get user by id successful: User 1
+2026-04-13 00:45:15 info: Get device status count successful
+2026-04-13 00:45:15 info: Get annual maintenance cost successful for year 2026
+2026-04-13 00:45:15 info: Get maintenance type count successful
+2026-04-13 00:45:15 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 00:45:18 info: Get devices successful: 6 devices found
+2026-04-13 00:45:20 info: Get devices successful: 6 devices found
+2026-04-13 00:45:20 info: Get running data successful: 14 records found
+2026-04-13 00:45:22 info: Get devices successful: 6 devices found
+2026-04-13 00:45:22 info: Get maintenance plans successful: 5 plans found
+2026-04-13 00:45:23 info: Get devices successful: 6 devices found
+2026-04-13 00:45:23 info: Get maintenances successful: 5 records found
+2026-04-13 00:45:25 info: Get devices successful: 6 devices found
+2026-04-13 00:45:25 info: Get users successful: 6 users found
+2026-04-13 00:45:25 info: Get repair orders successful: 7 orders found
+2026-04-13 00:46:55 info: Server is running on port 3001
+2026-04-13 00:46:55 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:46:55 info: Redis connected successfully
+2026-04-13 00:47:02 info: Server is running on port 3001
+2026-04-13 00:47:02 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:47:02 info: Redis connected successfully
+2026-04-13 00:48:13 info: Get user by id from cache: User 1
+2026-04-13 00:48:15 info: Get repair orders from cache
+2026-04-13 00:48:15 info: Get devices successful: 6 devices found
+2026-04-13 00:48:15 info: Get users successful: 6 users found
+2026-04-13 00:48:33 info: Get user by id from cache: User 1
+2026-04-13 00:48:33 info: Get repair orders from cache
+2026-04-13 00:48:33 info: Get devices successful: 6 devices found
+2026-04-13 00:48:33 info: Get users successful: 6 users found
+2026-04-13 00:48:45 error: Create repair order error: Incorrect integer value: 'WO2026041200021280' for column 'id' at row 1
+2026-04-13 00:49:54 info: Get user by id from cache: User 1
+2026-04-13 00:49:54 info: Get repair orders from cache
+2026-04-13 00:49:54 info: Get devices successful: 6 devices found
+2026-04-13 00:49:54 info: Get users successful: 6 users found
+2026-04-13 00:49:56 info: Get device status count successful
+2026-04-13 00:49:56 info: Get annual maintenance cost successful for year 2026
+2026-04-13 00:49:56 info: Get maintenance type count successful
+2026-04-13 00:49:56 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 00:49:58 info: Get devices successful: 6 devices found
+2026-04-13 00:49:59 info: Get devices successful: 6 devices found
+2026-04-13 00:49:59 info: Get running data from cache
+2026-04-13 00:50:00 info: Get devices successful: 6 devices found
+2026-04-13 00:50:00 info: Get maintenance plans from cache
+2026-04-13 00:50:01 info: Get devices successful: 6 devices found
+2026-04-13 00:50:01 info: Get maintenances from cache
+2026-04-13 00:50:10 info: Get devices successful: 6 devices found
+2026-04-13 00:50:10 info: Get maintenance plans from cache
+2026-04-13 00:50:12 info: Get devices successful: 6 devices found
+2026-04-13 00:50:12 info: Get repair orders from cache
+2026-04-13 00:50:12 info: Get users successful: 6 users found
+2026-04-13 00:50:17 info: Get all departments successful: 5 departments found
+2026-04-13 00:50:17 info: Get users successful: 6 users found
+2026-04-13 00:50:17 info: Get all departments successful: 5 departments found
+2026-04-13 00:50:18 info: Get all departments successful: 5 departments found
+2026-04-13 00:51:21 info: Server is running on port 3001
+2026-04-13 00:51:21 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:51:21 info: Redis connected successfully
+2026-04-13 00:52:05 info: Server is running on port 3001
+2026-04-13 00:52:05 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:52:05 info: Redis connected successfully
+2026-04-13 00:52:16 info: Server is running on port 3001
+2026-04-13 00:52:16 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:52:16 info: Redis connected successfully
+2026-04-13 00:52:21 info: Login successful: User 1
+2026-04-13 00:52:21 info: Update device status to fault: Device 2
+2026-04-13 00:52:21 info: Create repair order successful: Order WO2026041200029709
+2026-04-13 00:52:58 info: Server is running on port 3001
+2026-04-13 00:52:58 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:52:58 info: Redis connected successfully
+2026-04-13 00:54:21 info: Get user by id from cache: User 1
+2026-04-13 00:54:22 info: Get users successful: 6 users found
+2026-04-13 00:54:22 info: Get devices successful: 6 devices found
+2026-04-13 00:54:22 info: Get repair orders successful: 1 orders found
+2026-04-13 00:54:30 info: Get devices successful: 6 devices found
+2026-04-13 00:54:30 info: Get maintenance plans successful: 5 plans found
+2026-04-13 00:54:31 info: Get devices successful: 6 devices found
+2026-04-13 00:54:31 info: Get maintenances successful: 5 records found
+2026-04-13 00:54:33 info: Get devices successful: 6 devices found
+2026-04-13 00:54:33 info: Get users successful: 6 users found
+2026-04-13 00:54:33 info: Get repair orders from cache
+2026-04-13 00:54:34 info: Get users successful: 2 users found
+2026-04-13 00:59:52 info: Server is running on port 3001
+2026-04-13 00:59:52 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 00:59:52 info: Redis connected successfully
+2026-04-13 01:00:01 info: Server is running on port 3001
+2026-04-13 01:00:01 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:00:01 info: Redis connected successfully
+2026-04-13 01:00:27 info: Server is running on port 3001
+2026-04-13 01:00:27 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:00:27 info: Redis connected successfully
+2026-04-13 01:00:39 info: Server is running on port 3001
+2026-04-13 01:00:39 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:00:39 info: Redis connected successfully
+2026-04-13 01:00:47 info: Server is running on port 3001
+2026-04-13 01:00:47 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:00:47 info: Redis connected successfully
+2026-04-13 01:00:58 info: Server is running on port 3001
+2026-04-13 01:00:58 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:00:58 info: Redis connected successfully
+2026-04-13 01:01:43 info: Get user by id successful: User 1
+2026-04-13 01:02:27 info: Get user by id from cache: User 1
+2026-04-13 01:03:01 info: Server is running on port 3001
+2026-04-13 01:03:01 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:03:01 info: Redis connected successfully
+2026-04-13 01:04:54 info: Server is running on port 3001
+2026-04-13 01:04:54 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:04:54 info: Redis connected successfully
+2026-04-13 01:05:10 info: Login successful: User 1
+2026-04-13 01:05:19 info: Get user by id from cache: User 1
+2026-04-13 01:05:22 info: Get user by id from cache: User 1
+2026-04-13 01:05:25 info: Login successful: User 1
+2026-04-13 01:06:40 info: Server is running on port 3001
+2026-04-13 01:06:40 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:06:40 info: Redis connected successfully
+2026-04-13 01:06:50 info: Server is running on port 3001
+2026-04-13 01:06:50 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:06:50 info: Redis connected successfully
+2026-04-13 01:07:00 info: Server is running on port 3001
+2026-04-13 01:07:00 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:07:00 info: Redis connected successfully
+2026-04-13 01:07:12 info: Login successful: User 1
+2026-04-13 01:07:27 info: Login successful: User 1
+2026-04-13 01:07:50 info: Server is running on port 3001
+2026-04-13 01:07:50 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:07:50 info: Redis connected successfully
+2026-04-13 01:08:33 info: Get user by id from cache: User 1
+2026-04-13 01:09:24 info: Get user by id from cache: User 1
+2026-04-13 01:09:25 info: Get device status count successful
+2026-04-13 01:09:25 info: Get annual maintenance cost successful for year 2026
+2026-04-13 01:09:25 info: Get maintenance type count successful
+2026-04-13 01:09:25 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 01:09:50 info: Get device status count successful
+2026-04-13 01:09:50 info: Get annual maintenance cost successful for year 2026
+2026-04-13 01:09:50 info: Get maintenance type count successful
+2026-04-13 01:09:50 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 01:10:33 info: Get all departments successful: 5 departments found
+2026-04-13 01:10:34 info: Get all departments successful: 5 departments found
+2026-04-13 01:10:34 info: Get users successful: 6 users found
+2026-04-13 01:10:34 info: Get all departments successful: 5 departments found
+2026-04-13 01:11:05 info: Get user by id from cache: User 1
+2026-04-13 01:11:12 info: Get user by id from cache: User 1
+2026-04-13 01:11:37 info: Get devices successful: 6 devices found
+2026-04-13 01:11:37 info: Get running data successful: 14 records found
+2026-04-13 01:15:03 info: Get user by id successful: User 1
+2026-04-13 01:15:04 info: Get running data from cache
+2026-04-13 01:15:04 info: Get devices successful: 6 devices found
+2026-04-13 01:15:13 info: Get users successful: 6 users found
+2026-04-13 01:16:14 info: Get running data from cache
+2026-04-13 01:16:15 info: Get running data from cache
+2026-04-13 01:16:15 info: Get devices successful: 6 devices found
+2026-04-13 01:16:16 info: Get user by id from cache: User 1
+2026-04-13 01:16:17 info: Get devices successful: 6 devices found
+2026-04-13 01:16:17 info: Get running data from cache
+2026-04-13 01:16:30 info: Get user by id from cache: User 1
+2026-04-13 01:16:31 info: Get running data from cache
+2026-04-13 01:16:31 info: Get devices successful: 6 devices found
+2026-04-13 01:16:46 info: Server is running on port 3001
+2026-04-13 01:16:46 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:16:46 info: Redis connected successfully
+2026-04-13 01:17:00 info: Server is running on port 3001
+2026-04-13 01:17:00 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:17:00 info: Redis connected successfully
+2026-04-13 01:17:47 info: Get user by id from cache: User 1
+2026-04-13 01:17:49 info: Get devices successful: 6 devices found
+2026-04-13 01:17:49 info: Get running data successful: 14 records found
+2026-04-13 01:18:27 info: Get devices successful: 6 devices found
+2026-04-13 01:18:27 info: Get users successful: 6 users found
+2026-04-13 01:18:27 info: Get repair orders successful: 1 orders found
+2026-04-13 01:18:28 info: Login successful: User 1
+2026-04-13 01:18:31 info: Get users successful: 2 users found
+2026-04-13 01:18:46 info: Get all departments successful: 5 departments found
+2026-04-13 01:18:46 info: Get users successful: 6 users found
+2026-04-13 01:18:46 info: Get all departments successful: 5 departments found
+2026-04-13 01:18:47 info: Get all departments successful: 5 departments found
+2026-04-13 01:21:15 info: Server is running on port 3001
+2026-04-13 01:21:15 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:21:15 info: Redis connected successfully
+2026-04-13 01:21:46 info: Server is running on port 3001
+2026-04-13 01:21:46 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:21:46 info: Redis connected successfully
+2026-04-13 01:22:49 info: Login successful: User 1
+2026-04-13 01:23:54 info: Get user by id from cache: User 1
+2026-04-13 01:24:19 info: Backup successful: backup_equipment_management_2026-04-12T17-24-19-586Z.sql
+2026-04-13 01:24:43 info: Get user by id from cache: User 1
+2026-04-13 01:25:21 info: Get all departments successful: 5 departments found
+2026-04-13 01:25:22 info: Get all departments successful: 5 departments found
+2026-04-13 01:25:22 info: Get users successful: 6 users found
+2026-04-13 01:25:22 info: Get all departments successful: 5 departments found
+2026-04-13 01:25:25 info: Get devices successful: 6 devices found
+2026-04-13 01:25:25 info: Get users successful: 6 users found
+2026-04-13 01:25:25 info: Get repair orders successful: 1 orders found
+2026-04-13 01:25:31 info: Get devices successful: 6 devices found
+2026-04-13 01:25:31 info: Get maintenance plans successful: 5 plans found
+2026-04-13 01:25:32 info: Get devices successful: 6 devices found
+2026-04-13 01:25:32 info: Get maintenances successful: 5 records found
+2026-04-13 01:25:37 info: Get users successful: 6 users found
+2026-04-13 01:25:42 info: Get users successful: 6 users found
+2026-04-13 01:25:57 info: Get device status count successful
+2026-04-13 01:25:57 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 01:25:57 info: Get annual maintenance cost successful for year 2026
+2026-04-13 01:25:57 info: Get maintenance type count successful
+2026-04-13 01:29:47 info: Server is running on port 3001
+2026-04-13 01:29:47 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:29:47 info: Redis connected successfully
+2026-04-13 01:29:57 info: Server is running on port 3001
+2026-04-13 01:29:57 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:29:57 info: Redis connected successfully
+2026-04-13 01:30:27 info: Server is running on port 3001
+2026-04-13 01:30:27 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:30:27 info: Redis connected successfully
+2026-04-13 01:30:42 info: Server is running on port 3001
+2026-04-13 01:30:42 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:30:42 info: Redis connected successfully
+2026-04-13 01:30:52 info: Server is running on port 3001
+2026-04-13 01:30:52 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:30:52 info: Redis connected successfully
+2026-04-13 01:31:02 info: Server is running on port 3001
+2026-04-13 01:31:02 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:31:02 info: Redis connected successfully
+2026-04-13 01:31:34 info: Server is running on port 3001
+2026-04-13 01:31:34 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:31:34 info: Redis connected successfully
+2026-04-13 01:32:08 info: Server is running on port 3001
+2026-04-13 01:32:08 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:32:08 info: Redis connected successfully
+2026-04-13 01:32:32 info: Server is running on port 3001
+2026-04-13 01:32:32 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:32:32 info: Redis connected successfully
+2026-04-13 01:33:04 info: Server is running on port 3001
+2026-04-13 01:33:04 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:33:04 info: Redis connected successfully
+2026-04-13 01:33:36 info: Server is running on port 3001
+2026-04-13 01:33:36 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:33:36 info: Redis connected successfully
+2026-04-13 01:34:07 info: Server is running on port 3001
+2026-04-13 01:34:07 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:34:07 info: Redis connected successfully
+2026-04-13 01:36:47 info: Server is running on port 3001
+2026-04-13 01:36:47 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:36:47 info: Redis connected successfully
+2026-04-13 01:37:03 info: Login successful: User 1
+2026-04-13 01:37:13 info: Get user by id successful: User 1
+2026-04-13 01:37:20 info: Login successful: User 1
+2026-04-13 01:37:20 info: Update device successful: Device 2
+2026-04-13 01:38:15 info: Get user by id from cache: User 1
+2026-04-13 01:41:22 info: Get user by id from cache: User 1
+2026-04-13 01:41:55 info: Server is running on port 3001
+2026-04-13 01:41:55 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:41:55 info: Redis connected successfully
+2026-04-13 01:42:20 info: Login successful: User 1
+2026-04-13 01:47:24 info: Server is running on port 3001
+2026-04-13 01:47:24 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:47:24 info: Redis connected successfully
+2026-04-13 01:48:23 info: Login successful: User 1
+2026-04-13 01:49:31 info: Get devices successful: 6 devices found
+2026-04-13 01:52:23 info: Get devices successful: 6 devices found
+2026-04-13 01:52:23 info: Get users successful: 6 users found
+2026-04-13 01:52:23 info: Get repair orders successful: 1 orders found
+2026-04-13 01:53:13 info: Server is running on port 3001
+2026-04-13 01:53:13 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:53:13 info: Redis connected successfully
+2026-04-13 01:53:28 info: Server is running on port 3001
+2026-04-13 01:53:28 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:53:28 info: Redis connected successfully
+2026-04-13 01:53:48 info: Server is running on port 3001
+2026-04-13 01:53:48 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:53:48 info: Redis connected successfully
+2026-04-13 01:54:53 info: Get all departments successful: 5 departments found
+2026-04-13 01:54:53 info: Get users successful: 6 users found
+2026-04-13 01:54:53 info: Get all departments successful: 5 departments found
+2026-04-13 01:55:12 info: Server is running on port 3001
+2026-04-13 01:55:12 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:55:12 info: Redis connected successfully
+2026-04-13 01:55:29 info: Server is running on port 3001
+2026-04-13 01:55:29 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:55:29 info: Redis connected successfully
+2026-04-13 01:55:45 info: Server is running on port 3001
+2026-04-13 01:55:45 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 01:55:45 info: Redis connected successfully
+2026-04-13 01:56:45 info: Get user by id successful: User 1
+2026-04-13 01:57:02 info: Login successful: User 1
+2026-04-13 01:57:02 info: Update device successful: Device 2
+2026-04-13 01:57:33 info: Get user by id from cache: User 1
+2026-04-13 01:58:11 info: Get users successful: 6 users found
+2026-04-13 01:58:11 info: Get all departments successful: 5 departments found
+2026-04-13 01:58:11 info: Get all departments successful: 5 departments found
+2026-04-13 01:59:08 info: Login successful: User 1
+2026-04-13 02:00:12 info: Server is running on port 3001
+2026-04-13 02:00:12 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 02:00:12 info: Redis connected successfully
+2026-04-13 02:00:47 info: Login successful: User 1
+2026-04-13 02:01:23 info: Get user by id from cache: User 1
+2026-04-13 02:01:43 info: Get devices successful: 6 devices found
+2026-04-13 02:01:43 info: Get users successful: 6 users found
+2026-04-13 02:01:43 info: Get repair orders successful: 1 orders found
+2026-04-13 02:03:48 info: Get user by id from cache: User 1
+2026-04-13 02:04:14 info: Get user by id from cache: User 1
+2026-04-13 02:04:43 info: Get all departments successful: 5 departments found
+2026-04-13 02:04:43 info: Get users successful: 6 users found
+2026-04-13 02:04:43 info: Get all departments successful: 5 departments found
+2026-04-13 02:04:56 info: Get devices successful: 6 devices found
+2026-04-13 02:04:56 info: Get running data successful: 14 records found
+2026-04-13 02:04:58 info: Get devices successful: 6 devices found
+2026-04-13 02:06:46 info: Get user by id successful: User 1
+2026-04-13 02:06:47 info: Get devices successful: 6 devices found
+2026-04-13 02:07:57 info: Get user by id from cache: User 1
+2026-04-13 02:07:57 info: Get devices successful: 6 devices found
+2026-04-13 02:08:02 info: Get devices successful: 6 devices found
+2026-04-13 02:08:02 info: Get running data from cache
+2026-04-13 02:08:04 info: Get devices successful: 6 devices found
+2026-04-13 02:08:04 info: Get maintenance plans successful: 5 plans found
+2026-04-13 02:08:06 info: Get user by id from cache: User 1
+2026-04-13 02:08:07 info: Get devices successful: 6 devices found
+2026-04-13 02:08:07 info: Get maintenance plans from cache
+2026-04-13 02:09:40 info: Get user by id from cache: User 1
+2026-04-13 02:09:41 info: Get devices successful: 6 devices found
+2026-04-13 02:09:41 info: Get maintenance plans from cache
+2026-04-13 02:10:13 info: Get user by id from cache: User 1
+2026-04-13 02:10:13 info: Get maintenance plans from cache
+2026-04-13 02:10:13 info: Get devices successful: 6 devices found
+2026-04-13 02:10:15 info: Get devices successful: 6 devices found
+2026-04-13 02:10:15 info: Get maintenances successful: 5 records found
+2026-04-13 02:10:18 info: Get user by id from cache: User 1
+2026-04-13 02:10:19 info: Get devices successful: 6 devices found
+2026-04-13 02:10:19 info: Get maintenances from cache
+2026-04-13 02:11:50 info: Get user by id from cache: User 1
+2026-04-13 02:11:51 info: Get devices successful: 6 devices found
+2026-04-13 02:11:51 info: Get maintenances from cache
+2026-04-13 02:12:26 info: Get user by id from cache: User 1
+2026-04-13 02:12:27 info: Get maintenances from cache
+2026-04-13 02:12:27 info: Get devices successful: 6 devices found
+2026-04-13 02:12:54 info: Get maintenance plans from cache
+2026-04-13 02:12:54 info: Get devices successful: 6 devices found
+2026-04-13 02:12:58 info: Get devices successful: 6 devices found
+2026-04-13 02:12:58 info: Get users successful: 6 users found
+2026-04-13 02:12:58 info: Get repair orders successful: 1 orders found
+2026-04-13 02:13:22 info: Get user by id from cache: User 1
+2026-04-13 02:13:23 info: Get devices successful: 6 devices found
+2026-04-13 02:13:23 info: Get users successful: 6 users found
+2026-04-13 02:13:23 info: Get repair orders from cache
+2026-04-13 02:13:35 info: Get user by id from cache: User 1
+2026-04-13 02:13:37 info: Get devices successful: 6 devices found
+2026-04-13 02:13:37 info: Get repair orders from cache
+2026-04-13 02:13:37 info: Get users successful: 6 users found
+2026-04-13 02:42:53 warn: Login failed: Invalid password for user admin
+2026-04-13 02:42:53 error: Login error: Invalid username or password
+2026-04-13 02:43:00 info: Login successful: User 1
+2026-04-13 02:43:00 info: Get user by id successful: User 1
+2026-04-13 02:43:00 info: Get user by id from cache: User 1
+2026-04-13 02:43:01 info: Get devices successful: 6 devices found
+2026-04-13 02:43:01 info: Get users successful: 6 users found
+2026-04-13 02:43:01 info: Get repair orders successful: 1 orders found
+2026-04-13 02:43:08 info: Get user by id from cache: User 1
+2026-04-13 02:43:09 info: Get device status count successful
+2026-04-13 02:43:09 info: Get annual maintenance cost successful for year 2026
+2026-04-13 02:43:09 info: Get maintenance type count successful
+2026-04-13 02:43:09 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 02:43:13 info: Login successful: User 1
+2026-04-13 02:43:13 info: Get user by id from cache: User 1
+2026-04-13 02:43:14 info: Get user by id from cache: User 1
+2026-04-13 02:43:14 info: Get device status count successful
+2026-04-13 02:43:14 info: Get annual maintenance cost successful for year 2026
+2026-04-13 02:43:14 info: Get maintenance type count successful
+2026-04-13 02:43:14 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 02:47:25 info: Login successful: User 1
+2026-04-13 02:47:25 info: Get user by id from cache: User 1
+2026-04-13 02:47:26 info: Get user by id from cache: User 1
+2026-04-13 02:47:27 info: Get device status count successful
+2026-04-13 02:47:27 info: Get annual maintenance cost successful for year 2026
+2026-04-13 02:47:27 info: Get maintenance type count successful
+2026-04-13 02:47:27 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 02:48:29 info: Login successful: User 1
+2026-04-13 02:48:29 info: Get user by id from cache: User 1
+2026-04-13 02:48:30 info: Get user by id from cache: User 1
+2026-04-13 02:48:31 info: Get device status count successful
+2026-04-13 02:48:31 info: Get annual maintenance cost successful for year 2026
+2026-04-13 02:48:31 info: Get maintenance type count successful
+2026-04-13 02:48:31 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 02:48:46 info: Get devices successful: 6 devices found
+2026-04-13 02:48:52 info: Delete device successful: Device 6
+2026-04-13 02:48:52 info: Get devices successful: 5 devices found
+2026-04-13 02:48:55 info: Get devices successful: 5 devices found
+2026-04-13 02:48:55 info: Get running data successful: 14 records found
+2026-04-13 02:48:58 info: Get all departments successful: 5 departments found
+2026-04-13 02:48:58 info: Get users successful: 6 users found
+2026-04-13 02:48:58 info: Get all departments successful: 5 departments found
+2026-04-13 02:49:42 info: Register successful: User 11
+2026-04-13 02:49:42 info: Get users successful: 7 users found
+2026-04-13 02:49:58 warn: Update user failed: Role with ID 普通操作员 not found
+2026-04-13 02:49:58 error: Update user error: Role not found
+2026-04-13 02:50:40 info: Get all departments successful: 5 departments found
+2026-04-13 02:50:41 info: Get all departments successful: 5 departments found
+2026-04-13 02:50:41 info: Get users successful: 7 users found
+2026-04-13 02:50:41 info: Get all departments successful: 5 departments found
+2026-04-13 02:50:59 warn: Update user failed: Role with ID 普通操作员 not found
+2026-04-13 02:50:59 error: Update user error: Role not found
+2026-04-13 02:53:41 info: Server is running on port 3001
+2026-04-13 02:53:41 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 02:53:41 info: Redis connected successfully
+2026-04-13 02:54:02 info: Redis connected successfully
+2026-04-13 03:02:34 info: Update user successful: User 11
+2026-04-13 03:02:34 info: Get users successful: 7 users found
+2026-04-13 03:05:25 info: Server is running on port 3001
+2026-04-13 03:05:25 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 03:05:25 info: Redis connected successfully
+2026-04-13 03:06:14 info: Reset password successful by admin: User 11
+2026-04-13 03:06:21 info: Delete user successful: User 11
+2026-04-13 03:06:21 info: Get users successful: 6 users found
+2026-04-13 03:06:23 info: Get all departments successful: 5 departments found
+2026-04-13 03:06:35 info: Get all departments successful: 5 departments found
+2026-04-13 03:06:35 info: Get all departments successful: 5 departments found
+2026-04-13 03:06:35 info: Get users successful: 6 users found
+2026-04-13 03:06:35 info: Get all departments successful: 5 departments found
+2026-04-13 03:08:32 info: Login successful: User 1
+2026-04-13 03:08:32 info: Get user by id successful: User 1
+2026-04-13 03:08:33 info: Get user by id from cache: User 1
+2026-04-13 03:08:37 info: Get all departments successful: 5 departments found
+2026-04-13 03:08:37 info: Get users successful: 6 users found
+2026-04-13 03:08:37 info: Get all departments successful: 5 departments found
+2026-04-13 03:08:38 info: Get device status count successful
+2026-04-13 03:08:38 info: Get annual maintenance cost successful for year 2026
+2026-04-13 03:08:38 info: Get maintenance type count successful
+2026-04-13 03:08:38 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 03:09:51 info: Login successful: User 1
+2026-04-13 03:09:51 info: Get user by id from cache: User 1
+2026-04-13 03:09:52 info: Get user by id from cache: User 1
+2026-04-13 03:09:53 info: Get annual maintenance cost successful for year 2026
+2026-04-13 03:09:53 info: Get device status count successful
+2026-04-13 03:09:53 info: Get maintenance type count successful
+2026-04-13 03:09:53 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-13 03:10:14 info: Get users successful: 6 users found
+2026-04-13 03:10:14 info: Get all departments successful: 5 departments found
+2026-04-13 03:10:14 info: Get all departments successful: 5 departments found
+2026-04-13 03:10:58 info: Register successful: User 12
+2026-04-13 03:10:58 info: Get users successful: 7 users found
+2026-04-13 03:11:18 info: Reset password successful by admin: User 12
+2026-04-13 03:11:32 info: Update user successful: User 12
+2026-04-13 03:11:32 info: Get users successful: 7 users found
+2026-04-13 03:12:16 info: Login successful: User 12
+2026-04-13 03:12:16 info: Get user by id successful: User 12
+2026-04-13 03:12:17 info: Get user by id from cache: User 12
+2026-04-13 03:12:43 info: Get user by id from cache: User 12
+2026-04-13 03:12:56 info: Get user by id from cache: User 12
+2026-04-13 03:12:57 info: Get devices successful: 5 devices found
+2026-04-13 03:12:57 info: Get running data successful: 14 records found
+2026-04-13 03:13:26 info: Get users successful: 7 users found
+2026-04-13 03:14:10 info: Update device running hours: Device 2, Running hours 125
+2026-04-13 03:14:10 info: Create running data successful: Data 15
+2026-04-13 03:14:10 info: Get running data successful: 15 records found
+2026-04-13 03:14:23 info: Get devices successful: 5 devices found
+2026-04-13 03:14:23 info: Get maintenance plans successful: 5 plans found
+2026-04-13 03:14:28 info: Get users successful: 7 users found
+2026-04-13 03:14:38 info: Login successful: User 1
+2026-04-13 03:14:38 info: Get user by id from cache: User 1
+2026-04-13 03:14:39 info: Get user by id from cache: User 1
+2026-04-13 03:14:40 info: Get devices successful: 5 devices found
+2026-04-13 03:14:40 info: Get maintenance plans from cache
+2026-04-13 03:14:55 info: Get all departments successful: 5 departments found
+2026-04-13 03:14:58 info: Get all departments successful: 5 departments found
+2026-04-13 03:14:58 info: Get users successful: 7 users found
+2026-04-13 03:14:58 info: Get all departments successful: 5 departments found
+2026-04-13 03:15:04 info: Delete user successful: User 12
+2026-04-13 03:15:04 info: Get users successful: 6 users found
+2026-04-13 03:15:09 info: Get all departments successful: 5 departments found
+2026-04-13 03:15:26 info: Create department successful: Department 6
+2026-04-13 03:15:26 info: Get all departments successful: 6 departments found
+2026-04-13 03:15:36 info: Update department successful: Department 6
+2026-04-13 03:15:36 info: Get all departments successful: 6 departments found
+2026-04-13 03:15:41 info: Delete department successful: Department 6
+2026-04-13 03:15:41 info: Get all departments successful: 5 departments found
+2026-04-13 03:17:21 info: Backup successful: backup_equipment_management_2026-04-12T19-17-20-939Z.sql
+2026-04-13 03:17:41 info: Get devices successful: 5 devices found
+2026-04-13 03:18:33 info: Create device successful: Device 7
+2026-04-13 03:18:34 info: Get devices successful: 6 devices found
+2026-04-13 03:18:41 info: Get all departments successful: 5 departments found
+2026-04-13 03:19:15 info: Scrap device successful: Device 2
+2026-04-13 03:19:15 info: Get devices successful: 6 devices found
+2026-04-13 03:19:22 info: Delete device successful: Device 2
+2026-04-13 03:19:22 info: Get devices successful: 5 devices found
+2026-04-13 03:19:33 info: Get devices successful: 5 devices found
+2026-04-13 03:19:33 info: Get maintenance plans successful: 2 plans found
+2026-04-13 03:19:36 info: Get users successful: 6 users found
+2026-04-13 03:20:40 info: Create maintenance plan successful: Plan 6
+2026-04-13 03:20:40 info: Get maintenance plans successful: 3 plans found
+2026-04-13 03:20:45 info: Get users successful: 6 users found
+2026-04-13 03:20:50 info: Get users successful: 6 users found
+2026-04-13 03:21:01 info: Get device status count successful
+2026-04-13 03:21:01 info: Get annual maintenance cost successful for year 2026
+2026-04-13 03:21:01 info: Get maintenance type count successful
+2026-04-13 03:21:01 info: Get expiring maintenance plans successful: 2 plans found
+2026-04-13 03:21:16 info: Get maintenance plans from cache
+2026-04-13 03:21:16 info: Get devices successful: 5 devices found
+2026-04-13 03:21:20 info: Get users successful: 6 users found
+2026-04-13 03:21:24 info: Get users successful: 6 users found
+2026-04-13 03:21:43 info: Update maintenance plan successful: Plan 6
+2026-04-13 03:21:43 info: Get maintenance plans successful: 3 plans found
+2026-04-13 03:21:46 info: Get device status count successful
+2026-04-13 03:21:46 info: Get annual maintenance cost successful for year 2026
+2026-04-13 03:21:46 info: Get maintenance type count successful
+2026-04-13 03:21:46 info: Get expiring maintenance plans successful: 2 plans found
+2026-04-13 03:21:54 info: Get devices successful: 5 devices found
+2026-04-13 03:21:54 info: Get users successful: 6 users found
+2026-04-13 03:21:54 info: Get repair orders successful: 0 orders found
+2026-04-13 03:21:57 info: Get devices successful: 5 devices found
+2026-04-13 03:21:57 info: Get maintenances successful: 4 records found
+2026-04-13 03:22:01 info: Get users successful: 6 users found
+2026-04-13 03:24:23 info: Server is running on port 3001
+2026-04-13 03:24:23 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 03:24:23 info: Redis connected successfully
+2026-04-13 03:24:57 info: Get users successful: 6 users found
+2026-04-13 03:25:26 info: Update device status to normal after maintenance: Device 7
+2026-04-13 03:25:26 info: Create maintenance successful: Maintenance 6
+2026-04-13 03:25:26 info: Get maintenances successful: 5 records found
+2026-04-13 03:25:35 info: Get device status count successful
+2026-04-13 03:25:35 info: Get maintenance type count successful
+2026-04-13 03:25:35 info: Get annual maintenance cost successful for year 2026
+2026-04-13 03:25:35 info: Get expiring maintenance plans successful: 2 plans found
+2026-04-13 03:25:43 info: Get devices successful: 5 devices found
+2026-04-13 03:25:43 info: Get maintenances from cache
+2026-04-13 03:25:47 info: Get devices successful: 5 devices found
+2026-04-13 03:25:47 info: Get users successful: 6 users found
+2026-04-13 03:25:47 info: Get repair orders from cache
+2026-04-13 03:26:21 info: Update device status to fault: Device 7
+2026-04-13 03:26:21 info: Create repair order successful: Order WO2026041200078790
+2026-04-13 03:26:22 info: Get repair orders successful: 1 orders found
+2026-04-13 03:26:34 info: Get users successful: 2 users found
+2026-04-13 03:26:58 info: Update repair order successful: Order WO2026041200078790
+2026-04-13 03:26:58 info: Get repair orders successful: 1 orders found
+2026-04-13 03:27:18 info: Get devices successful: 5 devices found
+2026-04-13 03:27:32 info: Get devices successful: 5 devices found
+2026-04-13 03:27:32 info: Get users successful: 6 users found
+2026-04-13 03:27:32 info: Get repair orders from cache
+2026-04-13 03:27:53 info: Update device status to normal: Device 7
+2026-04-13 03:27:53 info: Update repair order successful: Order WO2026041200078790
+2026-04-13 03:27:53 info: Get repair orders successful: 1 orders found
+2026-04-13 03:28:03 info: Get devices successful: 5 devices found
+2026-04-13 03:28:29 info: Get repair orders from cache
+2026-04-13 03:28:29 info: Get devices successful: 5 devices found
+2026-04-13 03:28:29 info: Get users successful: 6 users found
+2026-04-13 03:28:31 info: Get devices successful: 5 devices found
+2026-04-13 03:28:31 info: Get maintenance plans successful: 3 plans found
+2026-04-13 03:28:32 info: Get devices successful: 5 devices found
+2026-04-13 03:28:32 info: Get maintenances from cache
+2026-04-13 03:28:33 info: Get devices successful: 5 devices found
+2026-04-13 03:28:33 info: Get running data successful: 14 records found
+2026-04-13 03:28:40 info: Get device status count successful
+2026-04-13 03:28:40 info: Get annual maintenance cost successful for year 2026
+2026-04-13 03:28:40 info: Get maintenance type count successful
+2026-04-13 03:28:40 info: Get expiring maintenance plans successful: 2 plans found
+2026-04-13 04:04:05 info: Server is running on port 3001
+2026-04-13 04:04:05 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-13 04:04:05 info: Redis connected successfully
