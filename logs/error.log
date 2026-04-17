@@ -287,3 +287,6 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-13 02:42:53 error: Login error: Invalid username or password
 2026-04-13 02:49:58 error: Update user error: Role not found
 2026-04-13 02:50:59 error: Update user error: Role not found
+2026-04-17 19:19:08 error: Login error: Invalid username or password
+2026-04-17 19:19:18 error: Login error: Invalid username or password
+2026-04-17 22:05:05 error: Create device error: Validation error
