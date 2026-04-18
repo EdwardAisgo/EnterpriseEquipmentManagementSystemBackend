@@ -3704,3 +3704,13 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-18 15:41:13 info: Login successful: User 1
 2026-04-18 15:41:13 info: Get user by id successful: User 1
 2026-04-18 15:41:13 info: Get user by id from cache: User 1
+2026-04-18 15:42:54 info: Login successful: User 1
+2026-04-18 15:42:54 info: Get user by id from cache: User 1
+2026-04-18 15:42:54 info: Get user by id from cache: User 1
+2026-04-18 15:42:58 info: Get all departments successful: 5 departments found
+2026-04-18 15:42:58 info: Get users successful: 6 users found
+2026-04-18 15:42:58 info: Get all departments successful: 5 departments found
+2026-04-18 15:42:59 info: Get all departments successful: 5 departments found
+2026-04-18 15:48:32 info: Login successful: User 1
+2026-04-18 15:48:32 info: Get user by id from cache: User 1
+2026-04-18 15:48:32 info: Get user by id from cache: User 1
