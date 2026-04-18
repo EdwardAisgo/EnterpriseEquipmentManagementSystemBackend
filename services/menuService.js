@@ -7,6 +7,7 @@ const DEFAULT_MENUS = [
 
   { id: 'equipment', parentId: null, name: '设备台账', path: '/equipment', icon: 'tool', sort: 20 },
   { id: 'equipment_list', parentId: 'equipment', name: '设备列表', path: '/equipment/list', icon: 'unorderedList', sort: 21 },
+  { id: 'equipment_device_types', parentId: 'equipment', name: '设备类型', path: '/equipment/device-types', icon: 'tags', sort: 22 },
 
   { id: 'monitoring', parentId: null, name: '运行监控', path: '/monitoring', icon: 'dashboard', sort: 30 },
 

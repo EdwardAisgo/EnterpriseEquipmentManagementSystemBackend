@@ -1,5 +1,6 @@
-const { Device, Maintenance, Department, MaintenancePlan } = require('../models');
+const { Device, Maintenance, Department, MaintenancePlan, RunningData, RepairOrder } = require('../models');
 const { Op } = require('sequelize');
+const { sequelize } = require('../config/database');
 const logger = require('../utils/logger');
 
 class ReportService {
@@ -84,7 +85,7 @@ class ReportService {
     try {
       const startDate = new Date(`${year}-01-01`);
       const endDate = new Date(`${year}-12-31`);
-      
+
       const monthlyCosts = await Maintenance.findAll({
         attributes: [
           [Maintenance.sequelize.fn('MONTH', Maintenance.sequelize.col('startDate')), 'month'],
@@ -105,6 +106,64 @@ class ReportService {
       return monthlyCosts;
     } catch (error) {
       logger.error(`Get annual maintenance cost error: ${error.message}`);
+      throw error;
+    }
+  }
+
+  // 获取监控面板统计数据
+  static async getMonitoringStats() {
+    try {
+      // 设备状态统计
+      const deviceStatusCounts = await Device.findAll({
+        attributes: ['status', [Device.sequelize.fn('COUNT', Device.sequelize.col('id')), 'count']],
+        group: ['status']
+      });
+
+      const statusMap = {};
+      let totalDevices = 0;
+      deviceStatusCounts.forEach((item) => {
+        const count = parseInt(item.get('count'), 10);
+        statusMap[item.status] = count;
+        totalDevices += count;
+      });
+
+      // 今日运行数据（使用 DATE() 函数只比较日期部分，避免时区问题）
+      const todayStr = new Date().toISOString().slice(0, 10); // '2026-04-18'
+
+      const todayRunningData = await RunningData.findAll({
+        where: sequelize.where(
+          sequelize.fn('DATE', sequelize.col('date')),
+          todayStr
+        ),
+        attributes: ['equipmentId', 'runningHours']
+      });
+
+      let todayRunningHours = 0;
+      const runningDeviceIds = new Set();
+      todayRunningData.forEach((record) => {
+        todayRunningHours += record.runningHours || 0;
+        runningDeviceIds.add(record.equipmentId);
+      });
+
+      // 待处理故障报修数
+      const pendingRepairCount = await RepairOrder.count({
+        where: {
+          status: 'pending'
+        }
+      });
+
+      return {
+        totalDevices,
+        normalCount: statusMap.normal || 0,
+        maintenanceCount: statusMap.maintenance || 0,
+        faultCount: statusMap.fault || 0,
+        scrappedCount: statusMap.scrapped || 0,
+        todayRunningHours: parseFloat(todayRunningHours.toFixed(1)),
+        todayRunningDeviceCount: runningDeviceIds.size,
+        pendingRepairCount
+      };
+    } catch (error) {
+      logger.error(`Get monitoring stats error: ${error.message}`);
       throw error;
     }
   }

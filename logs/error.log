@@ -290,3 +290,43 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-17 19:19:08 error: Login error: Invalid username or password
 2026-04-17 19:19:18 error: Login error: Invalid username or password
 2026-04-17 22:05:05 error: Create device error: Validation error
+2026-04-18 12:01:10 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:11 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:11 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:12 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:13 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:14 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:17 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:22 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:30 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:40:55 error: Login error: 
+2026-04-18 13:23:43 error: Login error: Unknown database 'equipment_management'
+2026-04-18 13:48:34 error: Restore failed: Command failed: mysql -h localhost -u root -pEdward@520zj equipment_management < "D:\project\EnterpriseEquipmentManagementSystemBackend\backups\backup_equipment_management_2026-04-12T19-17-20-939Z.sql"
+'mysql' �����ڲ����ⲿ���Ҳ���ǿ����еĳ���
+���������ļ���
+
+2026-04-18 14:41:38 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:46:30 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:46:40 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:46:58 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:46:58 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:47:40 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:47:40 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:50:47 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:50:49 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:01 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:02 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:03 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:08 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:12 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:30 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:35 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:44 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:55 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:56:19 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:57:00 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:57:31 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:57:36 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:57:38 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:58:14 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 15:34:30 error: Login error: Invalid username or password

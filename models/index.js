@@ -1,6 +1,7 @@
 const User = require('./User');
 const Department = require('./Department');
 const Device = require('./Device');
+const DeviceType = require('./DeviceType');
 const Maintenance = require('./Maintenance');
 const MaintenancePlan = require('./MaintenancePlan');
 const RepairOrder = require('./RepairOrder');
@@ -31,10 +32,14 @@ RepairOrder.belongsTo(Device, { foreignKey: 'equipmentId' });
 Device.hasMany(RunningData, { foreignKey: 'equipmentId' });
 RunningData.belongsTo(Device, { foreignKey: 'equipmentId' });
 
+DeviceType.hasMany(Device, { foreignKey: 'deviceTypeId' });
+Device.belongsTo(DeviceType, { foreignKey: 'deviceTypeId' });
+
 module.exports = {
   User,
   Department,
   Device,
+  DeviceType,
   Maintenance,
   MaintenancePlan,
   RepairOrder,

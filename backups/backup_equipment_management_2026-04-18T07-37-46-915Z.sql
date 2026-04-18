@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.44, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.45, for Win64 (x86_64)
 --
 -- Host: localhost    Database: equipment_management
 -- ------------------------------------------------------
--- Server version	8.0.44
+-- Server version	8.0.45
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -37,8 +37,12 @@ CREATE TABLE `departments` (
   UNIQUE KEY `name_6` (`name`),
   UNIQUE KEY `name_7` (`name`),
   UNIQUE KEY `name_8` (`name`),
-  UNIQUE KEY `name_9` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  UNIQUE KEY `name_9` (`name`),
+  UNIQUE KEY `name_10` (`name`),
+  UNIQUE KEY `name_11` (`name`),
+  UNIQUE KEY `name_12` (`name`),
+  UNIQUE KEY `name_13` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -78,6 +82,7 @@ CREATE TABLE `devices` (
   `notes` text COLLATE utf8mb4_unicode_ci,
   `createdAt` datetime DEFAULT NULL,
   `updatedAt` datetime DEFAULT NULL,
+  `deviceTypeId` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `deviceCode` (`deviceCode`),
   UNIQUE KEY `deviceCode_2` (`deviceCode`),
@@ -88,8 +93,18 @@ CREATE TABLE `devices` (
   UNIQUE KEY `deviceCode_7` (`deviceCode`),
   UNIQUE KEY `deviceCode_8` (`deviceCode`),
   UNIQUE KEY `deviceCode_9` (`deviceCode`),
+  UNIQUE KEY `deviceCode_10` (`deviceCode`),
+  UNIQUE KEY `deviceCode_11` (`deviceCode`),
+  UNIQUE KEY `deviceCode_12` (`deviceCode`),
+  UNIQUE KEY `deviceCode_13` (`deviceCode`),
   KEY `departmentId` (`departmentId`),
+  KEY `Devices_deviceTypeId_foreign_idx` (`deviceTypeId`),
+  CONSTRAINT `Devices_deviceTypeId_foreign_idx` FOREIGN KEY (`deviceTypeId`) REFERENCES `devicetypes` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `devices_ibfk_1` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `devices_ibfk_10` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
+  CONSTRAINT `devices_ibfk_11` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
+  CONSTRAINT `devices_ibfk_12` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
+  CONSTRAINT `devices_ibfk_13` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `devices_ibfk_2` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `devices_ibfk_3` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
   CONSTRAINT `devices_ibfk_4` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
@@ -107,8 +122,36 @@ CREATE TABLE `devices` (
 
 LOCK TABLES `devices` WRITE;
 /*!40000 ALTER TABLE `devices` DISABLE KEYS */;
-INSERT INTO `devices` VALUES (1,'CNC-A-001','五轴联动加工中心','加工设备','DMG MORI DMU 50',NULL,'normal',1,'一号车间 A1区','2025-04-11 16:08:19',1200000.00,'DMG MORI','2026-10-08 16:08:19',NULL,NULL,1560,NULL,'2026-04-11 16:08:19','2026-04-11 19:23:03'),(2,'CNC-A-002','立式加工中心','加工设备','MAZAK VCN-530C',NULL,'fault',1,'一号车间 A2区','2026-01-11 16:08:19',850000.00,'MAZAK','2027-01-06 16:08:19',NULL,NULL,420,NULL,'2026-04-11 16:08:19','2026-04-12 16:52:21'),(3,'PACK-B-001','全自动包装流水线','包装设备','SF-600',NULL,'normal',1,'二号车间 B1区','2025-04-11 16:08:19',450000.00,'上海帆顺','2026-03-12 16:08:19',NULL,NULL,2100,NULL,'2026-04-11 16:08:19','2026-04-12 09:58:57'),(4,'TEST-Q-001','三坐标测量机','检测设备','ZEISS Contura',NULL,'normal',3,'质检中心','2026-01-11 16:08:19',600000.00,'ZEISS','2027-02-05 16:08:19',NULL,NULL,120,NULL,'2026-04-11 16:08:19','2026-04-12 09:59:00'),(5,'FORK-W-001','电动叉车','其他设备','Linde E20',NULL,'normal',4,'成品库','2025-04-11 16:08:19',150000.00,'Linde','2026-04-21 16:08:19',NULL,NULL,850,NULL,'2026-04-11 16:08:19','2026-04-12 09:59:03'),(6,'test','测试设备','生产设备','test',NULL,'scrapped',NULL,'车库','2026-04-10 16:00:00',100.00,NULL,NULL,'2026-04-12 15:34:21','111',0,NULL,'2026-04-12 10:24:19','2026-04-12 15:34:21');
+INSERT INTO `devices` VALUES (1,'CNC-A-001','五轴联动加工中心','加工设备','DMG MORI DMU 50',NULL,'normal',1,'一号车间 A1区','2025-04-11 16:08:19',1200000.00,'DMG MORI','2026-10-08 16:08:19',NULL,NULL,16,NULL,'2026-04-11 16:08:19','2026-04-18 06:28:06',NULL),(2,'CNC-A-002','立式加工中心','加工设备','MAZAK VCN-530C',NULL,'fault',1,'一号车间 A2区','2026-01-11 16:08:19',850000.00,'MAZAK','2027-01-06 16:08:19',NULL,NULL,125,'name-test','2026-04-11 16:08:19','2026-04-12 19:14:10',NULL),(3,'PACK-B-001','全自动包装流水线','包装设备','SF-600',NULL,'normal',1,'二号车间 B1区','2025-04-11 16:08:19',450000.00,'上海帆顺','2026-03-12 16:08:19',NULL,NULL,2100,NULL,'2026-04-11 16:08:19','2026-04-12 09:58:57',NULL),(4,'TEST-Q-001','三坐标测量机','检测设备','ZEISS Contura',NULL,'normal',3,'质检中心','2026-01-11 16:08:19',600000.00,'ZEISS','2027-02-05 16:08:19',NULL,NULL,120,NULL,'2026-04-11 16:08:19','2026-04-12 09:59:00',NULL),(5,'FORK-W-001','电动叉车','其他设备','Linde E20',NULL,'normal',4,'成品库','2025-04-11 16:08:19',150000.00,'Linde','2026-04-21 16:08:19',NULL,NULL,850,NULL,'2026-04-11 16:08:19','2026-04-12 09:59:03',NULL);
 /*!40000 ALTER TABLE `devices` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `devicetypes`
+--
+
+DROP TABLE IF EXISTS `devicetypes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `devicetypes` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `createdAt` datetime DEFAULT NULL,
+  `updatedAt` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `devicetypes`
+--
+
+LOCK TABLES `devicetypes` WRITE;
+/*!40000 ALTER TABLE `devicetypes` DISABLE KEYS */;
+INSERT INTO `devicetypes` VALUES (1,'生产设备','直接用于产品制造的设备','2026-04-18 07:09:44','2026-04-18 07:09:44'),(2,'包装设备','用于产品包装的设备','2026-04-18 07:09:44','2026-04-18 07:09:44'),(3,'加工设备','用于零部件加工的设备','2026-04-18 07:09:44','2026-04-18 07:09:44'),(4,'检测设备','用于质量检测的设备','2026-04-18 07:09:44','2026-04-18 07:09:44'),(5,'物流设备','用于仓储物流的设备','2026-04-18 07:09:44','2026-04-18 07:09:44'),(6,'辅助设备','为生产提供辅助支持的设备','2026-04-18 07:09:44','2026-04-18 07:09:44');
+/*!40000 ALTER TABLE `devicetypes` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -134,6 +177,10 @@ CREATE TABLE `maintenanceplans` (
   PRIMARY KEY (`id`),
   KEY `deviceId` (`deviceId`),
   CONSTRAINT `maintenanceplans_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `maintenanceplans_ibfk_10` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `maintenanceplans_ibfk_11` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `maintenanceplans_ibfk_12` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `maintenanceplans_ibfk_13` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `maintenanceplans_ibfk_2` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `maintenanceplans_ibfk_3` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`),
   CONSTRAINT `maintenanceplans_ibfk_4` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`),
@@ -178,6 +225,10 @@ CREATE TABLE `maintenances` (
   PRIMARY KEY (`id`),
   KEY `deviceId` (`deviceId`),
   CONSTRAINT `maintenances_ibfk_1` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `maintenances_ibfk_10` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `maintenances_ibfk_11` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `maintenances_ibfk_12` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `maintenances_ibfk_13` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `maintenances_ibfk_2` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `maintenances_ibfk_3` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`),
   CONSTRAINT `maintenances_ibfk_4` FOREIGN KEY (`deviceId`) REFERENCES `devices` (`id`),
@@ -195,7 +246,7 @@ CREATE TABLE `maintenances` (
 
 LOCK TABLES `maintenances` WRITE;
 /*!40000 ALTER TABLE `maintenances` DISABLE KEYS */;
-INSERT INTO `maintenances` VALUES (1,1,'preventive','月度常规检查与导轨润滑111','2026-03-22 16:08:19','2026-03-22 20:08:19','completed','李工',500.00,'检查结果良好','2026-04-11 16:08:19','2026-04-12 13:21:07'),(2,5,'corrective','更换电瓶液及检查刹车系统','2026-02-25 16:08:19','2026-02-26 00:08:19','completed','外部维保单位',1200.00,'建议每半年检查一次','2026-04-11 16:08:19','2026-04-11 16:08:19'),(3,1,'preventive','整体维护','2026-04-11 16:00:00','2026-04-11 16:00:00','completed','李工',1200.00,NULL,'2026-04-11 19:23:03','2026-04-11 19:23:03'),(4,1,'preventive','1233','2026-04-12 16:00:00','2026-04-12 16:00:00','completed','胥星',1200.00,'2121','2026-04-12 10:22:32','2026-04-12 12:25:26'),(5,6,'preventive','123','2026-04-09 16:00:00','2026-04-09 16:00:00','completed','胥星',12.00,'12','2026-04-12 12:35:08','2026-04-12 12:35:08');
+INSERT INTO `maintenances` VALUES (1,1,'preventive','月度常规检查与导轨润滑111','2026-03-22 16:08:19','2026-03-22 20:08:19','completed','李工',500.00,'检查结果良好','2026-04-11 16:08:19','2026-04-12 13:21:07'),(2,5,'corrective','更换电瓶液及检查刹车系统','2026-02-25 16:08:19','2026-02-26 00:08:19','completed','外部维保单位',1200.00,'建议每半年检查一次','2026-04-11 16:08:19','2026-04-11 16:08:19'),(3,1,'preventive','整体维护','2026-04-11 16:00:00','2026-04-11 16:00:00','completed','李工',1200.00,NULL,'2026-04-11 19:23:03','2026-04-11 19:23:03'),(4,1,'preventive','1233','2026-04-12 16:00:00','2026-04-12 16:00:00','completed','胥星',1200.00,'2121','2026-04-12 10:22:32','2026-04-12 12:25:26');
 /*!40000 ALTER TABLE `maintenances` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -207,7 +258,7 @@ DROP TABLE IF EXISTS `menus`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `menus` (
-  `id` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `parentId` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `path` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -226,8 +277,44 @@ CREATE TABLE `menus` (
 
 LOCK TABLES `menus` WRITE;
 /*!40000 ALTER TABLE `menus` DISABLE KEYS */;
-INSERT INTO `menus` VALUES ('analytics',NULL,'数据统计','/analytics','barChart',10,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('analytics_overview','analytics','统计概览','/analytics/overview','pieChart',11,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('equipment',NULL,'设备台账','/equipment','tool',20,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('equipment_list','equipment','设备列表','/equipment/list','unorderedList',21,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('maintenance',NULL,'维护保养','/maintenance','build',40,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('maintenance_plans','maintenance','维护计划','/maintenance/plans','calendar',41,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('maintenance_records','maintenance','保养记录','/maintenance/records','history',42,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('monitoring',NULL,'运行监控','/monitoring','dashboard',30,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('repair',NULL,'故障维修','/repair','warning',50,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('repair_orders','repair','维修工单','/repair/orders','fileText',51,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system',NULL,'系统管理','/system','setting',60,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system_backup','system','数据备份','/system/backup','database',65,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system_departments','system','部门管理','/system/departments','team',62,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system_logs','system','日志管理','/system/logs','profile',64,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system_roles','system','角色管理','/system/roles','lock',63,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system_users','system','用户管理','/system/users','user',61,0,'2026-04-12 17:03:43','2026-04-12 17:03:43');
+INSERT INTO `menus` VALUES ('analytics',NULL,'数据统计','/analytics','barChart',10,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('analytics_overview','analytics','统计概览','/analytics/overview','pieChart',11,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('equipment',NULL,'设备台账','/equipment','tool',20,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('equipment_device_types','equipment','设备类型','/equipment/device-types','tags',22,0,'2026-04-18 07:01:26','2026-04-18 07:01:26'),('equipment_list','equipment','设备列表','/equipment/list','unorderedList',21,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('maintenance',NULL,'维护保养','/maintenance','build',40,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('maintenance_plans','maintenance','维护计划','/maintenance/plans','calendar',41,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('maintenance_records','maintenance','保养记录','/maintenance/records','history',42,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('monitoring',NULL,'运行监控','/monitoring','dashboard',30,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('repair',NULL,'故障维修','/repair','warning',50,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('repair_orders','repair','维修工单','/repair/orders','fileText',51,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system',NULL,'系统管理','/system','setting',60,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system_backup','system','数据备份','/system/backup','database',65,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system_departments','system','部门管理','/system/departments','team',62,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system_logs','system','日志管理','/system/logs','profile',64,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system_roles','system','角色管理','/system/roles','lock',63,0,'2026-04-12 17:03:43','2026-04-12 17:03:43'),('system_users','system','用户管理','/system/users','user',61,0,'2026-04-12 17:03:43','2026-04-12 17:03:43');
 /*!40000 ALTER TABLE `menus` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `operationlogs`
+--
+
+DROP TABLE IF EXISTS `operationlogs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `operationlogs` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `userId` int DEFAULT NULL,
+  `username` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `roleName` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `action` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `entityType` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `entityId` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `entityName` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `details` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ip` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `userAgent` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `createdAt` datetime DEFAULT NULL,
+  `updatedAt` datetime DEFAULT NULL,
+  `displayName` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `operationlogs`
+--
+
+LOCK TABLES `operationlogs` WRITE;
+/*!40000 ALTER TABLE `operationlogs` DISABLE KEYS */;
+INSERT INTO `operationlogs` VALUES (1,1,'admin','系统管理员','更新设备','device','2','立式加工中心','{\"body\":{\"notes\":\"log-test\"}}','::1','axios/1.13.6','2026-04-12 17:37:20','2026-04-12 17:37:20','系统管理员'),(2,1,'admin','系统管理员','登录','auth','admin','系统登录','{\"result\":\"success\"}','127.0.0.1','seed-script','2026-04-12 16:42:06','2026-04-12 16:42:06','系统管理员'),(3,1,'admin','系统管理员','查看设备列表','device',NULL,NULL,'{\"page\":1,\"pageSize\":10}','127.0.0.1','seed-script','2026-04-12 17:00:06','2026-04-12 17:00:06','系统管理员'),(4,1,'admin','系统管理员','更新设备','device','1','五轴联动加工中心','{\"changed\":[\"notes\"]}','127.0.0.1','seed-script','2026-04-12 17:17:06','2026-04-12 17:17:06','系统管理员'),(5,1,'admin','系统管理员','提交报修','repair_order','WO2026041200029709','WO2026041200029709','{\"equipmentId\":2}','127.0.0.1','seed-script','2026-04-12 17:30:06','2026-04-12 17:30:06','系统管理员'),(6,1,'admin','系统管理员','创建备份','backup','backup_seed_2026-04-12','数据库备份','{\"method\":\"manual\"}','127.0.0.1','seed-script','2026-04-12 17:37:06','2026-04-12 17:37:06','系统管理员'),(7,1,'admin','系统管理员','更新设备','device','2','立式加工中心','{\"body\":{\"notes\":\"name-test\"}}','::1','axios/1.13.6','2026-04-12 17:57:02','2026-04-12 17:57:02','系统管理员'),(8,1,'admin','系统管理员','删除设备','device','6',NULL,'{}','::1','Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36 Edg/123.0.0.0','2026-04-12 18:48:52','2026-04-12 18:48:52','系统管理员'),(9,12,'testUser','普通操作员','新增运行数据','running_data','15','15','{\"body\":{\"deviceId\":2,\"date\":\"2026-04-12T16:00:00.000Z\",\"runningHours\":125,\"production\":100,\"energyConsumption\":30,\"operator\":\"测试用户\",\"notes\":\"测试上报运行数据\"}}','::1','Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36 Edg/123.0.0.0','2026-04-12 19:14:10','2026-04-12 19:14:10','测试用户'),(10,1,'admin','admin','恢复备份','backup','backup_equipment_management_2026-04-12T19-17-20-939Z.sql','backup_equipment_management_2026-04-12T19-17-20-939Z.sql','{}','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0','2026-04-18 05:56:16','2026-04-18 05:56:16','系统管理员'),(11,1,'admin','admin','新增运行数据','running_data','16','16','{\"body\":{\"deviceId\":1,\"date\":\"2026-04-18T12:00:00.000Z\",\"runningHours\":16,\"production\":150,\"energyConsumption\":36,\"operator\":\"胥星\"}}','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0','2026-04-18 06:28:06','2026-04-18 06:28:06','系统管理员'),(12,1,'admin','系统管理员','新增设备类型','device_type','7','测试设备类型','{\"body\":{\"name\":\"测试设备类型\"}}','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0','2026-04-18 07:17:30','2026-04-18 07:17:30','系统管理员'),(13,1,'admin','系统管理员','删除设备类型','device_type','7',NULL,'{}','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0','2026-04-18 07:19:02','2026-04-18 07:19:02','系统管理员'),(14,1,'admin','系统管理员','创建备份','backup','backup_equipment_management_2026-04-18T07-19-29-870Z.sql','backup_equipment_management_2026-04-18T07-19-29-870Z.sql','{}','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0','2026-04-18 07:19:30','2026-04-18 07:19:30','系统管理员'),(15,1,'admin','系统管理员','删除备份','backup','backup_equipment_management_2026-04-12T17-24-19-586Z.sql','backup_equipment_management_2026-04-12T17-24-19-586Z.sql','{}','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0','2026-04-18 07:37:31','2026-04-18 07:37:31','系统管理员'),(16,1,'admin','系统管理员','删除备份','backup','backup_equipment_management_2026-04-12T19-17-20-939Z.sql','backup_equipment_management_2026-04-12T19-17-20-939Z.sql','{}','::1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0','2026-04-18 07:37:33','2026-04-18 07:37:33','系统管理员');
+/*!40000 ALTER TABLE `operationlogs` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -238,7 +325,7 @@ DROP TABLE IF EXISTS `repairorders`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `repairorders` (
-  `id` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `equipmentId` int NOT NULL,
   `applicant` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `applyDate` datetime NOT NULL,
@@ -256,7 +343,11 @@ CREATE TABLE `repairorders` (
   KEY `equipmentId` (`equipmentId`),
   CONSTRAINT `repairorders_ibfk_1` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `repairorders_ibfk_2` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
-  CONSTRAINT `repairorders_ibfk_3` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`)
+  CONSTRAINT `repairorders_ibfk_3` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `repairorders_ibfk_4` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `repairorders_ibfk_5` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `repairorders_ibfk_6` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `repairorders_ibfk_7` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -287,8 +378,12 @@ CREATE TABLE `roles` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   UNIQUE KEY `name_2` (`name`),
-  UNIQUE KEY `name_3` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  UNIQUE KEY `name_3` (`name`),
+  UNIQUE KEY `name_4` (`name`),
+  UNIQUE KEY `name_5` (`name`),
+  UNIQUE KEY `name_6` (`name`),
+  UNIQUE KEY `name_7` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -297,7 +392,7 @@ CREATE TABLE `roles` (
 
 LOCK TABLES `roles` WRITE;
 /*!40000 ALTER TABLE `roles` DISABLE KEYS */;
-INSERT INTO `roles` VALUES (1,'系统管理员','拥有系统所有操作权限，包括权限分配、数据备份等。','[\"equipment\",\"equipment_list\",\"monitoring\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\",\"repair\",\"repair_orders\",\"analytics\",\"analytics_overview\",\"system\",\"system_users\",\"system_departments\",\"system_roles\",\"system_backup\",\"system_logs\"]','2026-04-11 17:03:46','2026-04-12 17:07:12'),(2,'生产经理','负责生产线的统筹管理，可以查看运行监控和审批报修单。','[\"equipment\",\"equipment_list\",\"monitoring\",\"analytics\",\"analytics_overview\",\"system\",\"system_departments\",\"system_users\",\"system_roles\",\"system_logs\",\"system_backup\"]','2026-04-11 17:03:46','2026-04-12 17:09:40'),(3,'维修工程师','负责设备的具体维护与故障修理。','[\"equipment\",\"equipment_list\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\",\"repair\",\"repair_orders\",\"monitoring\"]','2026-04-11 17:03:46','2026-04-12 17:09:40'),(4,'普通操作员','日常设备操作人员，负责数据上报和提交报修。','[\"monitoring\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\"]','2026-04-11 17:03:46','2026-04-12 17:09:40'),(11,'设备管理员','负责设备的台账管理，设备的故障上报，设备的维护保养信息更新等。','[\"equipment\",\"equipment_list\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\",\"repair\",\"repair_orders\"]','2026-04-12 17:22:02','2026-04-12 17:22:02'),(12,'admin','管理员','[\"analytics\",\"analytics_overview\",\"equipment\",\"equipment_list\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\",\"monitoring\",\"repair\",\"repair_orders\",\"system\",\"system_backup\",\"system_departments\",\"system_logs\",\"system_roles\",\"system_users\"]','2026-04-12 17:22:38','2026-04-12 17:22:38'),(13,'manager','经理','[\"analytics\",\"analytics_overview\",\"equipment\",\"equipment_list\",\"monitoring\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\",\"repair\",\"repair_orders\"]','2026-04-12 17:22:38','2026-04-12 17:22:38'),(14,'staff','员工','[\"equipment\",\"equipment_list\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\",\"repair\",\"repair_orders\",\"monitoring\"]','2026-04-12 17:22:38','2026-04-12 17:22:38');
+INSERT INTO `roles` VALUES (1,'系统管理员','拥有系统所有操作权限，包括权限分配、数据备份等。','[\"equipment\",\"equipment_list\",\"monitoring\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\",\"repair\",\"repair_orders\",\"analytics\",\"analytics_overview\",\"system\",\"system_users\",\"system_departments\",\"system_roles\",\"system_backup\",\"system_logs\"]','2026-04-11 17:03:46','2026-04-12 17:07:12'),(2,'生产经理','负责生产线的统筹管理，可以查看运行监控和审批报修单。','[\"equipment\",\"equipment_list\",\"monitoring\",\"analytics\",\"analytics_overview\",\"system\",\"system_departments\",\"system_users\",\"system_roles\",\"system_logs\",\"system_backup\"]','2026-04-11 17:03:46','2026-04-12 17:09:40'),(3,'维修工程师','负责设备的具体维护与故障修理。','[\"equipment\",\"equipment_list\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\",\"repair\",\"repair_orders\",\"monitoring\"]','2026-04-11 17:03:46','2026-04-12 17:09:40'),(4,'普通操作员','日常设备操作人员，负责数据上报和提交报修。','[\"monitoring\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\"]','2026-04-11 17:03:46','2026-04-12 17:09:40'),(11,'设备管理员','负责设备的台账管理，设备的故障上报，设备的维护保养信息更新等。','[\"equipment\",\"equipment_list\",\"maintenance\",\"maintenance_plans\",\"maintenance_records\",\"repair\",\"repair_orders\"]','2026-04-12 17:22:02','2026-04-12 17:22:02');
 /*!40000 ALTER TABLE `roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -322,6 +417,10 @@ CREATE TABLE `runningdata` (
   PRIMARY KEY (`id`),
   KEY `equipmentId` (`equipmentId`),
   CONSTRAINT `runningdata_ibfk_1` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `runningdata_ibfk_10` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `runningdata_ibfk_11` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `runningdata_ibfk_12` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
+  CONSTRAINT `runningdata_ibfk_13` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `runningdata_ibfk_2` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `runningdata_ibfk_3` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
   CONSTRAINT `runningdata_ibfk_4` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
@@ -330,7 +429,7 @@ CREATE TABLE `runningdata` (
   CONSTRAINT `runningdata_ibfk_7` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
   CONSTRAINT `runningdata_ibfk_8` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`),
   CONSTRAINT `runningdata_ibfk_9` FOREIGN KEY (`equipmentId`) REFERENCES `devices` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -339,7 +438,7 @@ CREATE TABLE `runningdata` (
 
 LOCK TABLES `runningdata` WRITE;
 /*!40000 ALTER TABLE `runningdata` DISABLE KEYS */;
-INSERT INTO `runningdata` VALUES (1,1,'2026-04-11 16:08:19',9.23994,141.085,66.5178,'王操作','今日运行正常','2026-04-11 16:08:20','2026-04-11 16:08:20'),(2,4,'2026-04-11 16:08:19',5.51389,222.395,12.4144,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(3,1,'2026-04-10 16:08:19',11.1956,139.097,65.594,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(4,4,'2026-04-10 16:08:19',4.92673,224.407,13.6245,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(5,1,'2026-04-09 16:08:19',9.25721,103.54,50.7093,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(6,4,'2026-04-09 16:08:19',4.40594,227.254,10.2162,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(7,1,'2026-04-08 16:08:19',10.0096,128.722,68.27,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(8,4,'2026-04-08 16:08:19',5.25675,224.799,10.523,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(9,1,'2026-04-07 16:08:19',8.98772,101.04,68.1547,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(10,4,'2026-04-07 16:08:19',4.82875,212.05,10.4845,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(11,1,'2026-04-06 16:08:19',10.6434,134.427,53.8231,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(12,4,'2026-04-06 16:08:19',5.11959,223.706,14.3042,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(13,1,'2026-04-05 16:08:19',10.9675,140.934,54.9067,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(14,4,'2026-04-05 16:08:19',4.50812,224.37,14.5056,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20');
+INSERT INTO `runningdata` VALUES (1,1,'2026-04-11 16:08:19',9.23994,141.085,66.5178,'王操作','今日运行正常','2026-04-11 16:08:20','2026-04-11 16:08:20'),(2,4,'2026-04-11 16:08:19',5.51389,222.395,12.4144,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(3,1,'2026-04-10 16:08:19',11.1956,139.097,65.594,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(4,4,'2026-04-10 16:08:19',4.92673,224.407,13.6245,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(5,1,'2026-04-09 16:08:19',9.25721,103.54,50.7093,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(6,4,'2026-04-09 16:08:19',4.40594,227.254,10.2162,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(7,1,'2026-04-08 16:08:19',10.0096,128.722,68.27,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(8,4,'2026-04-08 16:08:19',5.25675,224.799,10.523,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(9,1,'2026-04-07 16:08:19',8.98772,101.04,68.1547,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(10,4,'2026-04-07 16:08:19',4.82875,212.05,10.4845,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(11,1,'2026-04-06 16:08:19',10.6434,134.427,53.8231,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(12,4,'2026-04-06 16:08:19',5.11959,223.706,14.3042,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(13,1,'2026-04-05 16:08:19',10.9675,140.934,54.9067,'王操作','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(14,4,'2026-04-05 16:08:19',4.50812,224.37,14.5056,'张经理','','2026-04-11 16:08:20','2026-04-11 16:08:20'),(15,2,'2026-04-12 16:00:00',125,100,30,'测试用户','测试上报运行数据','2026-04-12 19:14:10','2026-04-12 19:14:10'),(16,1,'2026-04-18 12:00:00',16,150,36,'胥星',NULL,'2026-04-18 06:28:06','2026-04-18 06:28:06');
 /*!40000 ALTER TABLE `runningdata` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -379,6 +478,14 @@ CREATE TABLE `users` (
   UNIQUE KEY `email_8` (`email`),
   UNIQUE KEY `username_9` (`username`),
   UNIQUE KEY `email_9` (`email`),
+  UNIQUE KEY `username_10` (`username`),
+  UNIQUE KEY `email_10` (`email`),
+  UNIQUE KEY `username_11` (`username`),
+  UNIQUE KEY `email_11` (`email`),
+  UNIQUE KEY `username_12` (`username`),
+  UNIQUE KEY `email_12` (`email`),
+  UNIQUE KEY `username_13` (`username`),
+  UNIQUE KEY `email_13` (`email`),
   KEY `departmentId` (`departmentId`),
   KEY `roleId` (`roleId`),
   CONSTRAINT `users_ibfk_1` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
@@ -388,7 +495,15 @@ CREATE TABLE `users` (
   CONSTRAINT `users_ibfk_13` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`),
   CONSTRAINT `users_ibfk_14` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
   CONSTRAINT `users_ibfk_15` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`),
+  CONSTRAINT `users_ibfk_16` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
+  CONSTRAINT `users_ibfk_17` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`),
+  CONSTRAINT `users_ibfk_18` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
+  CONSTRAINT `users_ibfk_19` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`),
   CONSTRAINT `users_ibfk_2` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `users_ibfk_20` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
+  CONSTRAINT `users_ibfk_21` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`),
+  CONSTRAINT `users_ibfk_22` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `users_ibfk_23` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `users_ibfk_3` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
   CONSTRAINT `users_ibfk_4` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
   CONSTRAINT `users_ibfk_5` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`),
@@ -397,7 +512,7 @@ CREATE TABLE `users` (
   CONSTRAINT `users_ibfk_8` FOREIGN KEY (`departmentId`) REFERENCES `departments` (`id`),
   CONSTRAINT `users_ibfk_9` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`),
   CONSTRAINT `Users_roleId_foreign_idx` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -419,4 +534,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-13  1:24:19
+-- Dump completed on 2026-04-18 15:37:47

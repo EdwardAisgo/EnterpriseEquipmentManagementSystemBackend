@@ -3313,3 +3313,394 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-17 23:04:07 info: Get devices successful: 4 devices found
 2026-04-17 23:04:07 info: Get users successful: 6 users found
 2026-04-17 23:04:07 info: Get repair orders from cache
+2026-04-18 12:01:10 info: Server is running on port 3001
+2026-04-18 12:01:10 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 12:01:10 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:10 info: Server will continue to run without Redis
+2026-04-18 12:01:11 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:11 info: Server will continue to run without Redis
+2026-04-18 12:01:11 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:11 info: Server will continue to run without Redis
+2026-04-18 12:01:12 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:12 info: Server will continue to run without Redis
+2026-04-18 12:01:13 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:13 info: Server will continue to run without Redis
+2026-04-18 12:01:14 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:14 info: Server will continue to run without Redis
+2026-04-18 12:01:17 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:17 info: Server will continue to run without Redis
+2026-04-18 12:01:22 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:22 info: Server will continue to run without Redis
+2026-04-18 12:01:30 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-18 12:01:30 info: Server will continue to run without Redis
+2026-04-18 12:40:27 info: Server is running on port 3001
+2026-04-18 12:40:27 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 12:40:27 info: Redis connected successfully
+2026-04-18 12:40:55 error: Login error: 
+2026-04-18 13:23:32 info: Server is running on port 3001
+2026-04-18 13:23:32 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 13:23:32 info: Redis connected successfully
+2026-04-18 13:23:43 error: Login error: Unknown database 'equipment_management'
+2026-04-18 13:30:25 info: Login successful: User 1
+2026-04-18 13:30:25 info: Get user by id successful: User 1
+2026-04-18 13:30:26 info: Get user by id from cache: User 1
+2026-04-18 13:30:27 info: Get device status count successful
+2026-04-18 13:30:27 info: Get annual maintenance cost successful for year 2026
+2026-04-18 13:30:27 info: Get maintenance type count successful
+2026-04-18 13:30:27 info: Get expiring maintenance plans successful: 0 plans found
+2026-04-18 13:30:33 info: Get devices successful: 0 devices found
+2026-04-18 13:30:35 info: Get devices successful: 0 devices found
+2026-04-18 13:30:35 info: Get running data successful: 0 records found
+2026-04-18 13:30:41 info: Get devices successful: 0 devices found
+2026-04-18 13:30:41 info: Get maintenance plans successful: 0 plans found
+2026-04-18 13:30:42 info: Get devices successful: 0 devices found
+2026-04-18 13:30:42 info: Get maintenances successful: 0 records found
+2026-04-18 13:30:44 info: Get users successful: 1 users found
+2026-04-18 13:30:44 info: Get devices successful: 0 devices found
+2026-04-18 13:30:44 info: Get repair orders successful: 0 orders found
+2026-04-18 13:30:45 info: Get all departments successful: 0 departments found
+2026-04-18 13:30:45 info: Get users successful: 1 users found
+2026-04-18 13:30:45 info: Get all departments successful: 0 departments found
+2026-04-18 13:31:02 info: Get all departments successful: 0 departments found
+2026-04-18 13:39:06 info: Server is running on port 3001
+2026-04-18 13:39:06 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 13:39:06 info: Redis connected successfully
+2026-04-18 13:47:41 info: Get users successful: 5 users found
+2026-04-18 13:47:41 info: Get all departments successful: 4 departments found
+2026-04-18 13:47:41 info: Get all departments successful: 4 departments found
+2026-04-18 13:47:51 info: Get all departments successful: 4 departments found
+2026-04-18 13:48:34 error: Restore failed: Command failed: mysql -h localhost -u root -pEdward@520zj equipment_management < "D:\project\EnterpriseEquipmentManagementSystemBackend\backups\backup_equipment_management_2026-04-12T19-17-20-939Z.sql"
+'mysql' �����ڲ����ⲿ���Ҳ���ǿ����еĳ���
+���������ļ���
+
+2026-04-18 13:54:58 info: Server is running on port 3001
+2026-04-18 13:54:58 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 13:54:58 info: Redis connected successfully
+2026-04-18 13:55:06 info: Found mysql at: C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe
+2026-04-18 13:55:06 info: Found mysqldump at: C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe
+2026-04-18 13:55:17 info: Found mysql at: C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe
+2026-04-18 13:55:17 info: Executing: mysql ...
+2026-04-18 13:55:21 warn: mysql stderr: mysql: [Warning] Using a password on the command line interface can be insecure.
+
+2026-04-18 13:55:21 info: Restore successful from: backup_equipment_management_2026-04-12T19-17-20-939Z.sql
+2026-04-18 13:56:08 info: Found mysqldump at: C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe
+2026-04-18 13:56:08 info: Executing: mysqldump ...
+2026-04-18 13:56:08 warn: mysqldump stderr: mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
+2026-04-18 13:56:08 info: Backup successful: backup_equipment_management_2026-04-18T05-56-08-586Z.sql
+2026-04-18 13:56:14 info: Found mysql at: C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe
+2026-04-18 13:56:14 info: Executing: mysql ...
+2026-04-18 13:56:16 warn: mysql stderr: mysql: [Warning] Using a password on the command line interface can be insecure.
+
+2026-04-18 13:56:16 info: Restore successful from: backup_equipment_management_2026-04-12T19-17-20-939Z.sql
+2026-04-18 13:56:18 info: Get users successful: 6 users found
+2026-04-18 13:56:18 info: Get all departments successful: 5 departments found
+2026-04-18 13:56:18 info: Get all departments successful: 5 departments found
+2026-04-18 13:56:22 info: Get all departments successful: 5 departments found
+2026-04-18 13:56:28 info: Get all departments successful: 5 departments found
+2026-04-18 13:56:28 info: Get users successful: 6 users found
+2026-04-18 13:56:28 info: Get all departments successful: 5 departments found
+2026-04-18 13:56:29 info: Get users successful: 6 users found
+2026-04-18 13:56:29 info: Get devices successful: 5 devices found
+2026-04-18 13:56:29 info: Get repair orders successful: 1 orders found
+2026-04-18 13:56:33 info: Get devices successful: 5 devices found
+2026-04-18 13:56:33 info: Get maintenance plans successful: 5 plans found
+2026-04-18 13:56:33 info: Get devices successful: 5 devices found
+2026-04-18 13:56:33 info: Get maintenances successful: 4 records found
+2026-04-18 13:56:35 info: Get devices successful: 5 devices found
+2026-04-18 13:56:35 info: Get running data successful: 15 records found
+2026-04-18 14:03:25 info: Server is running on port 3001
+2026-04-18 14:03:25 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:03:25 info: Redis connected successfully
+2026-04-18 14:03:46 info: Get user by id successful: User 1
+2026-04-18 14:03:47 info: Get devices successful: 5 devices found
+2026-04-18 14:03:47 info: Get running data successful: 15 records found
+2026-04-18 14:03:51 info: Get devices successful: 5 devices found
+2026-04-18 14:03:52 info: Server is running on port 3001
+2026-04-18 14:03:52 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:03:52 info: Redis connected successfully
+2026-04-18 14:03:53 info: Get devices successful: 4 devices found
+2026-04-18 14:03:54 info: Get devices successful: 0 devices found
+2026-04-18 14:03:56 info: Get devices successful: 1 devices found
+2026-04-18 14:03:58 info: Get devices successful: 0 devices found
+2026-04-18 14:04:00 info: Get devices successful: 5 devices found
+2026-04-18 14:04:10 info: Server is running on port 3001
+2026-04-18 14:04:10 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:04:10 info: Redis connected successfully
+2026-04-18 14:06:44 info: Get running data from cache
+2026-04-18 14:06:44 info: Get devices successful: 5 devices found
+2026-04-18 14:23:34 info: Get devices successful: 5 devices found
+2026-04-18 14:23:34 info: Get running data successful: 15 records found
+2026-04-18 14:27:29 info: Get users successful: 6 users found
+2026-04-18 14:28:06 info: Update device running hours: Device 1, Running hours 16
+2026-04-18 14:28:06 info: Create running data successful: Data 16
+2026-04-18 14:28:06 info: Get running data successful: 16 records found
+2026-04-18 14:30:03 info: Server is running on port 3001
+2026-04-18 14:30:03 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:30:03 info: Redis connected successfully
+2026-04-18 14:30:14 info: Server is running on port 3001
+2026-04-18 14:30:14 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:30:14 info: Redis connected successfully
+2026-04-18 14:30:30 info: Login successful: User 1
+2026-04-18 14:30:30 info: Get user by id successful: User 1
+2026-04-18 14:30:30 info: Get user by id from cache: User 1
+2026-04-18 14:30:31 info: Get device status count successful
+2026-04-18 14:30:31 info: Get annual maintenance cost successful for year 2026
+2026-04-18 14:30:31 info: Get maintenance type count successful
+2026-04-18 14:30:31 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 14:30:34 info: Get devices successful: 5 devices found
+2026-04-18 14:30:34 info: Get running data from cache
+2026-04-18 14:30:42 info: Get devices successful: 5 devices found
+2026-04-18 14:41:15 info: Server is running on port 3001
+2026-04-18 14:41:15 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:41:15 info: Redis connected successfully
+2026-04-18 14:41:20 info: Server is running on port 3001
+2026-04-18 14:41:20 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:41:20 info: Redis connected successfully
+2026-04-18 14:41:38 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:41:50 info: Server is running on port 3001
+2026-04-18 14:41:50 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:41:50 info: Redis connected successfully
+2026-04-18 14:42:01 info: Server is running on port 3001
+2026-04-18 14:42:01 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:42:01 info: Redis connected successfully
+2026-04-18 14:42:11 info: Server is running on port 3001
+2026-04-18 14:42:11 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:42:11 info: Redis connected successfully
+2026-04-18 14:42:36 info: Server is running on port 3001
+2026-04-18 14:42:36 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:42:36 info: Redis connected successfully
+2026-04-18 14:42:47 info: Server is running on port 3001
+2026-04-18 14:42:47 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:42:47 info: Redis connected successfully
+2026-04-18 14:42:56 info: Server is running on port 3001
+2026-04-18 14:42:56 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:42:56 info: Redis connected successfully
+2026-04-18 14:43:04 info: Server is running on port 3001
+2026-04-18 14:43:04 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:43:04 info: Redis connected successfully
+2026-04-18 14:43:16 info: Server is running on port 3001
+2026-04-18 14:43:16 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:43:16 info: Redis connected successfully
+2026-04-18 14:43:26 info: Server is running on port 3001
+2026-04-18 14:43:26 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:43:26 info: Redis connected successfully
+2026-04-18 14:43:45 info: Server is running on port 3001
+2026-04-18 14:43:45 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:43:45 info: Redis connected successfully
+2026-04-18 14:44:05 info: Server is running on port 3001
+2026-04-18 14:44:05 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:44:05 info: Redis connected successfully
+2026-04-18 14:44:19 info: Server is running on port 3001
+2026-04-18 14:44:19 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:44:19 info: Redis connected successfully
+2026-04-18 14:45:10 info: Server is running on port 3001
+2026-04-18 14:45:10 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:45:10 info: Redis connected successfully
+2026-04-18 14:46:28 info: Get user by id successful: User 1
+2026-04-18 14:46:30 info: Get user by id from cache: User 1
+2026-04-18 14:46:30 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:46:40 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:46:58 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:46:58 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:47:40 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:47:40 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:50:47 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:50:47 info: Get running data successful: 16 records found
+2026-04-18 14:50:49 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:50:58 info: Get device status count successful
+2026-04-18 14:50:58 info: Get annual maintenance cost successful for year 2026
+2026-04-18 14:50:58 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 14:50:58 info: Get maintenance type count successful
+2026-04-18 14:51:01 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:01 info: Get maintenance plans successful: 5 plans found
+2026-04-18 14:51:02 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:02 info: Get maintenances successful: 4 records found
+2026-04-18 14:51:03 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:03 info: Get running data from cache
+2026-04-18 14:51:08 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:12 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:12 info: Get running data from cache
+2026-04-18 14:51:30 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:33 info: Get user by id from cache: User 1
+2026-04-18 14:51:35 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:41 info: Login successful: User 1
+2026-04-18 14:51:41 info: Get user by id from cache: User 1
+2026-04-18 14:51:42 info: Get user by id from cache: User 1
+2026-04-18 14:51:44 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:51:55 info: Get running data from cache
+2026-04-18 14:51:55 error: Get devices error: Table 'equipment_management.devicetypes' doesn't exist
+2026-04-18 14:53:03 info: Server is running on port 3001
+2026-04-18 14:53:03 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:53:03 info: Redis connected successfully
+2026-04-18 14:53:16 info: Server is running on port 3001
+2026-04-18 14:53:16 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:53:17 info: Redis connected successfully
+2026-04-18 14:53:36 info: Server is running on port 3001
+2026-04-18 14:53:36 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 14:53:36 info: Redis connected successfully
+2026-04-18 14:56:19 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:56:59 info: Get user by id successful: User 1
+2026-04-18 14:57:00 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:57:31 info: Get user by id from cache: User 1
+2026-04-18 14:57:31 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:57:36 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:57:36 info: Get running data successful: 16 records found
+2026-04-18 14:57:38 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:58:10 info: Get device status count successful
+2026-04-18 14:58:10 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 14:58:10 info: Get annual maintenance cost successful for year 2026
+2026-04-18 14:58:10 info: Get maintenance type count successful
+2026-04-18 14:58:14 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
+2026-04-18 14:59:53 info: Get user by id from cache: User 1
+2026-04-18 14:59:54 info: Get devices successful: 5 devices found
+2026-04-18 15:01:21 info: Server is running on port 3001
+2026-04-18 15:01:21 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 15:01:21 info: Redis connected successfully
+2026-04-18 15:05:30 info: Get user by id from cache: User 1
+2026-04-18 15:06:03 info: Get all device types successful: 0 types found
+2026-04-18 15:06:06 info: Get devices successful: 5 devices found
+2026-04-18 15:06:07 info: Get all device types successful: 0 types found
+2026-04-18 15:06:07 info: Get all departments successful: 5 departments found
+2026-04-18 15:06:27 info: Get user by id from cache: User 1
+2026-04-18 15:06:34 info: Get all device types successful: 0 types found
+2026-04-18 15:06:43 info: Get user by id from cache: User 1
+2026-04-18 15:06:44 info: Get all device types successful: 0 types found
+2026-04-18 15:08:52 info: Get devices successful: 5 devices found
+2026-04-18 15:08:53 info: Get all device types successful: 0 types found
+2026-04-18 15:09:59 info: Get user by id successful: User 1
+2026-04-18 15:09:59 info: Get all device types successful: 6 types found
+2026-04-18 15:11:01 info: Server is running on port 3001
+2026-04-18 15:11:01 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 15:11:01 info: Redis connected successfully
+2026-04-18 15:11:24 info: Server is running on port 3001
+2026-04-18 15:11:24 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 15:11:24 info: Redis connected successfully
+2026-04-18 15:17:23 info: Get all device types successful: 6 types found
+2026-04-18 15:17:30 info: Create device type successful: Type 7
+2026-04-18 15:17:30 info: Get all device types successful: 7 types found
+2026-04-18 15:18:03 info: Get devices successful: 5 devices found
+2026-04-18 15:18:08 info: Get all device types successful: 7 types found
+2026-04-18 15:18:38 info: Get devices successful: 5 devices found
+2026-04-18 15:18:39 info: Get all device types successful: 7 types found
+2026-04-18 15:18:59 info: Get all device types successful: 7 types found
+2026-04-18 15:19:02 info: Delete device type successful: Type 7
+2026-04-18 15:19:02 info: Get all device types successful: 6 types found
+2026-04-18 15:19:04 info: Server is running on port 3001
+2026-04-18 15:19:04 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-18 15:19:04 info: Redis connected successfully
+2026-04-18 15:19:30 info: Found mysqldump at: C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe
+2026-04-18 15:19:30 info: Executing: mysqldump ...
+2026-04-18 15:19:30 warn: mysqldump stderr: mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
+2026-04-18 15:19:30 info: Backup successful: backup_equipment_management_2026-04-18T07-19-29-870Z.sql
+2026-04-18 15:19:40 info: Get device status count successful
+2026-04-18 15:19:40 info: Get annual maintenance cost successful for year 2026
+2026-04-18 15:19:40 info: Get maintenance type count successful
+2026-04-18 15:19:40 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 15:20:04 info: Get all device types successful: 6 types found
+2026-04-18 15:20:20 info: Get devices successful: 5 devices found
+2026-04-18 15:20:20 info: Get running data successful: 16 records found
+2026-04-18 15:20:24 info: Get devices successful: 5 devices found
+2026-04-18 15:20:24 info: Get maintenances successful: 4 records found
+2026-04-18 15:20:33 info: Get devices successful: 5 devices found
+2026-04-18 15:20:33 info: Get maintenance plans successful: 5 plans found
+2026-04-18 15:23:01 info: Get users successful: 6 users found
+2026-04-18 15:23:08 info: Get users successful: 6 users found
+2026-04-18 15:23:21 info: Get devices successful: 5 devices found
+2026-04-18 15:23:21 info: Get users successful: 6 users found
+2026-04-18 15:23:21 info: Get repair orders successful: 1 orders found
+2026-04-18 15:23:24 info: Get running data from cache
+2026-04-18 15:23:24 info: Get devices successful: 5 devices found
+2026-04-18 15:23:29 info: Get devices successful: 5 devices found
+2026-04-18 15:23:33 info: Get devices successful: 5 devices found
+2026-04-18 15:23:33 info: Get running data from cache
+2026-04-18 15:23:44 info: Get devices successful: 5 devices found
+2026-04-18 15:23:46 info: Get devices successful: 5 devices found
+2026-04-18 15:23:47 info: Get all device types successful: 6 types found
+2026-04-18 15:23:55 info: Get devices successful: 5 devices found
+2026-04-18 15:23:56 info: Get devices successful: 5 devices found
+2026-04-18 15:23:56 info: Get running data from cache
+2026-04-18 15:24:03 info: Get device status count successful
+2026-04-18 15:24:03 info: Get annual maintenance cost successful for year 2026
+2026-04-18 15:24:03 info: Get maintenance type count successful
+2026-04-18 15:24:04 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 15:24:06 info: Get devices successful: 5 devices found
+2026-04-18 15:24:09 info: Get all device types successful: 6 types found
+2026-04-18 15:24:14 info: Get devices successful: 5 devices found
+2026-04-18 15:24:14 info: Get maintenance plans from cache
+2026-04-18 15:24:18 info: Get devices successful: 5 devices found
+2026-04-18 15:24:18 info: Get maintenances from cache
+2026-04-18 15:24:22 info: Get devices successful: 5 devices found
+2026-04-18 15:24:22 info: Get users successful: 6 users found
+2026-04-18 15:24:22 info: Get repair orders from cache
+2026-04-18 15:25:36 info: Get repair orders from cache
+2026-04-18 15:25:36 info: Get devices successful: 5 devices found
+2026-04-18 15:25:36 info: Get users successful: 6 users found
+2026-04-18 15:25:41 info: Get devices successful: 5 devices found
+2026-04-18 15:25:41 info: Get repair orders from cache
+2026-04-18 15:25:41 info: Get users successful: 6 users found
+2026-04-18 15:26:45 info: Get devices successful: 5 devices found
+2026-04-18 15:26:48 info: Get all device types successful: 6 types found
+2026-04-18 15:26:49 info: Get devices successful: 5 devices found
+2026-04-18 15:30:36 info: Login successful: User 1
+2026-04-18 15:30:36 info: Get user by id successful: User 1
+2026-04-18 15:30:37 info: Get user by id from cache: User 1
+2026-04-18 15:30:37 info: Get devices successful: 5 devices found
+2026-04-18 15:30:39 info: Get user by id from cache: User 1
+2026-04-18 15:30:39 info: Get devices successful: 5 devices found
+2026-04-18 15:34:30 warn: Login failed: Invalid password for user admin
+2026-04-18 15:34:30 error: Login error: Invalid username or password
+2026-04-18 15:34:34 info: Login successful: User 1
+2026-04-18 15:34:34 info: Get user by id from cache: User 1
+2026-04-18 15:34:34 info: Get user by id from cache: User 1
+2026-04-18 15:34:36 info: Get device status count successful
+2026-04-18 15:34:36 info: Get annual maintenance cost successful for year 2026
+2026-04-18 15:34:36 info: Get maintenance type count successful
+2026-04-18 15:34:36 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 15:34:47 info: Get user by id from cache: User 1
+2026-04-18 15:34:48 info: Get device status count successful
+2026-04-18 15:34:48 info: Get annual maintenance cost successful for year 2026
+2026-04-18 15:34:48 info: Get maintenance type count successful
+2026-04-18 15:34:48 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 15:34:49 info: Get user by id from cache: User 1
+2026-04-18 15:35:20 info: Get user by id from cache: User 1
+2026-04-18 15:35:21 info: Get device status count successful
+2026-04-18 15:35:21 info: Get annual maintenance cost successful for year 2026
+2026-04-18 15:35:21 info: Get maintenance type count successful
+2026-04-18 15:35:21 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 15:35:22 info: Get user by id from cache: User 1
+2026-04-18 15:35:23 info: Get device status count successful
+2026-04-18 15:35:23 info: Get annual maintenance cost successful for year 2026
+2026-04-18 15:35:23 info: Get maintenance type count successful
+2026-04-18 15:35:23 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 15:35:23 info: Get user by id from cache: User 1
+2026-04-18 15:35:24 info: Get device status count successful
+2026-04-18 15:35:24 info: Get annual maintenance cost successful for year 2026
+2026-04-18 15:35:24 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 15:35:24 info: Get maintenance type count successful
+2026-04-18 15:35:24 info: Get user by id from cache: User 1
+2026-04-18 15:35:25 info: Get device status count successful
+2026-04-18 15:35:25 info: Get annual maintenance cost successful for year 2026
+2026-04-18 15:35:25 info: Get maintenance type count successful
+2026-04-18 15:35:25 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 15:35:26 info: Get user by id from cache: User 1
+2026-04-18 15:35:26 info: Get device status count successful
+2026-04-18 15:35:26 info: Get annual maintenance cost successful for year 2026
+2026-04-18 15:35:26 info: Get maintenance type count successful
+2026-04-18 15:35:26 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 15:37:25 info: Login successful: User 1
+2026-04-18 15:37:25 info: Get user by id from cache: User 1
+2026-04-18 15:37:26 info: Get user by id from cache: User 1
+2026-04-18 15:37:27 info: Get device status count successful
+2026-04-18 15:37:27 info: Get annual maintenance cost successful for year 2026
+2026-04-18 15:37:27 info: Get maintenance type count successful
+2026-04-18 15:37:27 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-18 15:37:47 info: Found mysqldump at: C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe
+2026-04-18 15:37:47 info: Executing: mysqldump ...
+2026-04-18 15:37:47 warn: mysqldump stderr: mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
+2026-04-18 15:37:47 info: Backup successful: backup_equipment_management_2026-04-18T07-37-46-915Z.sql
+2026-04-18 15:41:13 info: Login successful: User 1
+2026-04-18 15:41:13 info: Get user by id successful: User 1
+2026-04-18 15:41:13 info: Get user by id from cache: User 1

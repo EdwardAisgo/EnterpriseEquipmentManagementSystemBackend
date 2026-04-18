@@ -59,4 +59,15 @@ router.get('/maintenance-expiring', authenticateToken, async (req, res) => {
   }
 });
 
+// 获取监控面板统计数据
+router.get('/monitoring-stats', authenticateToken, async (req, res) => {
+  try {
+    const stats = await ReportService.getMonitoringStats();
+    res.json({ stats });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
 module.exports = router;

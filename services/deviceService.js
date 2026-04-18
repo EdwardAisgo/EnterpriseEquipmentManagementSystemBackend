@@ -1,4 +1,4 @@
-const { Device, Department, RepairOrder } = require('../models');
+const { Device, Department, RepairOrder, DeviceType } = require('../models');
 const { Op } = require('sequelize');
 const logger = require('../utils/logger');
 const RedisCache = require('../utils/redis');
@@ -22,11 +22,28 @@ class DeviceService {
         ];
       }
 
-      const devices = await Device.findAll({
-        where,
-        include: [{ model: Department, attributes: ['id', 'name'] }],
-        order: [['createdAt', 'DESC']]
-      });
+      let devices;
+      try {
+        devices = await Device.findAll({
+          where,
+          include: [
+            { model: Department, attributes: ['id', 'name'] },
+            { model: DeviceType, attributes: ['id', 'name'] }
+          ],
+          order: [['createdAt', 'DESC']]
+        });
+      } catch (err) {
+        // DeviceTypes 表尚未创建时降级查询
+        if (err.original && err.original.code === 'ER_NO_SUCH_TABLE') {
+          devices = await Device.findAll({
+            where,
+            include: [{ model: Department, attributes: ['id', 'name'] }],
+            order: [['createdAt', 'DESC']]
+          });
+        } else {
+          throw err;
+        }
+      }
 
       logger.info(`Get devices successful: ${devices.length} devices found`);
       return devices;
@@ -76,8 +93,21 @@ class DeviceService {
           throw new Error('设备编号已存在');
         }
       }
+
+      // 如果传了 deviceTypeId，同步 type 字段为 DeviceType.name
+      if (deviceData.deviceTypeId) {
+        try {
+          const deviceType = await DeviceType.findByPk(deviceData.deviceTypeId);
+          if (deviceType) {
+            deviceData.type = deviceType.name;
+          }
+        } catch (_e) {
+          // DeviceTypes 表不存在时忽略
+        }
+      }
+
       const device = await Device.create(deviceData);
-      
+
       // 清除设备列表缓存
       await RedisCache.del('devices:all');
       logger.info(`Create device successful: Device ${device.id}`);
@@ -109,8 +139,21 @@ class DeviceService {
           }
         }
       }
+
+      // 如果传了 deviceTypeId，同步 type 字段为 DeviceType.name
+      if (deviceData.deviceTypeId) {
+        try {
+          const deviceType = await DeviceType.findByPk(deviceData.deviceTypeId);
+          if (deviceType) {
+            deviceData.type = deviceType.name;
+          }
+        } catch (_e) {
+          // DeviceTypes 表不存在时忽略
+        }
+      }
+
       await device.update(deviceData);
-      
+
       // 清除相关缓存
       await RedisCache.del('devices:all');
       await RedisCache.del(`device:${id}`);

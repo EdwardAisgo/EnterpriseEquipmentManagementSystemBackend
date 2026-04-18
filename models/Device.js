@@ -20,6 +20,14 @@ const Device = sequelize.define('Device', {
     type: DataTypes.STRING(50),
     allowNull: false
   },
+  deviceTypeId: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+    references: {
+      model: 'DeviceTypes',
+      key: 'id'
+    }
+  },
   model: {
     type: DataTypes.STRING(100),
     allowNull: false
