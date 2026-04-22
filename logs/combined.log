@@ -4043,3 +4043,39 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-22 09:25:10 info: Get maintenances successful: 4 records found
 2026-04-22 09:25:11 info: Get repair orders successful: 1 orders found
 2026-04-22 09:25:18 info: Get running data successful: 16 records found
+2026-04-22 09:29:50 info: Server is running on port 3001
+2026-04-22 09:29:50 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-22 09:29:50 info: Redis connected successfully
+2026-04-22 09:34:15 info: Get user by id successful: User 1
+2026-04-22 09:34:49 info: Get all departments successful: 5 departments found
+2026-04-22 09:34:51 info: Get all departments successful: 5 departments found
+2026-04-22 09:34:51 info: Get users successful: 6 users found
+2026-04-22 09:34:51 info: Get all departments successful: 5 departments found
+2026-04-22 09:34:56 info: Get users successful: 6 users found
+2026-04-22 09:34:56 info: Get devices successful: 5 devices found
+2026-04-22 09:34:56 info: Get repair orders successful: 1 orders found
+2026-04-22 09:35:08 info: Get user by id from cache: User 1
+2026-04-22 09:36:36 info: Get user by id from cache: User 1
+2026-04-22 09:39:24 info: Get user by id from cache: User 1
+2026-04-22 09:39:26 info: Get user by id from cache: User 1
+2026-04-22 09:39:28 info: Get user by id from cache: User 1
+2026-04-22 09:39:33 info: Get user by id from cache: User 1
+2026-04-22 09:39:36 info: Get user by id from cache: User 1
+2026-04-22 09:39:37 info: Get device status count successful
+2026-04-22 09:39:37 info: Get annual maintenance cost successful for year 2026
+2026-04-22 09:39:37 info: Get maintenance type count successful
+2026-04-22 09:39:37 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-22 09:39:39 info: Get repair orders from cache
+2026-04-22 09:39:39 info: Get devices successful: 5 devices found
+2026-04-22 09:39:39 info: Get users successful: 6 users found
+2026-04-22 09:40:25 info: Get user by id from cache: User 1
+2026-04-22 09:40:43 info: Get user by id from cache: User 1
+2026-04-22 09:40:48 info: Get device status count successful
+2026-04-22 09:40:48 info: Get maintenance type count successful
+2026-04-22 09:40:48 info: Get annual maintenance cost successful for year 2026
+2026-04-22 09:40:48 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-22 09:42:35 info: Get user by id from cache: User 1
+2026-04-22 09:42:36 info: Get device status count successful
+2026-04-22 09:42:36 info: Get annual maintenance cost successful for year 2026
+2026-04-22 09:42:36 info: Get maintenance type count successful
+2026-04-22 09:42:36 info: Get expiring maintenance plans successful: 5 plans found

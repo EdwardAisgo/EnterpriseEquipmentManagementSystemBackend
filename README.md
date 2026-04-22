@@ -9,6 +9,15 @@
 - JWT（Authorization: Bearer Token）
 - Redis（缓存）
 - winston（日志）
+- dayjs / 原生 Date（日期处理）
+
+## 日期存储约定
+
+本项目所有**业务日期字段**（如 `purchaseDate`、`lastMaintenance`、`applyDate` 等）统一以 **`YYYY-MM-DD`** 字符串形式存储，数据库对应类型为 MySQL `DATE`（Sequelize `DATEONLY`）。
+
+- `createdAt` / `updatedAt` 仍保持 `DATETIME` 类型，用于完整审计时间。
+- 后端通过 `utils/dateHelper.js` 的 `toDateString()` 对入参进行防御式归一化，支持兼容 ISO 字符串、Date 对象及 `YYYY-MM-DD` 字符串。
+- 前端提交前已将 dayjs 对象格式化为 `YYYY-MM-DD` 字符串，避免时区漂移。
 
 ## 目录结构
 
@@ -20,7 +29,13 @@ EnterpriseEquipmentManagementSystemBackend/
 ├── models/                     # Sequelize 模型与关联
 ├── routes/                     # 路由（REST API）
 ├── services/                   # 业务服务层
-├── utils/                      # 工具（日志/redis/同步脚本等）
+├── utils/                      # 工具（日志/redis/日期归一化等）
+│   ├── dateHelper.js           # 日期归一化：统一转换为 YYYY-MM-DD
+│   └── ...
+├── scripts/                    # 辅助脚本（迁移/初始化数据等）
+│   ├── migrate-dates-to-dateonly.js  # 存量日期字段迁移（DATETIME → DATE）
+│   ├── seed-all-data.js        # 初始化演示数据
+│   └── ...
 ├── tests/                      # 单元/接口测试（部分脚本）
 ├── logs/                       # 运行日志（本地）
 ├── .env.example                # 环境变量模板（建议复制为 .env）
@@ -72,6 +87,24 @@ node sync-database.js
 ```
 
 说明：该脚本会执行 `sequelize.sync({ alter: true })`，用于开发环境快速对齐表结构；生产环境请使用更可控的迁移方案。
+
+### 3.1 日期字段迁移（如从旧版 DATETIME 升级）
+
+如果存量数据中的业务日期字段仍为 `DATETIME` 或带时间，可执行迁移脚本统一截断为 `DATE`：
+
+```bash
+node scripts/migrate-dates-to-dateonly.js
+```
+
+该脚本会遍历以下表与字段，自动执行 `UPDATE ... SET col = DATE(col)` 并 `ALTER TABLE ... MODIFY col DATE`：
+
+- `Devices`：`purchaseDate`、`warrantyEndDate`、`scrapDate`
+- `Maintenances`：`startDate`、`endDate`
+- `MaintenancePlans`：`lastMaintenance`、`nextMaintenance`
+- `RunningData`：`date`
+- `RepairOrders`：`applyDate`、`repairDate`
+
+迁移完成后建议重启服务，以清空 Redis 缓存中的旧格式数据。
 
 ### 4. 默认账号与基础数据
 
