@@ -16,7 +16,7 @@ const RunningData = sequelize.define('RunningData', {
     }
   },
   date: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: false
   },
   runningHours: {

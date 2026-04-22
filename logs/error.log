@@ -330,3 +330,31 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-18 14:57:38 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
 2026-04-18 14:58:14 error: Get devices error: Unknown column 'Device.deviceTypeId' in 'field list'
 2026-04-18 15:34:30 error: Login error: Invalid username or password
+2026-04-21 15:59:42 error: Redis connection error: Redis connection to localhost:6379 failed - read ECONNRESET
+2026-04-21 15:59:42 error: Redis connection error: Ready check failed: Redis connection lost and command aborted. It might have been processed.
+2026-04-21 15:59:42 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:43 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:43 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:44 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:46 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:49 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:54 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:00:02 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:00:16 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:00:40 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:01:20 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:02:29 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:04:25 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:07:43 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 18:03:31 error: Get devices error: Cannot destructure property 'search' of 'query' as it is undefined.
+2026-04-21 18:03:31 error: Get device by id error: Device not found
+2026-04-21 18:03:31 error: Create device error: 设备编号已存在
+2026-04-21 18:03:31 error: Update device error: Cannot read properties of undefined (reading 'include')
+2026-04-21 18:03:31 error: Update device error: Device not found
+2026-04-21 18:03:31 error: Delete device error: Cannot read properties of undefined (reading 'include')
+2026-04-21 18:03:31 error: Delete device error: Device not found
+2026-04-21 18:03:31 error: Get maintenance by id error: Maintenance record not found
+2026-04-21 18:03:31 error: Update maintenance error: Cannot read properties of undefined (reading 'include')
+2026-04-21 18:03:31 error: Update maintenance error: Maintenance record not found
+2026-04-21 18:03:31 error: Delete maintenance error: Cannot read properties of undefined (reading 'include')
+2026-04-21 18:03:31 error: Delete maintenance error: Maintenance record not found

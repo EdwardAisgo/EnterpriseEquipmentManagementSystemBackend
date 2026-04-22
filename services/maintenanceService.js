@@ -1,6 +1,7 @@
 const { Maintenance, Device } = require('../models');
 const logger = require('../utils/logger');
 const RedisCache = require('../utils/redis');
+const { toDateString } = require('../utils/dateHelper');
 
 class MaintenanceService {
   // 获取维护记录列表
@@ -66,8 +67,8 @@ class MaintenanceService {
         deviceId: maintenanceData.deviceId,
         maintenanceType: maintenanceData.maintenanceType || 'preventive',
         description: maintenanceData.maintenanceContent,
-        startDate: maintenanceData.maintenanceDate,
-        endDate: maintenanceData.endDate || maintenanceData.maintenanceDate, // 如果没有结束日期，默认为开始日期
+        startDate: toDateString(maintenanceData.maintenanceDate),
+        endDate: toDateString(maintenanceData.endDate || maintenanceData.maintenanceDate), // 如果没有结束日期，默认为开始日期
         status: maintenanceData.status || 'completed', // 默认为已完成
         technician: maintenanceData.maintenancePerson,
         cost: maintenanceData.cost,
@@ -108,8 +109,8 @@ class MaintenanceService {
         deviceId: maintenanceData.deviceId,
         maintenanceType: maintenanceData.maintenanceType,
         description: maintenanceData.maintenanceContent,
-        startDate: maintenanceData.maintenanceDate,
-        endDate: maintenanceData.endDate || maintenanceData.maintenanceDate,
+        startDate: toDateString(maintenanceData.maintenanceDate),
+        endDate: toDateString(maintenanceData.endDate || maintenanceData.maintenanceDate),
         status: maintenanceData.status,
         technician: maintenanceData.maintenancePerson,
         cost: maintenanceData.cost,

@@ -2,6 +2,7 @@ const { Device, Department, RepairOrder, DeviceType } = require('../models');
 const { Op } = require('sequelize');
 const logger = require('../utils/logger');
 const RedisCache = require('../utils/redis');
+const { toDateString } = require('../utils/dateHelper');
 
 class DeviceService {
   // 获取设备列表
@@ -106,7 +107,13 @@ class DeviceService {
         }
       }
 
-      const device = await Device.create(deviceData);
+      const normalizedData = {
+        ...deviceData,
+        purchaseDate: toDateString(deviceData.purchaseDate),
+        warrantyEndDate: toDateString(deviceData.warrantyEndDate),
+        scrapDate: toDateString(deviceData.scrapDate),
+      };
+      const device = await Device.create(normalizedData);
 
       // 清除设备列表缓存
       await RedisCache.del('devices:all');
@@ -152,7 +159,13 @@ class DeviceService {
         }
       }
 
-      await device.update(deviceData);
+      const normalizedData = {
+        ...deviceData,
+        purchaseDate: toDateString(deviceData.purchaseDate),
+        warrantyEndDate: toDateString(deviceData.warrantyEndDate),
+        scrapDate: toDateString(deviceData.scrapDate),
+      };
+      await device.update(normalizedData);
 
       // 清除相关缓存
       await RedisCache.del('devices:all');
@@ -178,7 +191,7 @@ class DeviceService {
       }
       await device.update({
         status: 'scrapped',
-        scrapDate: new Date(),
+        scrapDate: toDateString(new Date()),
         scrapReason
       });
 
@@ -194,7 +207,7 @@ class DeviceService {
         await RepairOrder.update(
           {
             status: 'completed',
-            repairDate: new Date(),
+            repairDate: toDateString(new Date()),
             repairContent: '设备已报废，工单自动关闭',
             notes: '设备已报废，工单自动关闭',
           },

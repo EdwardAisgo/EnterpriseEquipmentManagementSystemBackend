@@ -28,11 +28,11 @@ const MaintenancePlan = sequelize.define('MaintenancePlan', {
     allowNull: false
   },
   lastMaintenance: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: true
   },
   nextMaintenance: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: false
   },
   responsiblePerson: {

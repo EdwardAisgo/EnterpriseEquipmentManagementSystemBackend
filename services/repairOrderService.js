@@ -1,6 +1,7 @@
 const { RepairOrder, Device } = require('../models');
 const logger = require('../utils/logger');
 const RedisCache = require('../utils/redis');
+const { toDateString } = require('../utils/dateHelper');
 
 class RepairOrderService {
   // 获取维修工单列表
@@ -85,7 +86,7 @@ class RepairOrderService {
         equipmentId: repairOrderData.equipmentId,
         faultDescription: repairOrderData.faultDescription,
         applicant: repairOrderData.reporter,
-        applyDate: repairOrderData.reportDate,
+        applyDate: toDateString(repairOrderData.reportDate),
         status: 'pending' // 默认状态为待处理
       };
       const repairOrder = await RepairOrder.create(transformedData);
@@ -115,8 +116,13 @@ class RepairOrderService {
         throw new Error('Repair order not found');
       }
       
+      const normalizedData = {
+        ...repairOrderData,
+        applyDate: toDateString(repairOrderData.applyDate),
+        repairDate: toDateString(repairOrderData.repairDate),
+      };
       const oldStatus = repairOrder.status;
-      await repairOrder.update(repairOrderData);
+      await repairOrder.update(normalizedData);
       
       // 处理设备状态更新
       if (oldStatus !== repairOrder.status) {

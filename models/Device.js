@@ -53,7 +53,7 @@ const Device = sequelize.define('Device', {
     allowNull: true
   },
   purchaseDate: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: true
   },
   purchasePrice: {
@@ -65,11 +65,11 @@ const Device = sequelize.define('Device', {
     allowNull: true
   },
   warrantyEndDate: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: true
   },
   scrapDate: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: true
   },
   scrapReason: {

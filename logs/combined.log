@@ -3714,3 +3714,291 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-18 15:48:32 info: Login successful: User 1
 2026-04-18 15:48:32 info: Get user by id from cache: User 1
 2026-04-18 15:48:32 info: Get user by id from cache: User 1
+2026-04-21 15:59:40 info: Server is running on port 3001
+2026-04-21 15:59:40 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 15:59:40 info: Redis connected successfully
+2026-04-21 15:59:42 error: Redis connection error: Redis connection to localhost:6379 failed - read ECONNRESET
+2026-04-21 15:59:42 info: Server will continue to run without Redis
+2026-04-21 15:59:42 error: Redis connection error: Ready check failed: Redis connection lost and command aborted. It might have been processed.
+2026-04-21 15:59:42 info: Server will continue to run without Redis
+2026-04-21 15:59:42 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:42 info: Server will continue to run without Redis
+2026-04-21 15:59:43 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:43 info: Server will continue to run without Redis
+2026-04-21 15:59:43 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:43 info: Server will continue to run without Redis
+2026-04-21 15:59:44 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:44 info: Server will continue to run without Redis
+2026-04-21 15:59:46 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:46 info: Server will continue to run without Redis
+2026-04-21 15:59:49 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:49 info: Server will continue to run without Redis
+2026-04-21 15:59:54 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 15:59:54 info: Server will continue to run without Redis
+2026-04-21 16:00:02 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:00:02 info: Server will continue to run without Redis
+2026-04-21 16:00:16 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:00:16 info: Server will continue to run without Redis
+2026-04-21 16:00:40 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:00:40 info: Server will continue to run without Redis
+2026-04-21 16:01:20 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:01:20 info: Server will continue to run without Redis
+2026-04-21 16:02:29 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:02:29 info: Server will continue to run without Redis
+2026-04-21 16:04:25 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:04:25 info: Server will continue to run without Redis
+2026-04-21 16:07:43 error: Redis connection error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2026-04-21 16:07:43 info: Server will continue to run without Redis
+2026-04-21 16:13:20 info: Redis connected successfully
+2026-04-21 16:16:54 info: Login successful: User 1
+2026-04-21 16:16:54 info: Get user by id successful: User 1
+2026-04-21 16:16:55 info: Get user by id from cache: User 1
+2026-04-21 16:16:59 info: Get device status count successful
+2026-04-21 16:16:59 info: Get annual maintenance cost successful for year 2026
+2026-04-21 16:16:59 info: Get maintenance type count successful
+2026-04-21 16:16:59 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-21 16:23:59 info: Get devices successful: 5 devices found
+2026-04-21 16:24:00 info: Get all device types successful: 6 types found
+2026-04-21 16:24:06 info: Get devices successful: 5 devices found
+2026-04-21 16:24:07 info: Get all departments successful: 5 departments found
+2026-04-21 16:24:07 info: Get all device types successful: 6 types found
+2026-04-21 16:24:12 info: Get all departments successful: 5 departments found
+2026-04-21 16:24:12 info: Get all device types successful: 6 types found
+2026-04-21 16:24:16 info: Update device successful: Device 1
+2026-04-21 16:24:16 info: Get devices successful: 5 devices found
+2026-04-21 16:24:18 info: Get all departments successful: 5 departments found
+2026-04-21 16:24:18 info: Get all device types successful: 6 types found
+2026-04-21 16:24:26 info: Get all departments successful: 5 departments found
+2026-04-21 16:24:26 info: Get all device types successful: 6 types found
+2026-04-21 16:24:33 info: Update device successful: Device 2
+2026-04-21 16:24:33 info: Get devices successful: 5 devices found
+2026-04-21 16:24:35 info: Get all departments successful: 5 departments found
+2026-04-21 16:24:35 info: Get all device types successful: 6 types found
+2026-04-21 16:24:40 info: Get all departments successful: 5 departments found
+2026-04-21 16:24:40 info: Get all device types successful: 6 types found
+2026-04-21 16:24:43 info: Update device successful: Device 3
+2026-04-21 16:24:43 info: Get devices successful: 5 devices found
+2026-04-21 16:24:45 info: Get all departments successful: 5 departments found
+2026-04-21 16:24:45 info: Get all device types successful: 6 types found
+2026-04-21 16:24:49 info: Update device successful: Device 4
+2026-04-21 16:24:49 info: Get devices successful: 5 devices found
+2026-04-21 16:24:50 info: Get all departments successful: 5 departments found
+2026-04-21 16:24:50 info: Get all device types successful: 6 types found
+2026-04-21 16:24:56 info: Get all departments successful: 5 departments found
+2026-04-21 16:24:56 info: Get all device types successful: 6 types found
+2026-04-21 16:25:08 info: Get all device types successful: 6 types found
+2026-04-21 16:25:14 info: Get devices successful: 5 devices found
+2026-04-21 16:25:16 info: Get all departments successful: 5 departments found
+2026-04-21 16:25:16 info: Get all device types successful: 6 types found
+2026-04-21 16:25:20 info: Update device successful: Device 5
+2026-04-21 16:25:20 info: Get devices successful: 5 devices found
+2026-04-21 16:26:18 info: Get devices successful: 5 devices found
+2026-04-21 16:26:18 info: Get running data successful: 16 records found
+2026-04-21 16:36:21 info: Get user by id successful: User 1
+2026-04-21 16:36:22 info: Get devices successful: 5 devices found
+2026-04-21 16:36:22 info: Get running data successful: 16 records found
+2026-04-21 16:36:25 info: Get user by id from cache: User 1
+2026-04-21 16:36:26 info: Get running data from cache
+2026-04-21 16:36:26 info: Get devices successful: 5 devices found
+2026-04-21 16:42:32 info: Get devices successful: 5 devices found
+2026-04-21 16:48:54 info: Get user by id successful: User 1
+2026-04-21 16:48:58 info: Get user by id from cache: User 1
+2026-04-21 16:48:59 info: Get devices successful: 5 devices found
+2026-04-21 16:49:08 info: Get user by id from cache: User 1
+2026-04-21 16:49:13 info: Get user by id from cache: User 1
+2026-04-21 16:49:14 info: Get devices successful: 5 devices found
+2026-04-21 16:52:55 info: Get user by id from cache: User 1
+2026-04-21 16:52:55 info: Get devices successful: 5 devices found
+2026-04-21 16:52:58 info: Get devices successful: 4 devices found
+2026-04-21 16:52:59 info: Get devices successful: 0 devices found
+2026-04-21 16:53:01 info: Get devices successful: 1 devices found
+2026-04-21 16:53:02 info: Get devices successful: 0 devices found
+2026-04-21 16:53:04 info: Get devices successful: 5 devices found
+2026-04-21 16:53:09 info: Get users successful: 6 users found
+2026-04-21 16:53:09 info: Get all departments successful: 5 departments found
+2026-04-21 16:53:09 info: Get all departments successful: 5 departments found
+2026-04-21 17:02:35 info: Get user by id successful: User 1
+2026-04-21 17:02:42 info: Get user by id from cache: User 1
+2026-04-21 17:02:46 info: Get user by id from cache: User 1
+2026-04-21 17:03:33 info: Get user by id from cache: User 1
+2026-04-21 17:03:38 info: Get user by id from cache: User 1
+2026-04-21 17:03:44 info: Get user by id from cache: User 1
+2026-04-21 17:03:48 info: Get user by id from cache: User 1
+2026-04-21 17:04:12 info: Get user by id from cache: User 1
+2026-04-21 17:04:17 info: Get user by id from cache: User 1
+2026-04-21 17:04:22 info: Get user by id from cache: User 1
+2026-04-21 17:04:26 info: Get user by id from cache: User 1
+2026-04-21 17:05:33 info: Get user by id from cache: User 1
+2026-04-21 17:05:38 info: Get user by id from cache: User 1
+2026-04-21 17:05:44 info: Get user by id from cache: User 1
+2026-04-21 17:05:49 info: Get user by id from cache: User 1
+2026-04-21 17:06:22 info: Get user by id from cache: User 1
+2026-04-21 17:06:27 info: Get user by id from cache: User 1
+2026-04-21 17:06:33 info: Get user by id from cache: User 1
+2026-04-21 17:06:39 info: Get user by id from cache: User 1
+2026-04-21 17:06:44 info: Get user by id from cache: User 1
+2026-04-21 17:07:01 info: Get user by id from cache: User 1
+2026-04-21 17:07:06 info: Get user by id from cache: User 1
+2026-04-21 17:07:10 info: Get user by id from cache: User 1
+2026-04-21 17:07:55 info: Get user by id from cache: User 1
+2026-04-21 17:08:01 info: Get user by id from cache: User 1
+2026-04-21 17:09:08 info: Get user by id from cache: User 1
+2026-04-21 17:09:13 info: Get user by id from cache: User 1
+2026-04-21 17:09:18 info: Get user by id from cache: User 1
+2026-04-21 17:09:23 info: Get user by id from cache: User 1
+2026-04-21 17:09:28 info: Get user by id from cache: User 1
+2026-04-21 17:09:33 info: Get user by id from cache: User 1
+2026-04-21 17:15:56 info: Get user by id successful: User 1
+2026-04-21 17:16:48 info: Get user by id from cache: User 1
+2026-04-21 17:24:05 info: Login successful: User 1
+2026-04-21 17:24:05 info: Get user by id from cache: User 1
+2026-04-21 17:24:05 info: Get user by id from cache: User 1
+2026-04-21 17:24:06 info: Get device status count successful
+2026-04-21 17:24:06 info: Get annual maintenance cost successful for year 2026
+2026-04-21 17:24:07 info: Get maintenance type count successful
+2026-04-21 17:24:07 info: Get expiring maintenance plans successful: 4 plans found
+2026-04-21 17:24:10 info: Get devices successful: 5 devices found
+2026-04-21 17:24:15 info: Get all device types successful: 6 types found
+2026-04-21 17:24:17 info: Get devices successful: 5 devices found
+2026-04-21 17:24:17 info: Get running data successful: 16 records found
+2026-04-21 17:24:19 info: Get devices successful: 5 devices found
+2026-04-21 17:24:19 info: Get maintenance plans successful: 5 plans found
+2026-04-21 17:24:22 info: Get devices successful: 5 devices found
+2026-04-21 17:24:22 info: Get maintenances successful: 4 records found
+2026-04-21 17:24:25 info: Get users successful: 6 users found
+2026-04-21 17:24:25 info: Get devices successful: 5 devices found
+2026-04-21 17:24:25 info: Get repair orders successful: 1 orders found
+2026-04-21 17:24:29 info: Get all departments successful: 5 departments found
+2026-04-21 17:24:29 info: Get users successful: 6 users found
+2026-04-21 17:24:29 info: Get all departments successful: 5 departments found
+2026-04-21 17:24:30 info: Get all departments successful: 5 departments found
+2026-04-21 17:25:10 info: Get all departments successful: 5 departments found
+2026-04-21 17:25:11 info: Get users successful: 6 users found
+2026-04-21 17:25:11 info: Get all departments successful: 5 departments found
+2026-04-21 17:25:11 info: Get all departments successful: 5 departments found
+2026-04-21 17:25:13 info: Get devices successful: 5 devices found
+2026-04-21 17:25:13 info: Get users successful: 6 users found
+2026-04-21 17:25:13 info: Get repair orders from cache
+2026-04-21 17:25:25 info: Get maintenance plans from cache
+2026-04-21 17:25:25 info: Get devices successful: 5 devices found
+2026-04-21 17:25:26 info: Get devices successful: 5 devices found
+2026-04-21 17:25:26 info: Get maintenances from cache
+2026-04-21 17:25:36 info: Get devices successful: 5 devices found
+2026-04-21 17:25:36 info: Get running data from cache
+2026-04-21 17:25:53 info: Get maintenance plans from cache
+2026-04-21 17:25:53 info: Get devices successful: 5 devices found
+2026-04-21 17:25:57 info: Get devices successful: 5 devices found
+2026-04-21 17:25:57 info: Get maintenances from cache
+2026-04-21 17:26:56 info: Get maintenance plans from cache
+2026-04-21 17:26:56 info: Get devices successful: 5 devices found
+2026-04-21 17:44:16 info: Server is running on port 3001
+2026-04-21 17:44:16 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:44:16 info: Redis connected successfully
+2026-04-21 17:44:29 info: Server is running on port 3001
+2026-04-21 17:44:29 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:44:29 info: Redis connected successfully
+2026-04-21 17:45:04 info: Server is running on port 3001
+2026-04-21 17:45:04 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:45:04 info: Redis connected successfully
+2026-04-21 17:45:09 info: Server is running on port 3001
+2026-04-21 17:45:09 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:45:09 info: Redis connected successfully
+2026-04-21 17:45:14 info: Server is running on port 3001
+2026-04-21 17:45:14 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:45:14 info: Redis connected successfully
+2026-04-21 17:45:19 info: Server is running on port 3001
+2026-04-21 17:45:19 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:45:19 info: Redis connected successfully
+2026-04-21 17:45:35 info: Server is running on port 3001
+2026-04-21 17:45:35 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:45:35 info: Redis connected successfully
+2026-04-21 17:46:23 info: Get devices successful: 5 devices found
+2026-04-21 17:46:42 info: Server is running on port 3001
+2026-04-21 17:46:42 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:46:42 info: Redis connected successfully
+2026-04-21 17:47:03 info: Server is running on port 3001
+2026-04-21 17:47:03 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:47:03 info: Redis connected successfully
+2026-04-21 17:47:21 info: Server is running on port 3001
+2026-04-21 17:47:21 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:47:21 info: Redis connected successfully
+2026-04-21 17:47:41 info: Server is running on port 3001
+2026-04-21 17:47:41 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:47:41 info: Redis connected successfully
+2026-04-21 17:48:15 info: Server is running on port 3001
+2026-04-21 17:48:15 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:48:15 info: Redis connected successfully
+2026-04-21 17:48:50 info: Server is running on port 3001
+2026-04-21 17:48:50 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:48:50 info: Redis connected successfully
+2026-04-21 17:49:15 info: Server is running on port 3001
+2026-04-21 17:49:15 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:49:15 info: Redis connected successfully
+2026-04-21 17:49:32 info: Server is running on port 3001
+2026-04-21 17:49:32 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:49:32 info: Redis connected successfully
+2026-04-21 17:50:06 info: Server is running on port 3001
+2026-04-21 17:50:06 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:50:06 info: Redis connected successfully
+2026-04-21 17:50:32 info: Server is running on port 3001
+2026-04-21 17:50:32 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:50:32 info: Redis connected successfully
+2026-04-21 17:50:56 info: Server is running on port 3001
+2026-04-21 17:50:56 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:50:56 info: Redis connected successfully
+2026-04-21 17:51:28 info: Server is running on port 3001
+2026-04-21 17:51:28 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:51:28 info: Redis connected successfully
+2026-04-21 17:51:48 info: Server is running on port 3001
+2026-04-21 17:51:48 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:51:48 info: Redis connected successfully
+2026-04-21 17:52:08 info: Server is running on port 3001
+2026-04-21 17:52:08 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:52:08 info: Redis connected successfully
+2026-04-21 17:53:05 info: Server is running on port 3001
+2026-04-21 17:53:05 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:53:05 info: Redis connected successfully
+2026-04-21 17:53:25 info: Server is running on port 3001
+2026-04-21 17:53:25 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:53:25 info: Redis connected successfully
+2026-04-21 17:53:43 info: Server is running on port 3001
+2026-04-21 17:53:43 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:53:43 info: Redis connected successfully
+2026-04-21 17:56:54 info: Get devices successful: 5 devices found
+2026-04-21 17:56:54 info: Get running data successful: 16 records found
+2026-04-21 17:59:24 info: Server is running on port 3001
+2026-04-21 17:59:24 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 17:59:24 info: Redis connected successfully
+2026-04-21 18:00:55 info: Server is running on port 3001
+2026-04-21 18:00:55 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-21 18:00:55 info: Redis connected successfully
+2026-04-21 18:03:31 info: Redis connected successfully
+2026-04-21 18:03:31 error: Get devices error: Cannot destructure property 'search' of 'query' as it is undefined.
+2026-04-21 18:03:31 info: Get device by id successful: Device 1
+2026-04-21 18:03:31 warn: Get device by id failed: Device 999 not found
+2026-04-21 18:03:31 error: Get device by id error: Device not found
+2026-04-21 18:03:31 warn: Create device failed: Device code DEV003 already exists
+2026-04-21 18:03:31 error: Create device error: 设备编号已存在
+2026-04-21 18:03:31 error: Update device error: Cannot read properties of undefined (reading 'include')
+2026-04-21 18:03:31 warn: Update device failed: Device 999 not found
+2026-04-21 18:03:31 error: Update device error: Device not found
+2026-04-21 18:03:31 error: Delete device error: Cannot read properties of undefined (reading 'include')
+2026-04-21 18:03:31 warn: Delete device failed: Device 999 not found
+2026-04-21 18:03:31 error: Delete device error: Device not found
+2026-04-21 18:03:31 info: Get devices by status successful: 1 devices found for status active
+2026-04-21 18:03:31 info: Get maintenances successful: 2 records found
+2026-04-21 18:03:31 info: Get maintenance by id successful: Maintenance 1
+2026-04-21 18:03:31 warn: Get maintenance by id failed: Maintenance 999 not found
+2026-04-21 18:03:31 error: Get maintenance by id error: Maintenance record not found
+2026-04-21 18:03:31 info: Create maintenance successful: Maintenance 3
+2026-04-21 18:03:31 error: Update maintenance error: Cannot read properties of undefined (reading 'include')
+2026-04-21 18:03:31 warn: Update maintenance failed: Maintenance 999 not found
+2026-04-21 18:03:31 error: Update maintenance error: Maintenance record not found
+2026-04-21 18:03:31 error: Delete maintenance error: Cannot read properties of undefined (reading 'include')
+2026-04-21 18:03:31 warn: Delete maintenance failed: Maintenance 999 not found
+2026-04-21 18:03:31 error: Delete maintenance error: Maintenance record not found
+2026-04-21 18:03:31 info: Get maintenances by device id successful: 2 records found for device 1
+2026-04-21 18:03:31 info: Get device status count successful
+2026-04-21 18:03:31 info: Get department device count successful
+2026-04-21 18:03:31 info: Get maintenance type count successful
+2026-04-21 18:03:31 info: Get annual maintenance cost successful for year 2023

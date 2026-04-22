@@ -20,7 +20,7 @@ const RepairOrder = sequelize.define('RepairOrder', {
     allowNull: false
   },
   applyDate: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: false
   },
   faultDescription: {
@@ -36,7 +36,7 @@ const RepairOrder = sequelize.define('RepairOrder', {
     allowNull: true
   },
   repairDate: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: true
   },
   repairContent: {

@@ -2,6 +2,7 @@ const { RunningData, Device } = require('../models');
 const { Op } = require('sequelize');
 const logger = require('../utils/logger');
 const RedisCache = require('../utils/redis');
+const { toDateString } = require('../utils/dateHelper');
 
 class RunningDataService {
   // 获取运行数据列表
@@ -74,7 +75,7 @@ class RunningDataService {
 
       const transformedData = {
         equipmentId,
-        date: runningData.date ?? runningData.recordTime,
+        date: toDateString(runningData.date ?? runningData.recordTime),
         runningHours: runningData.runningHours,
         production: runningData.production,
         energyConsumption: runningData.energyConsumption,
@@ -120,7 +121,11 @@ class RunningDataService {
         logger.warn(`Update running data failed: Data ${id} not found`);
         throw new Error('Running data not found');
       }
-      await data.update(runningData);
+      const normalizedData = {
+        ...runningData,
+        date: toDateString(runningData.date ?? runningData.recordTime),
+      };
+      await data.update(normalizedData);
       
       // 清除相关缓存
       await RedisCache.del('runningData:all');

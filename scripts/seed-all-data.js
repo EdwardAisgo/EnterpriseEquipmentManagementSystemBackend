@@ -121,19 +121,20 @@ async function seedAllData() {
     // ========== 5. 维护计划 ==========
     console.log('  创建维护计划...');
     const now = new Date();
+    const fmt = (d) => d.toISOString().slice(0, 10);
     const nextMonth = new Date(now); nextMonth.setMonth(nextMonth.getMonth() + 1);
     const nextWeek = new Date(now); nextWeek.setDate(nextWeek.getDate() + 7);
     const nextQuarter = new Date(now); nextQuarter.setMonth(nextQuarter.getMonth() + 3);
     const nextYear = new Date(now); nextYear.setFullYear(nextYear.getFullYear() + 1);
 
     const plansData = [
-      { deviceId: deviceMap['EQ001'], maintenanceType: '日常维护', cycle: 1, cycleUnit: 'month', nextMaintenance: nextMonth, responsiblePerson: '张三' },
-      { deviceId: deviceMap['EQ002'], maintenanceType: '日常维护', cycle: 1, cycleUnit: 'month', nextMaintenance: nextMonth, responsiblePerson: '李四' },
-      { deviceId: deviceMap['EQ003'], maintenanceType: '定期维护', cycle: 3, cycleUnit: 'month', nextMaintenance: nextQuarter, responsiblePerson: '王五' },
-      { deviceId: deviceMap['EQ004'], maintenanceType: '日常维护', cycle: 2, cycleUnit: 'week', nextMaintenance: nextWeek, responsiblePerson: '赵六' },
-      { deviceId: deviceMap['EQ005'], maintenanceType: '定期维护', cycle: 6, cycleUnit: 'month', nextMaintenance: nextQuarter, responsiblePerson: '张三' },
-      { deviceId: deviceMap['EQ006'], maintenanceType: '精度校准', cycle: 1, cycleUnit: 'year', nextMaintenance: nextYear, responsiblePerson: '王五' },
-      { deviceId: deviceMap['EQ008'], maintenanceType: '日常维护', cycle: 1, cycleUnit: 'month', nextMaintenance: nextMonth, responsiblePerson: '赵六' }
+      { deviceId: deviceMap['EQ001'], maintenanceType: '日常维护', cycle: 1, cycleUnit: 'month', nextMaintenance: fmt(nextMonth), responsiblePerson: '张三' },
+      { deviceId: deviceMap['EQ002'], maintenanceType: '日常维护', cycle: 1, cycleUnit: 'month', nextMaintenance: fmt(nextMonth), responsiblePerson: '李四' },
+      { deviceId: deviceMap['EQ003'], maintenanceType: '定期维护', cycle: 3, cycleUnit: 'month', nextMaintenance: fmt(nextQuarter), responsiblePerson: '王五' },
+      { deviceId: deviceMap['EQ004'], maintenanceType: '日常维护', cycle: 2, cycleUnit: 'week', nextMaintenance: fmt(nextWeek), responsiblePerson: '赵六' },
+      { deviceId: deviceMap['EQ005'], maintenanceType: '定期维护', cycle: 6, cycleUnit: 'month', nextMaintenance: fmt(nextQuarter), responsiblePerson: '张三' },
+      { deviceId: deviceMap['EQ006'], maintenanceType: '精度校准', cycle: 1, cycleUnit: 'year', nextMaintenance: fmt(nextYear), responsiblePerson: '王五' },
+      { deviceId: deviceMap['EQ008'], maintenanceType: '日常维护', cycle: 1, cycleUnit: 'month', nextMaintenance: fmt(nextMonth), responsiblePerson: '赵六' }
     ];
 
     await MaintenancePlan.bulkCreate(plansData, { transaction: t, ignoreDuplicates: true });

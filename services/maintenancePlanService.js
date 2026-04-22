@@ -1,6 +1,7 @@
 const { MaintenancePlan, Device } = require('../models');
 const logger = require('../utils/logger');
 const RedisCache = require('../utils/redis');
+const { toDateString } = require('../utils/dateHelper');
 
 class MaintenancePlanService {
   // 获取维护计划列表
@@ -61,7 +62,12 @@ class MaintenancePlanService {
   // 添加维护计划
   static async createMaintenancePlan(planData) {
     try {
-      const plan = await MaintenancePlan.create(planData);
+      const normalizedData = {
+        ...planData,
+        lastMaintenance: toDateString(planData.lastMaintenance),
+        nextMaintenance: toDateString(planData.nextMaintenance),
+      };
+      const plan = await MaintenancePlan.create(normalizedData);
       
       // 清除维护计划列表缓存
       await RedisCache.del('maintenancePlans:all');
@@ -81,7 +87,12 @@ class MaintenancePlanService {
         logger.warn(`Update maintenance plan failed: Plan ${id} not found`);
         throw new Error('Maintenance plan not found');
       }
-      await plan.update(planData);
+      const normalizedData = {
+        ...planData,
+        lastMaintenance: toDateString(planData.lastMaintenance),
+        nextMaintenance: toDateString(planData.nextMaintenance),
+      };
+      await plan.update(normalizedData);
       
       // 清除相关缓存
       await RedisCache.del('maintenancePlans:all');
