@@ -4079,3 +4079,15 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-22 09:42:36 info: Get annual maintenance cost successful for year 2026
 2026-04-22 09:42:36 info: Get maintenance type count successful
 2026-04-22 09:42:36 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-22 10:10:09 info: Get user by id successful: User 1
+2026-04-22 10:10:55 info: Get all departments successful: 5 departments found
+2026-04-22 10:10:56 info: Get all departments successful: 5 departments found
+2026-04-22 10:10:56 info: Get users successful: 6 users found
+2026-04-22 10:10:56 info: Get all departments successful: 5 departments found
+2026-04-22 10:13:23 info: Login successful: User 1
+2026-04-22 10:13:23 info: Get user by id from cache: User 1
+2026-04-22 10:13:24 info: Get user by id from cache: User 1
+2026-04-22 10:13:25 info: Get device status count successful
+2026-04-22 10:13:25 info: Get annual maintenance cost successful for year 2026
+2026-04-22 10:13:25 info: Get maintenance type count successful
+2026-04-22 10:13:25 info: Get expiring maintenance plans successful: 5 plans found
