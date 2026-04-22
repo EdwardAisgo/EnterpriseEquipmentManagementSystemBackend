@@ -4002,3 +4002,44 @@ notNull Violation: RunningData.operator cannot be null
 2026-04-21 18:03:31 info: Get department device count successful
 2026-04-21 18:03:31 info: Get maintenance type count successful
 2026-04-21 18:03:31 info: Get annual maintenance cost successful for year 2023
+2026-04-22 09:02:33 info: Login successful: User 1
+2026-04-22 09:03:01 info: Get maintenance plans successful: 5 plans found
+2026-04-22 09:03:01 info: Get maintenance plans from cache
+2026-04-22 09:08:36 info: Get devices successful: 5 devices found
+2026-04-22 09:08:36 info: Get running data successful: 16 records found
+2026-04-22 09:08:37 info: Get repair orders successful: 1 orders found
+2026-04-22 09:08:50 info: Create maintenance plan successful: Plan 6
+2026-04-22 09:12:13 info: Get maintenances successful: 4 records found
+2026-04-22 09:13:12 info: Login successful: User 1
+2026-04-22 09:13:12 info: Get user by id successful: User 1
+2026-04-22 09:13:13 info: Get user by id from cache: User 1
+2026-04-22 09:13:14 info: Get device status count successful
+2026-04-22 09:13:14 info: Get annual maintenance cost successful for year 2026
+2026-04-22 09:13:14 info: Get expiring maintenance plans successful: 5 plans found
+2026-04-22 09:13:14 info: Get maintenance type count successful
+2026-04-22 09:13:20 info: Get devices successful: 5 devices found
+2026-04-22 09:13:22 info: Get all device types successful: 6 types found
+2026-04-22 09:13:25 info: Get devices successful: 5 devices found
+2026-04-22 09:13:25 info: Get running data from cache
+2026-04-22 09:13:28 info: Get devices successful: 5 devices found
+2026-04-22 09:13:28 info: Get maintenance plans successful: 6 plans found
+2026-04-22 09:13:29 info: Get devices successful: 5 devices found
+2026-04-22 09:13:29 info: Get maintenances from cache
+2026-04-22 09:13:33 info: Get devices successful: 5 devices found
+2026-04-22 09:13:33 info: Get repair orders from cache
+2026-04-22 09:13:33 info: Get users successful: 6 users found
+2026-04-22 09:13:36 info: Get all departments successful: 5 departments found
+2026-04-22 09:13:36 info: Get users successful: 6 users found
+2026-04-22 09:13:36 info: Get all departments successful: 5 departments found
+2026-04-22 09:13:38 info: Get all departments successful: 5 departments found
+2026-04-22 09:15:31 info: Get maintenance plans from cache
+2026-04-22 09:15:41 info: Get maintenance plans from cache
+2026-04-22 09:24:38 info: Server is running on port 3001
+2026-04-22 09:24:38 info: Server started successfully. Database sync can be performed manually if needed.
+2026-04-22 09:24:38 info: Redis connected successfully
+2026-04-22 09:24:47 info: Login successful: User 1
+2026-04-22 09:24:57 info: Get devices successful: 5 devices found
+2026-04-22 09:24:58 info: Get maintenance plans successful: 6 plans found
+2026-04-22 09:25:10 info: Get maintenances successful: 4 records found
+2026-04-22 09:25:11 info: Get repair orders successful: 1 orders found
+2026-04-22 09:25:18 info: Get running data successful: 16 records found
