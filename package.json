@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/**/*.test.js",
+    "prestart": "node scripts/check-redis.js",
     "start": "node app.js",
+    "predev": "node scripts/check-redis.js",
     "dev": "nodemon app.js",
     "smoke": "node scripts/smoke-api.js"
   },
